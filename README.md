@@ -1,8 +1,8 @@
-#Website for DSC PVGCOET
+Website for DSC PVGCOET
 
-##Created using React
+Created using React
 
-##Following routes are currently defined : 
+Following routes are currently defined : 
 
     path                component       functionality 
 
