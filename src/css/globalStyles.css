@@ -1,1 +1,54 @@
 /* define all global fonts, typefaces and colors here */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+:root {
+
+    /* Typefaces */
+
+    --bigHeadingFontFamily : 'Lexend Deca', sans-serif;
+    --mediumHeadingFontFamily : 'Montserrat', sans-serif;
+    --smallHeadingFontFamily: 'Poppins', sans-serif;
+
+    --darkText : #2a2b2b;
+    --tanText : #434343;
+    --darkGrey: #878787;
+    --grey: #ababab;
+    --lightGrey: #d3d3d3;
+    --ultraLightGrey: #eeeeee;
+
+    --smallText: 15px;
+    --heading6 : 17px;
+    --heading5: 19px;
+    --heading4: 25px;
+    --heading3: 30px;
+    --heading2: 40px;
+    --heading1: 50px;
+
+    --bold: 800;
+    --medium: 700;
+    --regular: 600;
+    --light: 500;
+
+    /* Colors */
+    --googleBlue : #4285F4;
+    --googleRed : #DB4437;
+    --googleGreen : #0F9D58;
+    --googleYellow : #F4B400;
+}
+
+.main-container {
+    font-family: var(--bigHeadingFontFamily);
+    font-size: var(--heading2);
+    font-weight: var(--bold);
+}
+
+html body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}

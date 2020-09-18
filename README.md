@@ -1,6 +1,6 @@
-Website for DSC PVGCOET
+# Website for DSC PVGCOET
 
-Created using React
+Created using React JS and React Router
 
 Following routes are currently defined : 
 
