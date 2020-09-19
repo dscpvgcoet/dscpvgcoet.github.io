@@ -28,7 +28,7 @@
     background-color: transparent;
     border-radius: 50px;
     font-family: var(--mediumHeadingFontFamily);
-    font-size: var(--smallText);
+    font-size: var(--heading6);
     font-weight: var(--regular);
     transition: 0.2s ease-in-out;
     cursor: pointer;
@@ -41,4 +41,13 @@
 }
 .link {
     color: var(--darkText)
+}
+
+.header-logo {
+    width: auto;
+}
+
+.header-logo img {
+    width: 350px;
+    margin-top: 20px;
 }

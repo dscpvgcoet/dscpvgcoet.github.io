@@ -6,6 +6,7 @@ import OurTeam from './OurTeam'
 import BlogList from './BlogList'
 
 class App extends React.Component {
+
     render() {
         return (
             <div>
