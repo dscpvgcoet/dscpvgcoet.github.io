@@ -1,5 +1,8 @@
 # Website for DSC PVGCOET
 
+[Click here](https://test-website-dscpvgcoet.herokuapp.com/) to open live website to test loading speed.
+
+
 Created using React JS and React Router
 
 Following routes are currently defined :
