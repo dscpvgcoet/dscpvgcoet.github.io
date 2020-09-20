@@ -16,7 +16,7 @@ class Header extends React.Component {
         const boxShadow = this.props.showLogoInHeader ? '4px 0 20px #0000002a' : '' 
         
         return (
-            <div className="header-main-container" ref={headerElement => this.headerElement = headerElement} style={{boxShadow: boxShadow}}>
+            <div className="header-main-container" ref={headerElement => this.headerElement = headerElement} style={{boxShadow: boxShadow,}}>
                 <div className="header-logo">
                     <img src={horizontalLogo} style={{visibility: displayValue }}/> 
                 </div>

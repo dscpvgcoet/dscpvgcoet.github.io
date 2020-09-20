@@ -39,14 +39,20 @@
 }
 
 .main-container {
-    font-family: var(--bigHeadingFontFamily);
-    font-size: var(--heading2);
-    font-weight: var(--bold);
-}
-
-html body {
     margin: 0;
     padding: 0;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
 a {
