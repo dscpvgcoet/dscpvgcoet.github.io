@@ -9,6 +9,9 @@ import '../css/home.css'
 
 import homeMainImage from '../assets/images/homepage_main.jpg'
 import DSCLogo from '../assets/images/DSCPVGCOETVertical.png'
+import bulb from '../assets/images/lightbulb.png'
+import team from '../assets/images/team.png'
+import jigsaw from '../assets/images/jigsaw.png'
 
 class Home extends React.Component {
 
@@ -72,7 +75,7 @@ class Home extends React.Component {
                         </div>
                     </div>
                     <div className="home-main-content-down-arrow" style={{display: isBelowMainFrame}} onClick={this.handleArrowClick}>
-                        <ChevronDown size={35} color='#434343' style={{backgroundColor:"#ccc",borderRadius:35,padding:5}} />
+                        <ChevronDown size={35} color='#434343' className="home-main-content-down-arrow-arrow"/>
                     </div>
                 </div>
 
@@ -82,6 +85,33 @@ class Home extends React.Component {
 
                 <div className="about-us-container">
                     <h3>About Us</h3>
+                    <p>Developers Students Club is a group of like minded individuals with the sole aim of teaching, learning and helping our fellow students to excel</p>
+                    <div className="features">
+                        <div className="feature-item">
+                            <div className="feature-item-image">
+                                <img src={bulb}/>
+                            </div>
+                            <h4 style={{color: 'gold'}}>We ideate</h4>
+                            <h6>We brainstorm for new ideas and chalk up a path to implement it</h6>
+                        </div>
+                        <div className="feature-item">
+                            <div className="feature-item-image">
+                                <img src={jigsaw}/>
+                            </div>
+                            <h4 style={{color: '#0BC70B'}}>We inspire</h4>
+                            <h6>We help to hone intelligent minds and develop a dynamic environment</h6>
+                        </div>
+                        <div className="feature-item">
+                            <div className="feature-item-image">
+                                <img src={team}/>
+                            </div>
+                            <h4 style={{color: '#4285F4'}}>We collaborate</h4>
+                            <h6>We work together on projects and empower the whole community</h6>
+                        </div>
+                    </div>
+                    <h4>Who can be a part of DSC ?</h4>
+                    <p>Anyone. Yep, that's right.</p>
+                    <p style={{fontSize: 15}}>DSC is open to any student, ranging from amateur developers who are just getting started, to experienced developers who want to further hone and showcase their skills</p>
                 </div>
                 <Footer/>
             </div>

@@ -72,6 +72,13 @@
     cursor: pointer;
 }
 
+.home-main-content-down-arrow-arrow {
+    padding: 8px;
+    background-color: #ffffff;
+    border-radius: 35px;
+    box-shadow: 2px 2px 15px #0000002a;
+}
+
 .hero {
     color: #111236;
     font-family: 'Montserrat', sans-serif;
@@ -106,13 +113,13 @@
     height: 24px;
     margin-left: 50%;
     transform: translateX(-50%);
-    fill: #434343;
+    fill: #2a2b2b;
     overflow: hidden;
 }
 
 .about-us-container {
     height:1500px; 
-    background-color: #434343; 
+    background-color: #2a2b2b; 
     top: -40px; 
     /* position: relative; */
     display: flex;
@@ -127,4 +134,75 @@
     color: #ffffff;
 }
 
+.about-us-container h4 {
+    font-family: var(--bigHeadingFontFamily);
+    font-size: var(--heading4);
+    font-weight: var(--bold);
+    color: #ffffff;
+}
 
+.about-us-container p {
+    font-family: var(--smallHeadingFontFamily);
+    font-size: var(--heading5);
+    font-weight: var(--thin);
+    color: #ffffff;
+    width: 60%;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+
+.features {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.feature-item {
+    width: 25%;
+    background-color: transparent;
+    margin: 0 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-item-image {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: #434343;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-item-image img {
+    width: 7vw;
+    height: 7vw;
+}
+
+.feature-item h4 {
+    font-family: var(--smallHeadingFontFamily);
+    font-size: var(--heading4);
+    font-weight: var(--regular);
+    letter-spacing: 0.9px;
+    margin: 20px 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+.feature-item h6 {
+    font-family: var(--smallHeadingFontFamily);
+    font-size: var(--smallText);
+    font-weight: var(--thin);
+    letter-spacing: 0.9px;
+    margin: 25px 0 10px 0;
+    padding: 0;
+    text-align: center;
+    color: #f6f6f6;
+}
