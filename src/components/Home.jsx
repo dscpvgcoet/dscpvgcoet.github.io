@@ -72,7 +72,7 @@ class Home extends React.Component {
                         </div>
                     </div>
                     <div className="home-main-content-down-arrow" style={{display: isBelowMainFrame}} onClick={this.handleArrowClick}>
-                        <ChevronDown size={35} color='#434343'/>
+                        <ChevronDown size={35} color='#434343' style={{backgroundColor:"#ccc",borderRadius:35,padding:5}} />
                     </div>
                 </div>
 
