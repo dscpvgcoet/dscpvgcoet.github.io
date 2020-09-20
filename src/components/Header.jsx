@@ -12,15 +12,17 @@ class Header extends React.Component {
 
     render() {
 
-        const displayValue = this.props.showLogoInHeader ? '' : 'none'
+        const displayValue = this.props.showLogoInHeader ? '' : 'hidden'
+        const boxShadow = this.props.showLogoInHeader ? '4px 0 20px #0000002a' : '' 
         
         return (
-            <div className="header-main-container" ref={headerElement => this.headerElement = headerElement}>
+            <div className="header-main-container" ref={headerElement => this.headerElement = headerElement} style={{boxShadow: boxShadow}}>
                 <div className="header-logo">
-                    <img src={horizontalLogo} style={{display: displayValue }}/> 
+                    <img src={horizontalLogo} style={{visibility: displayValue }}/> 
                 </div>
                 <div className="header-options">
                     <ul>
+                        <li>Home</li>
                         <li><Link to="/" className="link">Blogs</Link></li>
                         <li>Our Team</li>
                         <li>Contact</li> 
