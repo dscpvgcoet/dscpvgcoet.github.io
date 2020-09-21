@@ -98,7 +98,7 @@ class Home extends React.Component {
                             <div className="feature-item-image">
                                 <img src={jigsaw}/>
                             </div>
-                            <h4 style={{color: '#0BC70B'}}>We inspire</h4>
+                            <h4 style={{color: '#17BA08'}}>We inspire</h4>
                             <h6>We help to hone intelligent minds and develop a dynamic environment</h6>
                         </div>
                         <div className="feature-item">
@@ -124,9 +124,9 @@ class Home extends React.Component {
                         Students also get to interact with industry experts as well as experts within and around our community, who are extremely keen to be in touch with us and guide us.
                     </p>
                 </div>
-                <div style={{height: 500, backgroundColor: '#fff'}}>
+                {/* <div style={{height: 500, backgroundColor: '#fff'}}>
 
-                </div>
+                </div> */}
                 <Footer/>
             </div>
         )

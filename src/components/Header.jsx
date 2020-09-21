@@ -7,7 +7,9 @@ import horizontalLogo from '../assets/images/DSCPVGCOETHorizontal.png'
 class Header extends React.Component {
 
     componentDidMount() {
-        this.props.passHeaderHeight(this.headerElement.clientHeight)
+        if(this.props.passHeaderHeight) {
+            this.props.passHeaderHeight(this.headerElement.clientHeight)
+        }
     }
 
     render() {
