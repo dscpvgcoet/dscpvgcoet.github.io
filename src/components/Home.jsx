@@ -75,7 +75,7 @@ class Home extends React.Component {
                         </div>
                     </div>
                     <div className="home-main-content-down-arrow" style={{display: isBelowMainFrame}} onClick={this.handleArrowClick}>
-                        <ChevronDown size={35} color='#434343' className="home-main-content-down-arrow-arrow"/>
+                        <ChevronDown size={45} color='#434343' className="home-main-content-down-arrow-arrow"/>
                     </div>
                 </div>
 
@@ -112,6 +112,20 @@ class Home extends React.Component {
                     <h4>Who can be a part of DSC ?</h4>
                     <p>Anyone. Yep, that's right.</p>
                     <p style={{fontSize: 15}}>DSC is open to any student, ranging from amateur developers who are just getting started, to experienced developers who want to further hone and showcase their skills</p>
+                    <br/>
+                    <h4>What do we do ?</h4>
+                    <p style={{fontSize:15}}>
+                        DSC PVG's COET comprises of a very diverse community with members from various displines of engineering and expertise working towards this initiative. 
+                        <br/>
+                        <br/>
+                        Here at DSC PVG's COET, we plan for students to get to work with a remarkably dedicated group of developers, collaborate on projects, organise workshops, represent us in competitions and hackathons and much more. 
+                        <br/>
+                        <br/>
+                        Students also get to interact with industry experts from Google as well as experts within and around our community, who are extremely keen to be in touch with us and guide us.
+                    </p>
+                </div>
+                <div style={{height: 500, backgroundColor: '#fff'}}>
+
                 </div>
                 <Footer/>
             </div>

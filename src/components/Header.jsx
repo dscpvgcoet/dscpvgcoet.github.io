@@ -22,10 +22,10 @@ class Header extends React.Component {
                 </div>
                 <div className="header-options">
                     <ul>
-                        <li>Home</li>
-                        <li><Link to="/" className="link">Blogs</Link></li>
-                        <li>Our Team</li>
-                        <li>Contact</li> 
+                        <li><Link to="/" className="link">Home</Link></li>
+                        <li><Link to="/blog-list" className="link">Blogs</Link></li>
+                        <li><Link to="/our-team" className="link">Team</Link></li>
+                        <li><Link to="/" className="link">Contact</Link></li> 
                     </ul>
                 </div>
                 

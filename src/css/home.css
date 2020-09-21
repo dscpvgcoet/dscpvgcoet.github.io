@@ -74,9 +74,9 @@
 
 .home-main-content-down-arrow-arrow {
     padding: 8px;
-    background-color: #ffffff;
+    background-color: transparent;
     border-radius: 35px;
-    box-shadow: 2px 2px 15px #0000002a;
+    /* box-shadow: 2px 2px 15px #0000002a; */
 }
 
 .hero {
@@ -139,6 +139,7 @@
     font-size: var(--heading4);
     font-weight: var(--bold);
     color: #ffffff;
+    margin-top: 100px;
 }
 
 .about-us-container p {
