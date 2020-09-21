@@ -121,7 +121,7 @@ class Home extends React.Component {
                         Here at DSC PVG's COET, we plan for students to get to work with a remarkably dedicated group of developers, collaborate on projects, organise workshops, represent us in competitions and hackathons and much more. 
                         <br/>
                         <br/>
-                        Students also get to interact with industry experts from Google as well as experts within and around our community, who are extremely keen to be in touch with us and guide us.
+                        Students also get to interact with industry experts as well as experts within and around our community, who are extremely keen to be in touch with us and guide us.
                     </p>
                 </div>
                 <div style={{height: 500, backgroundColor: '#fff'}}>
