@@ -56,7 +56,7 @@ class Footer extends React.Component {
             <div className="three-sections">
                 <div className="section">
                     <h3>About Us</h3>
-                    <p>Developer Student Clubs PVG's COET, powered by Google Developers, is a non-profit university based community that aims to inspire intelligent minds in the field of technology. </p>
+                    <p>Developer Student Clubs PVG's COET, powered by Google Developer Experts, is a non-profit university based community that aims to inspire intelligent minds in the field of technology. </p>
                 </div>
                 <div className="separator"></div>
                 <div className="section">
