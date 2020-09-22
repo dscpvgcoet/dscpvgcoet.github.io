@@ -1,4 +1,5 @@
 import DSCLeadPhoto from './assets/images/sunanda_somwase.jpeg'
+import Gaurav from './assets/images/gaurav_khairnar.jpg'
 
 export const DSCLeadInformation = {
     name : 'Sunanda Somwase',
@@ -22,7 +23,7 @@ export const teamInformation  = {
         },
         {
             name : 'Gaurav Khairnar',
-            photo : 'https://drive.google.com/open?id=1MmA4VgBwPDs6cW5vL8y5fgd3y90zVwBj',
+            photo : Gaurav,
             position: 'Associate Technical Head', 
         },
         {
