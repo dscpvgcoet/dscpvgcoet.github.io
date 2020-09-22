@@ -32,7 +32,7 @@ export const teamInformation  = {
         },
         {
             name : 'Yash Mehta',
-            photo : 'https://drive.google.com/open?id=1pu48w9go7a9rI10drLG_S2r07GK0l5lJ',
+            photo : 'https://drive.google.com/open?id=1LlmivdCu2CN_VRt20WtRnwbjXb1uYkDi',
             position: 'Operations Head', 
         },
         {
