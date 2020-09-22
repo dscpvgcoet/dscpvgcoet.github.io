@@ -1,0 +1,32 @@
+@import url('./globalStyles.css');
+
+.blog-list {
+	padding-top: 120px;
+	text-align: center;
+
+}
+
+.blog-item {
+	padding-bottom: 30px;
+}
+
+.blog-list h2 {
+	font-family: var(--bigHeadingFontFamily);
+	font-size: var(--heading2);
+	font-weight: var(--bold);
+	color: var(--tanText);
+}
+
+.blog-image {
+	max-height: 400px;
+	max-width: 600px;
+}
+
+.blog-title {
+	font-family: var(--mediumHeadingFontFamily);
+	color: var(--darkText);
+	font-size: var(--heading4);
+	font-weight: bold;
+}
+
+
