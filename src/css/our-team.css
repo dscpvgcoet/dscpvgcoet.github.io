@@ -1,7 +1,7 @@
 @import url('./globalStyles.css');
 
 .team-main-container {
-    min-height: 100vh;
+    
     display: flex;
     flex-direction: row;
 }
@@ -34,6 +34,108 @@
 .right-side {
     width: 50%;
     display: flex;
-    flex-direction: column;
-    background-color: gold;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-members-core {
+    box-sizing: border-box;
+    padding: 10px 10%;
+    background-color: transparent;
+}
+
+.team-members-core-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.core-member-box {
+    /* display: inline-block; */
+    margin: 10px 20px;
+    background-color:transparent;
+    width: 20%;
+    padding: 5px 5px 20px 5px;
+}
+
+.core-member-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 100px;
+    margin: 10% auto;
+    background-color: #f6f6f6;
+    overflow: hidden;
+}
+
+.core-member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    margin-top: 0;
+}
+
+.core-member-box h3 {
+    font-family: var(--smallHeadingFontFamily);
+    font-size: var(--heading5);
+    font-weight: var(--medium);
+    color: var(--tanText);
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.core-member-box p {
+    font-family: var(--smallHeadingFontFamily);
+    font-size: var(--verySmallText);
+    font-weight: var(--regular);
+    color: var(--darkGrey);
+    text-align: center;
+    margin: 0;
+}
+
+.team-title {
+    font-family: var(--smallHeadingFontFamily);
+    font-size: var(--heading4);
+    font-weight: var(--medium);
+    color: var(--tanText);
+    text-align: center;
+    margin-top: 80px;
+}
+
+.complete-member-box {
+    display: flex;
+    height: 60px;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 20px;
+    background-color:transparent;
+    width: 20%;
+    padding: 5px 5px 20px 5px;
+}
+
+.complete-member-photo-box {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+}
+
+.complete-member-box h3 {
+    font-family: var(--smallHeadingFontFamily);
+    font-size: var(--smallText);
+    font-weight: var(--medium);
+    color: var(--tanText);
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.complete-member-box p {
+    font-family: var(--smallHeadingFontFamily);
+    font-size: var(--verySmallText);
+    font-weight: var(--regular);
+    color: var(--darkGrey);
+    margin: 0;
 }
