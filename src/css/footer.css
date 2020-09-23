@@ -121,7 +121,7 @@ a .social-media-icons-card {
     text-align: center;
     font-weight: 400;
     line-height:22px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .section span {
@@ -189,5 +189,9 @@ a .social-media-icons-card {
     }
     .separator {
         display: none;
+    }
+    .section span{
+        width: auto;
+        justify-content: center;
     }
 }

@@ -1,20 +1,21 @@
 @import url('./globalStyles.css');
 
 .team-main-container {
-    
+    padding-top: 80px;
     display: flex;
     flex-direction: row;
 }
 
 .left-side {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: transparent;
     padding: 20px;
-    align-items: left;
-    padding-left: 10%;
     box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .left-side h2 {
@@ -29,6 +30,7 @@
     font-size: var(--heading6);
     font-weight: var(--regular);
     color: var(--tanText);
+    text-align: center;
 }
 
 .right-side {
@@ -106,8 +108,8 @@
 .complete-member-box {
     display: flex;
     height: 60px;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     margin: 10px 20px;
     background-color:transparent;
     width: 20%;
@@ -138,4 +140,31 @@
     font-weight: var(--regular);
     color: var(--darkGrey);
     margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .team-main-container {
+        padding-top: 0;
+    }
+    .team-title {
+        margin-top: 0;
+    }
+    .team-members-core-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .core-member-box {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .complete-member-box {
+        box-sizing: border-box;
+        flex-direction: row;
+        width: 100%;
+        margin: 0;
+        height: 50px;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

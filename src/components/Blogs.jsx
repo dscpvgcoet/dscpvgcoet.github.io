@@ -20,19 +20,20 @@ export default class Blogs extends React.Component {
   };
 
   componentDidMount() {
+    window.scroll({top:0, left:0, behavior:'smooth'})
     this.getBlogs();
   }
 
   render() {
     if (!this.state.isLoaded || !this.state.blogTitles) {
-      return <div>Loading.. .</div>;
+      return <div className="blog-list">Loading.. .</div>;
     } else {
       return (
         <div className="blog-list">
           <h2>Our Blogs</h2>
           {this.state.blogList.map((blog, index) => (
             <div className="blog-item">
-              <p key={index}><a href={blog.link} className="blog-title" ><u>{blog.title.rendered}</u></a></p>
+              <p key={index}><a href={blog.link} className="blog-title" >{blog.title.rendered}</a></p>
               <a href={blog.link}><img src={blog.jetpack_featured_media_url} className="blog-image" ></img></a>
               
               {/*<p>{blog.excerpt.rendered}</p>*/}

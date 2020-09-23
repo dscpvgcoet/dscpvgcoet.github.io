@@ -239,6 +239,7 @@
     }
     .hero {
         height: 1.7rem;
+        bottom: -1px;
     }
     .features {
         flex-direction: column;

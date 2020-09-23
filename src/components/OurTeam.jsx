@@ -1,4 +1,5 @@
 import React from 'react'
+import { isMobile, BrowserView, MobileView } from 'react-device-detect'
 
 import Header from './Header'
 import Footer from './Footer'
@@ -45,10 +46,10 @@ class OurTeam extends React.Component {
                         </div>
                         
                     </div> */}
-                    <div>
+                    {/* <div> */}
                         <h3>{member.name}</h3>    
                         <p>{member.position}</p>
-                    </div>
+                    {/* </div> */}
                 </div>
             )
         })
@@ -64,13 +65,10 @@ class OurTeam extends React.Component {
                     showLogoInHeader={true}
                     passHeaderHeight={height => this.setState({headerHeight: height})}
                 />
-                <div className="team-main-container" style={{paddingTop: this.state.headerHeight + 20}}>
+                <div className="team-main-container" style={{paddingTop: isMobile? 0 : this.state.headerHeight + 20}}>
                     <div className="left-side">
                         <h2>Our Team</h2>
                         <p>Presenting our passionate team for Developer Students Club PVGCOET 2020-2021</p>
-                    </div>
-                    <div className="right-side">
-                        <img src={team} style={{width: '40%', objectFit:'cover', marginBottom: 0, display: 'none'}}/>
                     </div>
                 </div>
                 <div className="team-members-core">
@@ -81,19 +79,35 @@ class OurTeam extends React.Component {
                     <div className="team-members-core-inner">
                         {this.renderCoreTeam(4,8)}
                     </div>
-                    <h3 className="team-title">Complete Team</h3>
-                    <div className="team-members-core-inner">
-                        {this.renderCompleteTeam(0,6)}
+                    <h3 className="team-title"  style={{marginTop: 80}}>Complete Team</h3>
+                    <BrowserView>
+                        <div className="team-members-core-inner">
+                            {this.renderCompleteTeam(0,6)}
+                        </div>
+                        <div className="team-members-core-inner">
+                            {this.renderCompleteTeam(6,12)}
+                        </div>
+                        <div className="team-members-core-inner">
+                            {this.renderCompleteTeam(12,18)}
+                        </div>
+                        <div className="team-members-core-inner">
+                            {this.renderCompleteTeam(18,24)}
+                        </div>
+                    </BrowserView>
+                    <MobileView>
+                        <div className="team-members-core-inner-mobile">
+                            {this.renderCompleteTeam(0,6)}
+                        </div>
+                        <div className="team-members-core-inner-mobile">
+                            {this.renderCompleteTeam(6,12)}
+                        </div>
+                        <div className="team-members-core-inner-mobile">
+                            {this.renderCompleteTeam(12,18)}
+                        </div>
+                        <div className="team-members-core-inner-mobile">
+                            {this.renderCompleteTeam(18,24)}
                     </div>
-                    <div className="team-members-core-inner">
-                        {this.renderCompleteTeam(6,12)}
-                    </div>
-                    <div className="team-members-core-inner">
-                        {this.renderCompleteTeam(12,18)}
-                    </div>
-                    <div className="team-members-core-inner">
-                        {this.renderCompleteTeam(18,24)}
-                    </div>
+                    </MobileView>
                 </div>
                 <Footer/>
             </div>

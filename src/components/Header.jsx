@@ -60,9 +60,9 @@ class Header extends React.Component {
                     <div className="header-options">
                         <ul>
                             <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/" className="link">Home</Link></li>
-                            <li><Link to="/blog-list" className="link">Blogs</Link></li>
-                            <li><Link to="/our-team" className="link">Team</Link></li>
-                            <li><Link to="/" className="link">Contact</Link></li> 
+                            <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/blog-list" className="link">Blogs</Link></li>
+                            <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/our-team" className="link">Team</Link></li>
+                            <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/" className="link">Contact</Link></li> 
                         </ul>
                     </div>
                 </div>
