@@ -54,3 +54,30 @@
     transition: visibility 0s, opacity 2.5s ease-in-out;
     margin-top: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+    .header-logo {
+        width: auto;
+    }
+    .header-logo img {
+        width: 60vw;
+    }
+    .rotate {
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .mobile-menu {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        transition: height 0.3s ease;
+    }
+    .header-options ul {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: 0;
+    }
+}

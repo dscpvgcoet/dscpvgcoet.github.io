@@ -209,8 +209,12 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .home-main-content {
+        height: 95vh;
+    }
     .home-main-content-inner {
         flex-direction: column;
+        padding-top: 20px;
     }
     .home-main-content-text {
         width: 100%;
@@ -224,9 +228,10 @@
     }
     .home-main-content-image {
         width: 100%;
+        overflow: hidden;
     }
     .home-main-content-image img {
-        width: 100%;
+        width: 120%;
     }
     .svg-curve {
         height: 30px;

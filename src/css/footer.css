@@ -174,3 +174,20 @@ a .social-media-icons-card {
     font-weight: 400;
     margin-bottom: 30px;  
 }
+
+@media only screen and (max-width: 600px) { 
+    .three-sections {
+        width: 100%;
+        flex-direction: column;
+    }
+    .section {
+        width: 90%;
+        height: auto;
+        margin: 10px auto; 
+        padding: 0 10px;
+        box-sizing: border-box; 
+    }
+    .separator {
+        display: none;
+    }
+}
