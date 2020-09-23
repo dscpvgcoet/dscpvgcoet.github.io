@@ -1,5 +1,6 @@
 import React from 'react'
 import { ChevronDown } from 'react-feather'
+import { isMobile, BrowserView, MobileView} from 'react-device-detect'
 
 import Header from './Header'
 import Footer from './Footer'
@@ -75,7 +76,7 @@ class Home extends React.Component {
                         </div>
                     </div>
                     <div className="home-main-content-down-arrow" style={{display: isBelowMainFrame}} onClick={this.handleArrowClick}>
-                        <ChevronDown size={45} color='#434343' className="home-main-content-down-arrow-arrow"/>
+                        <ChevronDown size={isMobile ? 65 : 45} color='#434343' className="home-main-content-down-arrow-arrow"/>
                     </div>
                 </div>
 
