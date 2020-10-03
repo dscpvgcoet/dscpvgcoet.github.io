@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8f6b096c.chunk.css",
+    "main.js": "/static/js/main.ad195019.chunk.js",
+    "main.js.map": "/static/js/main.ad195019.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d2e4bddf.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d2e4bddf.js.map",
+    "static/js/2.fbc02e30.chunk.js": "/static/js/2.fbc02e30.chunk.js",
+    "static/js/2.fbc02e30.chunk.js.map": "/static/js/2.fbc02e30.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.26034d2940f075f8d4bb7a28ae1b3846.js": "/precache-manifest.26034d2940f075f8d4bb7a28ae1b3846.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.8f6b096c.chunk.css.map": "/static/css/main.8f6b096c.chunk.css.map",
+    "static/js/2.fbc02e30.chunk.js.LICENSE.txt": "/static/js/2.fbc02e30.chunk.js.LICENSE.txt",
+    "static/media/DSCPVGCOETHorizontal.png": "/static/media/DSCPVGCOETHorizontal.95c010f1.png",
+    "static/media/DSCPVGCOETVertical.png": "/static/media/DSCPVGCOETVertical.973fc04b.png",
+    "static/media/gaurav_khairnar.jpg": "/static/media/gaurav_khairnar.371a5ea2.jpg",
+    "static/media/homepage_main.jpg": "/static/media/homepage_main.799ad44c.jpg",
+    "static/media/jigsaw.png": "/static/media/jigsaw.7e902205.png",
+    "static/media/lightbulb.png": "/static/media/lightbulb.9804ab6c.png",
+    "static/media/sunanda_somwase.jpeg": "/static/media/sunanda_somwase.2b7a2214.jpeg",
+    "static/media/team.jpg": "/static/media/team.4dd2f552.jpg",
+    "static/media/team.png": "/static/media/team.b6d11487.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d2e4bddf.js",
+    "static/js/2.fbc02e30.chunk.js",
+    "static/css/main.8f6b096c.chunk.css",
+    "static/js/main.ad195019.chunk.js"
+  ]
+}
