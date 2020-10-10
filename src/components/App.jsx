@@ -13,8 +13,8 @@ class App extends React.Component {
                 <Router>
                     <div>
                         <Route path="/" exact component={Home}/>
-                        <Route path="/our-team" exact component={OurTeam}/>
-                        <Route path="/blog-list" exact component={BlogList}/>
+                        <Route path="/team" exact component={OurTeam}/>
+                        <Route path="/blogs" exact component={BlogList}/>
                     </div>
                 </Router>
             </div>

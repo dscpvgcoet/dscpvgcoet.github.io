@@ -68,7 +68,7 @@ class Home extends React.Component {
                     <div className="home-main-content-inner">
                         <div className="home-main-content-text">
                             <img src={DSCLogo}/>
-                            <h4>A community by students , for students</h4>
+                            <h4>A community by students, for students</h4>
                             <h6>We at DSC PVGCOET hope to empower young developers discover their talents and help them succeed</h6>
                         </div>
                         <div className="home-main-content-image">
@@ -110,11 +110,11 @@ class Home extends React.Component {
                             <h6>We work together on projects and empower the whole community</h6>
                         </div>
                     </div>
-                    <h4>Who can be a part of DSC ?</h4>
+                    <h4>Who can be a part of DSC?</h4>
                     <p>Anyone. Yep, that's right.</p>
                     <p style={{fontSize: 15}}>DSC is open to any student, ranging from amateur developers who are just getting started, to experienced developers who want to further hone and showcase their skills</p>
                     <br/>
-                    <h4>What do we do ?</h4>
+                    <h4>What do we do?</h4>
                     <p style={{fontSize:15}}>
                         DSC PVG's COET comprises of a very diverse community with members from various displines of engineering and expertise working towards this initiative. 
                         <br/>

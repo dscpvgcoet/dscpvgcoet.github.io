@@ -12,17 +12,17 @@ const socialMediaInfo = [
     {
         name : 'Instagram',
         image : instagramLogo,
-        href : 'https://instagram.com',
+        href : 'https://instagram.com/dscpvgcoet',
     },
     {
         name : 'Twitter',
         image : twitterLogo,
-        href : 'https://instagram.com',
+        href : 'https://twitter.com/dscpvgcoet',
     },
     {
-        name : 'LinkedIN',
+        name : 'LinkedIn',
         image : linkedinLogo,
-        href : 'https://instagram.com',
+        href : 'https://www.linkedin.com/company/dscpvgcoet',
     },
 ]
 
@@ -63,11 +63,11 @@ class Footer extends React.Component {
                     <h3>Contact Us</h3>
                     <span>
                         <img src={mail}/>
-                        <p>dscpvgcoet@gmail.com</p>
+                        <p>dscpvgcoet@pvgcoet.ac.in</p>
                     </span>
                     <span>
                         <img src={phone}/>
-                        <p style={{textAlign: 'left'}}>+91 94563456XX</p>
+                        <p style={{textAlign: 'left'}}>+91 90213 93816</p>
                     </span>
                     <span>
                         <img src={location}/>
