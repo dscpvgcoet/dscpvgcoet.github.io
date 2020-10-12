@@ -10,19 +10,19 @@ import location from '../assets/images/icons/pin.png'
 
 const socialMediaInfo = [
     {
-        name : 'Instagram',
-        image : instagramLogo,
-        href : 'https://instagram.com/dscpvgcoet',
+        name: 'Instagram',
+        image: instagramLogo,
+        href: 'https://instagram.com/dscpvgcoet',
     },
     {
-        name : 'Twitter',
-        image : twitterLogo,
-        href : 'https://twitter.com/dscpvgcoet',
+        name: 'Twitter',
+        image: twitterLogo,
+        href: 'https://twitter.com/dscpvgcoet',
     },
     {
-        name : 'LinkedIn',
-        image : linkedinLogo,
-        href : 'https://www.linkedin.com/company/dscpvgcoet',
+        name: 'LinkedIn',
+        image: linkedinLogo,
+        href: 'https://www.linkedin.com/company/dscpvgcoet',
     },
 ]
 
@@ -34,7 +34,7 @@ class Footer extends React.Component {
             return (
                 <a href={item.href} target="_blank">
                     <div className="social-media-icons-card">
-                        <img src={item.image} className="social-media-icons-image"/>
+                        <img src={item.image} className="social-media-icons-image" />
                         <p className="social-media-icons-p">{item.name}</p>
                     </div>
                 </a>
@@ -45,47 +45,47 @@ class Footer extends React.Component {
     render() {
         return (
             <div className="footer-main">
-            <div className="social-media-icons">
-               {this.renderSocialMediaIcons()}
-            </div>
-            {/* <div className="footer-text">
+                <div className="social-media-icons">
+                    {this.renderSocialMediaIcons()}
+                </div>
+                {/* <div className="footer-text">
                 <h2>We are based in Delhi, India</h2>
                 <p>We work with clients all over the world. Get in touch with us</p>
             </div> */}
 
-            <div className="three-sections">
-                <div className="section">
-                    <h3>About Us</h3>
-                    <p>Developer Student Clubs PVG's COET, powered by Google Developer Experts, is a non-profit university based community that aims to inspire intelligent minds in the field of technology. </p>
-                </div>
-                <div className="separator"></div>
-                <div className="section">
-                    <h3>Contact Us</h3>
-                    <span>
-                        <img src={mail}/>
-                        <p>dscpvgcoet@pvgcoet.ac.in</p>
-                    </span>
-                    <span>
-                        <img src={phone}/>
-                        <p style={{textAlign: 'left'}}>+91 90213 93816</p>
-                    </span>
-                    <span>
-                        <img src={location}/>
-                        <p style={{textAlign: 'left'}}>PVG's COET, Sahakarnagar, Pune</p>
-                    </span>
-                </div>
-                <div className="separator"></div>
-                <div className="section">
-                    <h3>Keep in touch</h3>
-                    <p>We'll be updating the space with more fun content soon! Keep an eye out for some exciting stuff coming up your way!</p>
-                    {/* <div className="app-buttons-div">
+                <div className="three-sections">
+                    <div className="section">
+                        <h3>About Us</h3>
+                        <p>Developer Student Clubs PVG's COET, powered by Google Developer Experts, is a non-profit university based community that aims to inspire intelligent minds in the field of technology. </p>
+                    </div>
+                    <div className="separator"></div>
+                    <div className="section">
+                        <h3>Contact Us</h3>
+                        <span>
+                            <img src={mail} />
+                            <p style={{ textAlign: 'left' }}><a className="footer-link" href="mailto:dscpvgcoet@pvgcoet.ac.in" target="_blank">dscpvgcoet@pvgcoet.ac.in</a></p>
+                        </span>
+                        <span>
+                            <img src={phone} />
+                            <p style={{ textAlign: 'left' }}>+91 90213 93816</p>
+                        </span>
+                        <span>
+                            <img src={location} />
+                            <p style={{ textAlign: 'left' }}><a className="footer-link" href="https://goo.gl/maps/8ExcK48y1z6F4ykG6" target="_blank">PVG's COET, Sahakarnagar, Pune</a></p>
+                        </span>
+                    </div>
+                    <div className="separator"></div>
+                    <div className="section">
+                        <h3>Keep in touch</h3>
+                        <p>We'll be updating the space with more fun content soon! Keep an eye out for some exciting stuff coming up your way!</p>
+                        {/* <div className="app-buttons-div">
                         <button className="app-button primary">Android</button>
                         <button className="app-button secondary">iOS</button>
                     </div> */}
+                    </div>
                 </div>
-            </div>
 
-        </div>
+            </div>
         )
     }
 }

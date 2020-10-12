@@ -2,7 +2,7 @@
 
 
 .footer-main {
-    width:100%;
+    width: 100%;
     margin: 0 auto;
     background-color: #2a2b2b;
     padding: 20px 0;
@@ -20,13 +20,13 @@
     justify-content: center;
     padding: 0;
     margin: 20px auto;
-    margin-top:50px
+    margin-top: 50px
 }
 
 a .social-media-icons-card {
-    width:45px;
+    width: 45px;
     height: 70px;
-    margin:0;
+    margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
@@ -38,7 +38,7 @@ a .social-media-icons-card {
 }
 
 .social-media-icons-image {
-    width:45px;
+    width: 45px;
     height: 45px;
 }
 
@@ -62,22 +62,33 @@ a .social-media-icons-card {
     align-items: center;
     margin-top: 40px;
 }
+
 .footer-text h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     color: #fff;
-    line-height:25px;
+    line-height: 25px;
     font-weight: 600px;
     margin: 0;
 }
+
 .footer-text p {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     color: #fff;
-    line-height:20px;
+    line-height: 20px;
     font-weight: 500px;
     margin: 0;
     margin-top: 10px;
+}
+
+.footer-link {
+    color: #fff;
+}
+
+.footer-link:hover {
+    color: #fff;
+    text-decoration: underline;
 }
 
 .three-sections {
@@ -92,13 +103,14 @@ a .social-media-icons-card {
 
 .section {
     height: 200px;
-    background:transparent;
+    background: transparent;
     width: 30%;
 }
+
 .separator {
     height: 180px;
-    width:1px;
-    background-color:#474444;
+    width: 1px;
+    background-color: #474444;
     border-radius: 1px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -106,13 +118,14 @@ a .social-media-icons-card {
 
 .section h3 {
     font-family: 'Montserrat', sans-serif;
-    color:var(--googleBlue);
+    color: var(--googleBlue);
     font-size: 18px;
     margin: 10px auto;
     text-align: center;
     font-weight: 700;
     margin-top: 20px;
 }
+
 .section p {
     font-family: 'Montserrat', sans-serif;
     color: #eee;
@@ -120,7 +133,7 @@ a .social-media-icons-card {
     margin: 0px 5px 10px 5px;
     text-align: center;
     font-weight: 400;
-    line-height:22px;
+    line-height: 22px;
     margin-top: 15px;
 }
 
@@ -142,7 +155,7 @@ a .social-media-icons-card {
 .app-buttons-div {
     width: 80%;
     margin: 25px auto;
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -152,7 +165,7 @@ a .social-media-icons-card {
     width: 100px;
     height: 45px;
     border-radius: 40px;
-    border: 2px solid ;
+    border: 2px solid;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -172,25 +185,28 @@ a .social-media-icons-card {
     margin: 20px auto;
     text-align: center;
     font-weight: 400;
-    margin-bottom: 30px;  
+    margin-bottom: 30px;
 }
 
-@media only screen and (max-width: 600px) { 
+@media only screen and (max-width: 600px) {
     .three-sections {
         width: 100%;
         flex-direction: column;
     }
+
     .section {
         width: 90%;
         height: auto;
-        margin: 10px auto; 
+        margin: 10px auto;
         padding: 0 10px;
-        box-sizing: border-box; 
+        box-sizing: border-box;
     }
+
     .separator {
         display: none;
     }
-    .section span{
+
+    .section span {
         width: auto;
         justify-content: center;
     }
