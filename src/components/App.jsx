@@ -1,6 +1,8 @@
 import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
+import { ThemeProvider } from '../context/ThemeContext'
+
 import Home from './Home'
 import OurTeam from './OurTeam'
 import BlogList from './BlogList'
@@ -9,7 +11,7 @@ class App extends React.Component {
 
     render() {
         return (
-            <div>
+            <ThemeProvider>
                 <Router>
                     <div>
                         <Route path="/" exact component={Home}/>
@@ -17,7 +19,7 @@ class App extends React.Component {
                         <Route path="/blogs" exact component={BlogList}/>
                     </div>
                 </Router>
-            </div>
+            </ThemeProvider>
         )
     }
 }

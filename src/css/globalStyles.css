@@ -10,6 +10,16 @@
     src: url('../assets/fonts/AvertaDemoPE-Regular.woff');
 }
 
+@font-face {
+    font-family: 'Wavehaus';
+    src: url('../assets/fonts/Wavehaus-128Bold.otf');
+}
+
+@font-face {
+    font-family: 'Wavehaus-Light';
+    src: url('../assets/fonts/Wavehaus-66Book.otf');
+}
+
 :root {
 
     /* Typefaces */
@@ -57,6 +67,7 @@ html{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body{
@@ -67,4 +78,109 @@ body{
 
 a {
     text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.ta-left {
+    text-align: left;
+}
+
+.ta-right {
+    text-align: right;
+}
+
+.h2 {
+    font-family: 'Wavehaus';
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.h3 {
+    font-family: 'Wavehaus';
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.h5 {
+    font-family: 'Wavehaus';
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin: 0;
+    padding: 0;
+}
+
+.t1 {
+    font-family: 'Averta';
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.t2 {
+    font-family: 'Averta';
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    margin: 5px 0;
+    padding: 0;
+}
+
+@keyframes flip {
+    0% { margin-top: -270px; }
+    5% { margin-top: -180px; }
+    33% { margin-top: -180px; }
+    38% { margin-top: -90px; }
+    66% { margin-top: -90px; }
+    71% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+.darkText {
+    color: var(--darkText);
+}
+
+.tanText {
+    color: var(--tanText);
+}
+
+.darkGrey {
+    color: var(--darkGrey);
+}
+
+.grey {
+    color: var(--grey);
+}
+
+.lightGrey {
+    color: var(--grey);
+}
+
+.ultraLightGrey {
+    color: var(--ultraLightGrey);
+}
+
+@keyframes changecolor {
+    0% { background-color: #F4B400; }
+    /* 32.99% { background-color: #4285F4; }
+    33% { background-color: #0F9D58; }
+    65.99% { background-color: #F4B400; }
+    66% { background-color: #F4B400; } */
+    50% { background-color: #0F9D58;}
+    99.99% { background-color: #4285F4; }
+    100% { background-color: #4285F4; }
 }

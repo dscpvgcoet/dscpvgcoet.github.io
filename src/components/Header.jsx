@@ -4,7 +4,7 @@ import { BarChart, X } from 'react-feather'
 import { isMobile, BrowserView, MobileView } from 'react-device-detect'
 
 import '../css/header.css'
-import horizontalLogo from '../assets/images/DSCPVGCOETHorizontal.png'
+import horizontalLogo from '../assets/images/DSCPVGCOETOnlyLogo.svg'
 import { times } from 'lodash'
 
 class Header extends React.Component {
@@ -26,14 +26,14 @@ class Header extends React.Component {
 
     render() {
 
-        const displayValue = this.props.showLogoInHeader ? '' : 'hidden'
+        const displayValue = this.props.showLogoInHeader ? 1 : 0
         const boxShadow = this.props.showLogoInHeader ? '4px 0 20px #0000002a' : '' 
         
         return (
             <>
             <div className="header-main-container" ref={headerElement => this.headerElement = headerElement} style={{boxShadow: boxShadow,}}>
                 <div className="header-logo">
-                    <img src={horizontalLogo} style={{visibility: displayValue }}/> 
+                    <img src={horizontalLogo} style={{opacity: displayValue }}/> 
                 </div>
                 <div onClick={this.handleMenuButtonClick}>
                     <MobileView>

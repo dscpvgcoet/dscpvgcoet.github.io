@@ -3,7 +3,7 @@
 .header-main-container {
     width: 100%;
     min-height: 60px;
-    background-color: #ffffff;
+    background-color: var(--background);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -46,13 +46,14 @@
 
 .header-logo {
     width: auto;
+    margin: auto 0;
 }
 
 .header-logo img {
-    width: 350px;
+    width: 60px;
     visibility: visible;
-    transition: visibility 0s, opacity 2.5s ease-in-out;
-    margin-top: 20px;
+    margin: auto 0;
+    transition: opacity 0.25s ease-in;
 }
 
 @media only screen and (max-width: 600px) {
