@@ -2,13 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('/assets/fonts/AvertaDemoPE-Regular.ttf');
+
+
+@font-face {
+    font-family: 'Averta';
+    src: url('../assets/fonts/AvertaDemoPE-Regular.woff');
+}
 
 :root {
 
     /* Typefaces */
 
     --bigHeadingFontFamily : 'Lexend Deca', sans-serif;
-    --mediumHeadingFontFamily : 'Montserrat', sans-serif;
+    --mediumHeadingFontFamily : 'Averta', sans-serif;
     --smallHeadingFontFamily: 'Poppins', sans-serif;
 
     --darkText : #2a2b2b;
@@ -33,6 +40,8 @@
     --light: 400;
 
     /* Colors */
+
+    --background: #FFFFFF;
     --googleBlue : #4285F4;
     --googleRed : #DB4437;
     --googleGreen : #0F9D58;
