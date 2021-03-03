@@ -50,7 +50,9 @@ class Header extends React.Component {
                             <li><Link to="/" className="link">Home</Link></li>
                             {/* <li><Link to="/blogs" className="link">Blogs</Link></li> */}
                             <li><Link to="/team" className="link">Team</Link></li>
-                            <li><Link to="/" className="link">Contact</Link></li> 
+                            <li><Link to="/" className="link">Events</Link></li>
+                            <li><Link to="/" className="link">Projects</Link></li>
+                            <li><Link to="/" className="link">Archives</Link></li>
                         </ul>
                     </div>
                 </BrowserView>

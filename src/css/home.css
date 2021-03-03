@@ -75,11 +75,12 @@
     width: fit-content;
     background-color: var(--ultraLightGrey);
     transition: 0.55s ease;
+    box-shadow: 0px 3px 5px var(--lightGrey);
 }
 
 .flip {
     animation: flip 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-    animation-delay: 100ms;
+    animation-delay: 200ms;
     list-style-type: none;
     padding-left: 0;
 }
@@ -216,20 +217,68 @@
 .features {
     margin: 40px auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
-    width: 70%;
-    justify-content: space-between;
+    width: 100%;
 }
 
 .feature-item {
-    width: 25%;
+    width: 100%;
     background-color: transparent;
-    margin: 0 5px;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 350px;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.feature-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.feature-item:nth-child(even) .feature-item-left {
+    padding-left: 0;
+    padding-right: 10vw;
+}
+
+.feature-item-left {
+    width: 47.5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 10vw;
     border-radius: 5px;
+    padding-right: 0;
+    overflow: hidden;
+}
+
+.feature-0{
+    animation: float 5s ease-in-out infinite;
+    margin-top: 20%;
+    width: 75%;
+}
+
+.feature-1{
+    animation: float3 5s ease-in-out infinite;
+    margin: auto 0;
+    width: 75%;
+}
+
+.feature-2{
+    animation: float 5s ease-in-out infinite;
+    margin: auto 0;
+    width: 75%;
+}
+
+.feature-item-right {
+    width: 52.5%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    padding:0 10vw;
 }
 
 .feature-item-image {
@@ -247,26 +296,102 @@
     height: 7vw;
 }
 
-.feature-item h4 {
-    font-family: var(--smallHeadingFontFamily);
-    font-size: var(--heading4);
-    font-weight: var(--regular);
-    letter-spacing: 0.9px;
-    margin: 20px 0 0 0;
-    padding: 0;
-    text-align: center;
+
+.join-dsc-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 10%;
+    margin: 20px 0;
 }
 
-.feature-item h6 {
-    font-family: var(--smallHeadingFontFamily);
-    font-size: var(--smallText);
-    font-weight: var(--thin);
-    letter-spacing: 0.9px;
-    margin: 25px 0 10px 0;
-    padding: 0;
-    text-align: center;
-    color: #f6f6f6;
+.join-dsc-container-inner {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 70px;
 }
+
+.join-dsc-card {
+    width: 30%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.join-dsc-card-upper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.join-dsc-index {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.join-dsc-card-text {
+    margin-left: 50px;
+    width: calc(100%-20px);
+    margin-top: 10px;
+    line-height: 23px;
+}
+
+.blue-container {
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--googleBlue);
+    padding-bottom: 50px;
+}
+
+.event-card {
+    width: 100%;
+    height: 300px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.event-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.event-card-image {
+    width: 50%;
+    height: 300px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.event-card-image img {
+    object-fit: contain;
+    height: 100%;
+}
+
+.know-more {
+    font-size: 17px;
+    color: rgb(13, 48, 206);
+    cursor: pointer;
+    margin-top: 20px;
+}
+
 
 @media only screen and (max-width: 600px) {
     .home-main-content {

@@ -15,9 +15,9 @@ const themeColors = {
         darkText : '#FFFFFF',
         tanText : '#EEEEEE',
         darkGrey: '#878787',
-        grey: '#ababab',
+        grey: '#303030',
         lightGrey: '#252525',
-        ultraLightGrey: '#202020',
+        ultraLightGrey: '#232323',
     },
 }
 

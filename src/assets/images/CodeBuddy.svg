@@ -1,0 +1,70 @@
+<svg width="669" height="409" viewBox="0 0 669 409" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f)">
+<rect x="100" y="152" width="281" height="99" fill="#262626"/>
+</g>
+<rect x="46" width="389" height="235" rx="10" fill="white"/>
+<path d="M46 10C46 4.47715 50.4772 0 56 0H425C430.523 0 435 4.47715 435 10V29H46V10Z" fill="#E3E3E3"/>
+<circle cx="414.5" cy="15.5" r="7.5" fill="#DE623C"/>
+<circle cx="392.5" cy="15.5" r="7.5" fill="#EAC400"/>
+<circle cx="370.5" cy="15.5" r="7.5" fill="#2B9A29"/>
+<rect x="61" y="45" width="76" height="12" rx="6" fill="#262626" fill-opacity="0.1"/>
+<rect x="162" y="62" width="76" height="12" rx="6" fill="#262626" fill-opacity="0.1"/>
+<rect x="126" y="99" width="29" height="12" rx="6" fill="#F91400" fill-opacity="0.6"/>
+<rect x="84" y="99" width="37" height="12" rx="6" fill="#262626" fill-opacity="0.1"/>
+<rect x="99" y="79" width="85" height="12" rx="6" fill="#262626" fill-opacity="0.1"/>
+<rect x="118" y="133" width="62" height="12" rx="6" fill="#262626" fill-opacity="0.1"/>
+<rect x="84" y="133" width="29" height="12" rx="6" fill="#1CEF18" fill-opacity="0.6"/>
+<rect x="145" y="167" width="30" height="12" rx="6" fill="#8000FF" fill-opacity="0.6"/>
+<rect x="132" y="201" width="23" height="12" rx="6" fill="#262626" fill-opacity="0.1"/>
+<rect x="61" y="201" width="67" height="12" rx="6" fill="#262626" fill-opacity="0.1"/>
+<rect x="108" y="184" width="99" height="12" rx="6" fill="#262626" fill-opacity="0.1"/>
+<rect x="73" y="184" width="31" height="12" rx="6" fill="#262626" fill-opacity="0.1"/>
+<rect x="73" y="167" width="67" height="12" rx="6" fill="#262626" fill-opacity="0.1"/>
+<rect x="99" y="150" width="67" height="12" rx="6" fill="#4285F4" fill-opacity="0.6"/>
+<rect x="84" y="116" width="85" height="12" rx="6" fill="#262626" fill-opacity="0.1"/>
+<rect x="73" y="79" width="21" height="12" rx="6" fill="#8000FF" fill-opacity="0.6"/>
+<rect x="243" y="62" width="25" height="12" rx="6" fill="#262626" fill-opacity="0.1"/>
+<rect x="145" y="45" width="62" height="12" rx="6" fill="#0099FF" fill-opacity="0.6"/>
+<rect x="61" y="62" width="96" height="12" rx="6" fill="#262626" fill-opacity="0.1"/>
+<rect x="213" y="45" width="76" height="12" rx="6" fill="#262626" fill-opacity="0.1"/>
+<g filter="url(#filter1_f)">
+<rect x="288" y="252" width="281" height="57" fill="#262626"/>
+</g>
+<rect x="225" y="96" width="389" height="235" rx="10" fill="#262626"/>
+<path d="M225 106C225 100.477 229.477 96 235 96H604C609.523 96 614 100.477 614 106V125H225V106Z" fill="#4E4E4E"/>
+<circle cx="593.5" cy="111.5" r="7.5" fill="#DE623C"/>
+<circle cx="571.5" cy="111.5" r="7.5" fill="#EAC400"/>
+<circle cx="549.5" cy="111.5" r="7.5" fill="#2B9A29"/>
+<rect x="240" y="141" width="76" height="12" rx="6" fill="white" fill-opacity="0.1"/>
+<rect x="341" y="158" width="76" height="12" rx="6" fill="white" fill-opacity="0.1"/>
+<rect x="305" y="195" width="29" height="12" rx="6" fill="#F91400" fill-opacity="0.6"/>
+<rect x="263" y="195" width="37" height="12" rx="6" fill="white" fill-opacity="0.1"/>
+<rect x="278" y="175" width="85" height="12" rx="6" fill="white" fill-opacity="0.1"/>
+<rect x="297" y="229" width="62" height="12" rx="6" fill="white" fill-opacity="0.1"/>
+<rect x="263" y="229" width="29" height="12" rx="6" fill="#1CEF18" fill-opacity="0.6"/>
+<rect x="324" y="263" width="30" height="12" rx="6" fill="#8000FF" fill-opacity="0.6"/>
+<rect x="311" y="297" width="23" height="12" rx="6" fill="white" fill-opacity="0.1"/>
+<rect x="240" y="297" width="67" height="12" rx="6" fill="white" fill-opacity="0.1"/>
+<rect x="287" y="280" width="99" height="12" rx="6" fill="white" fill-opacity="0.1"/>
+<rect x="252" y="280" width="31" height="12" rx="6" fill="white" fill-opacity="0.1"/>
+<rect x="252" y="263" width="67" height="12" rx="6" fill="white" fill-opacity="0.1"/>
+<rect x="278" y="246" width="67" height="12" rx="6" fill="#4285F4" fill-opacity="0.6"/>
+<rect x="263" y="212" width="85" height="12" rx="6" fill="white" fill-opacity="0.1"/>
+<rect x="252" y="175" width="21" height="12" rx="6" fill="#8000FF" fill-opacity="0.6"/>
+<rect x="422" y="158" width="25" height="12" rx="6" fill="white" fill-opacity="0.1"/>
+<rect x="324" y="141" width="62" height="12" rx="6" fill="#0099FF" fill-opacity="0.6"/>
+<rect x="240" y="158" width="96" height="12" rx="6" fill="white" fill-opacity="0.1"/>
+<rect x="392" y="141" width="76" height="12" rx="6" fill="white" fill-opacity="0.1"/>
+<defs>
+<filter id="filter0_f" x="0" y="52" width="481" height="299" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur"/>
+</filter>
+<filter id="filter1_f" x="188" y="152" width="481" height="257" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur"/>
+</filter>
+</defs>
+</svg>

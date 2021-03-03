@@ -11,10 +11,12 @@ import '../css/home.css'
 import homeMainImage from '../assets/images/homepage_main.jpg'
 import DSCLogo from '../assets/images/DSCPVGCOETOnlyLogo.svg'
 import DSCLogoText from '../assets/images/DSCPVGCOETOnlyTextWhite.svg'
-import bulb from '../assets/images/lightbulb.png'
-import team from '../assets/images/team.png'
-import jigsaw from '../assets/images/jigsaw.png'
-
+import bulb from '../assets/images/Ideate.svg'
+import team from '../assets/images/Communicate2.svg'
+import jigsaw from '../assets/images/Collaborate.svg'
+import codebuddy from '../assets/images/CodeBuddy.svg'
+import ama from '../assets/images/AMA.svg'
+import verboselog from '../assets/images/VerboseLog.svg'
 
 const opportunitiesInfo = [
     {
@@ -35,11 +37,110 @@ const opportunitiesInfo = [
     },
 ]
 
+const featuresInfo = [
+    {
+        color:'#4285F4',
+        image:bulb,
+        title:'We ideate',
+        description:'We brainstorm for new ideas and chalk up a path to implement them successfully'
+    },
+    {
+        color:'#FBA416',
+        image:team,
+        title:'We communicate',
+        description:'We help to hone intelligent minds and develop a dynamic environment through dialogue'
+    },
+    {
+        color:'#594DD2',
+        image:jigsaw,
+        title:'We collaborate',
+        description:'We work together on projects and empower the whole community'
+    },
+]
+
+const joinDSCInfo = [
+    {
+        title:'Fill the form',
+        description:'Every year, we circulate a form for interested students to apply for joining DSC. Filling the form is the first step to get started!'
+    },
+    {
+        title:'Give the interview',
+        description:'Our core committee will conduct a one-to-one interview with you to assess your skills, interests and passion. Based on this interview, suitable canditates will be shortlisted.'
+    },
+    {
+        title:'Contribute and Learn',
+        description:'It doesnt end here. Be an active part of DSC and its events to gain maximum knowledge, experience, and to participate in various projects!'
+    },
+]
+
+const featuresEventsInfo = [
+    {
+        title:'CodeBuddy Coding Event',
+        description:'Over 100 students were mentored by coding experts over 2 months',
+        image:codebuddy
+    },
+    {
+        title:'Ask Me Anything',
+        description:'Weekly themed series where the DSC panel answers questions',
+        image:ama
+    },
+    {
+        title:'VerboseLog',
+        description:'A Spotify podcast hosted by DSC panelists alongs with notable guest speakers',
+        image:verboselog
+    },
+]
+
 const RenderOpportunity = ({icon, description, index}) => {
     return (
         <div className="grid-opportunities-item" key={index}>
             <div className="opportunities-icon">{icon}</div>
-            <p className="t2 grey ta-center">{description}</p>
+            <p className="t2 darkGrey ta-center">{description}</p>
+        </div>
+    )
+}
+
+const RenderFeature = ({color, image, title, description, index}) => {
+    return (
+        <div className="feature-item" key={index}>
+            <div className="feature-item-left" style={{backgroundColor:color}}>
+                <img src={image} className={`feature-${index}`}/>
+            </div>
+            <div className="feature-item-right">
+                <p className="h0 lightGrey">0{index+1}</p>
+                <p className="h2 tanText">{title}</p>
+                <p className="t2 darkGrey">{description}</p>
+            </div>
+        </div>
+    )
+}
+
+const RenderJoinDSCCard = ({title, description, index}) => {
+    return (
+        <div className="join-dsc-card" key={index}>
+            <div className="join-dsc-card-upper">
+                <div className="join-dsc-index">
+                    <p className="h5 tanText">{index+1}</p>
+                </div>
+                <p className="h6 tanText">{title}</p>
+            </div>
+            <p className="t2 darkGrey join-dsc-card-text">{description}</p>
+        </div>
+    )
+}
+
+const RenderEventHomepage = ({title, description="", index, image}) => {
+    return (
+        <div className="event-card">
+            <div className="event-card-image">
+                <img src={image} className={`event-${index}`}/>
+            </div>
+            <div className="event-info">
+                <p className="h0 tanText" style={{opacity:0.2}}>0{index+1}</p>
+                <p className="h4 ultraLightGrey" style={{marginTop: 20}}>{title}</p>
+                <p className="t2 lightGrey" style={{marginTop: 20}}>{description}</p>
+                
+            </div>
         </div>
     )
 }
@@ -126,7 +227,7 @@ class Home extends React.Component {
                                 
                             <p className="t1 ta-center">
                                 <span>their talents and help them</span>
-                                <span className="change-word" style={{backgroundColor: this.state.colors[this.state.activeColor], width: this.state.widths[this.state.activeWidth]}}>
+                                <span className="change-word" style={{backgroundColor: this.state.colors[this.state.activeColor], width: this.state.widths[this.state.activeWidth], boxShadow:`3px 3px 15px #111111`}}>
                                     <ul className="flip">
                                         <li>succeed</li>
                                         <li>ideate</li>
@@ -160,7 +261,7 @@ class Home extends React.Component {
                 <div className="about-us-container">
                     
                     
-                    <p className="h3 darkText">Opportunities DSC provides</p>
+                    <p className="h3 darkText ta-center">Opportunities DSC provides</p>
                     
                     <div className="grid-opportunities">
                         {
@@ -170,31 +271,52 @@ class Home extends React.Component {
                         }
                     </div>
 
+                    <p className="h3 darkText ta-center" style={{marginTop: 100}}>What DSC does and how</p>
                    
-                    
+
                     <div className="features">
-                        <div className="feature-item">
-                            <div className="feature-item-image">
-                                <img src={bulb}/>
-                            </div>
-                            <h4 style={{color: 'gold'}}>We ideate</h4>
-                            <h6>We brainstorm for new ideas and chalk up a path to implement it</h6>
-                        </div>
-                        <div className="feature-item">
-                            <div className="feature-item-image">
-                                <img src={jigsaw}/>
-                            </div>
-                            <h4 style={{color: '#17BA08'}}>We inspire</h4>
-                            <h6>We help to hone intelligent minds and develop a dynamic environment</h6>
-                        </div>
-                        <div className="feature-item">
-                            <div className="feature-item-image">
-                                <img src={team}/>
-                            </div>
-                            <h4 style={{color: '#4285F4'}}>We collaborate</h4>
-                            <h6>We work together on projects and empower the whole community</h6>
+                        {
+                            featuresInfo.map((item, index) => {
+                                return <RenderFeature color={item.color} description={item.description} index={index} title={item.title} image={item.image}/>
+                            })
+                        }
+                    </div>
+
+
+                    <div className="join-dsc-container">
+
+                        <p className="h3 darkText ta-center" style={{marginTop:50}}>How do I join DSC ?</p>
+                        <p className="t2 darkGrey ta-center" style={{marginTop:50, width: '60%'}}>DSC is open to any student, ranging from amateur developers who are just getting started, to experienced developers who want to further hone and showcase their skills</p>
+                        <div className="join-dsc-container-inner">
+                            {
+                                joinDSCInfo.map((item, index) => {
+                                    return <RenderJoinDSCCard title={item.title} description={item.description} index={index}/>
+                                })
+                            }
                         </div>
                     </div>
+
+                    <div className="blue-container">
+
+                        <p className="h3 background ta-center" style={{marginTop:50}}>DSC Events</p>
+                        <p className="t2 background ta-center" style={{marginTop:50, width: '60%'}}>In its first year, DSC conducted various events throughout the year successfully! <br/>Here are some of our featured events</p>
+
+                        <div className="join-dsc-container-inner" style={{height:'auto', marginTop: 80, flexDirection:'column'}}>
+                            {
+                                featuresEventsInfo.map((item, index) => {
+                                    return <RenderEventHomepage title={item.title} description={item.description} index={index} image={item.image}/>
+                                })
+                            }
+                        </div>
+
+                        <div className="secondary-button">
+                            <p className="h6 tanText">view more</p>
+                        </div>
+                    </div>
+
+
+
+
                     <h4>Who can be a part of DSC?</h4>
                     <p>Anyone. Yep, that's right.</p>
                     <p style={{fontSize: 15}}>DSC is open to any student, ranging from amateur developers who are just getting started, to experienced developers who want to further hone and showcase their skills</p>

@@ -96,6 +96,15 @@ a {
     text-align: right;
 }
 
+.h0 {
+    font-family: 'Wavehaus';
+    font-size: 80px;
+    font-weight: 800;
+    letter-spacing: 0px;
+    margin: 0;
+    padding: 0;
+}
+
 .h2 {
     font-family: 'Wavehaus';
     font-size: 40px;
@@ -114,11 +123,29 @@ a {
     padding: 0;
 }
 
+.h4 {
+    font-family: 'Wavehaus';
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+}
+
 .h5 {
     font-family: 'Wavehaus';
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.3px;
+    margin: 0;
+    padding: 0;
+}
+
+.h6 {
+    font-family: 'Wavehaus-light';
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
     margin: 0;
     padding: 0;
 }
@@ -167,11 +194,32 @@ a {
 }
 
 .lightGrey {
-    color: var(--grey);
+    color: var(--lightGrey);
 }
 
 .ultraLightGrey {
     color: var(--ultraLightGrey);
+}
+
+.secondary-button {
+    margin: 0 auto;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #FFFFFF33;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 50px;
+}
+.secondary-button:hover {
+    background-color: #FFF;
+    transition: 0.3s ease-in-out;
+}
+.secondary-button:hover * {
+    color: #2a2b2b !important;
 }
 
 @keyframes changecolor {
@@ -183,4 +231,51 @@ a {
     50% { background-color: #0F9D58;}
     99.99% { background-color: #4285F4; }
     100% { background-color: #4285F4; }
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px) translateX(-3px) rotate(1deg);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes float2 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-7px) translateX(-4px) rotate(-3deg);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes float3 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(3px) translateX(3px) rotate(1.5deg);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes float4 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px) translateX(-7px) rotate(-4deg);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
