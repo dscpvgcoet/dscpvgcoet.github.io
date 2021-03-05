@@ -6,6 +6,8 @@ import { ThemeProvider } from '../context/ThemeContext'
 import Home from './Home'
 import OurTeam from './OurTeam'
 import BlogList from './BlogList'
+import EventsTimeline from './EventsTimeline'
+import Contact from './Contact'
 
 class App extends React.Component {
 
@@ -17,6 +19,8 @@ class App extends React.Component {
                         <Route path="/" exact component={Home}/>
                         <Route path="/team" exact component={OurTeam}/>
                         <Route path="/blogs" exact component={BlogList}/>
+                        <Route path="/events" exact component={EventsTimeline}/>
+                        <Route path="/contact" exact component={Contact}/>
                     </div>
                 </Router>
             </ThemeProvider>

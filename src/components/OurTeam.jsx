@@ -29,8 +29,8 @@ class OurTeam extends React.Component {
                     <div className="core-member-photo">
                         <img src={member.photo.replace('open?', 'uc?')}/>
                     </div>
-                    <h3>{member.name}</h3>    
-                    <p>{member.position}</p>
+                    <p className="h6 tanText ta-center">{member.name}</p>    
+                    <p className="t2 darkGrey ta-center">{member.position}</p>
                 </div>
             )
         })
@@ -47,8 +47,8 @@ class OurTeam extends React.Component {
                         
                     </div> */}
                     {/* <div> */}
-                        <h3>{member.name}</h3>    
-                        <p>{member.position}</p>
+                        <p className="h6 tanText ta-left">{member.name}</p>    
+                        <p className="t2 darkGrey ta-left">{member.position}</p>
                     {/* </div> */}
                 </div>
             )
@@ -67,19 +67,19 @@ class OurTeam extends React.Component {
                 />
                 <div className="team-main-container" style={{paddingTop: isMobile? 0 : this.state.headerHeight + 20}}>
                     <div className="left-side">
-                        <h2>Our Team</h2>
-                        <p>Presenting our passionate team for Developer Students Club PVGCOET 2020-2021</p>
+                        <p className="h3 darkText">Our Team</p>
+                        <p className="t2 darkGrey">Presenting our passionate team for Developer Students Club PVGCOET 2020-2021</p>
                     </div>
                 </div>
                 <div className="team-members-core">
-                    <h3 className="team-title">Core Team</h3>
+                    <p className="team-title h6 tanText ta-center">Core Team</p>
                     <div className="team-members-core-inner">
                         {this.renderCoreTeam(0,4)}
                     </div>
                     <div className="team-members-core-inner">
                         {this.renderCoreTeam(4,8)}
                     </div>
-                    <h3 className="team-title"  style={{marginTop: 80}}>Complete Team</h3>
+                    <p className="team-title h6 tanText ta-center">Complete Team</p>
                     <BrowserView>
                         <div className="team-members-core-inner">
                             {this.renderCompleteTeam(0,6)}

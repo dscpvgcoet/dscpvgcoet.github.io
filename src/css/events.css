@@ -1,0 +1,199 @@
+@import './globalStyles.css';
+
+.eventstimeline-main-container {
+    height: 100vh;
+    background-color: var(--background);
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-container-outer {
+    width: 100%;
+    flex-grow: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-container {
+    width: 200%;
+    flex-grow: 1;
+    background-color: transparent;
+    padding: 20px 0;
+    position: relative;
+    transition: 0.5s ease-out;
+    z-index:101;
+}
+
+.timeline {
+    min-width: calc(90vw);
+    height: 10px;
+    background-color: var(--grey);
+    border-radius: 10px;
+    position: fixed;
+    margin: auto 5vw;
+    top: 50%;
+    z-index: 99;
+    /* margin-top: 50px; */
+    /* transform: translateY(calc(-50% - 0px)); */
+    top: 50%;
+    transform: translateY(calc(-50% + 70px));
+}
+
+.circle {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: var(--grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-out;
+    z-index: 100;
+}
+
+
+.circle:hover , .circle *:hover {
+    cursor: pointer;
+    filter: brightness(1.4);
+    transition: 0.3s ease-out;
+}
+
+.today {
+    position: absolute;
+    left: 5vw;
+    top: 50%;
+    transform: translateX(-50%) translateY(-40px);
+}
+
+.timeline-now {
+    position: absolute;
+    left: 5vw;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%); 
+    border: 5px solid var(--googleGreen); 
+}
+
+.timeline-now-inner {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--googleGreen);
+}
+
+.next-button, .prev-button {
+    position: fixed;
+    right: 5vw;
+    top: 50%;
+    transform: translateY(calc(-50% + 70px)) translateX(50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--grey);
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 15px var(--lightGrey);
+    cursor: pointer;
+    transition: 0.2s ease-out;
+    z-index: 102;
+}
+
+.next-button:hover {
+    transform: scale(1.1) translateY(calc(-50% + 65px)) translateX(50%);
+    transition: 0.3s ease-out;
+}
+
+.prev-button {
+    left: 5vw;
+    transform: translateY(calc(-50% + 70px)) translateX(-50%);
+}
+
+.prev-button:hover {
+    transform: scale(1.1) translateY(calc(-50% + 65px)) translateX(-50%);
+    transition: 0.3s ease-out;
+}
+
+
+.events-card {
+    position: absolute;
+    width: 20vw;
+    height: 45%;
+    background-color: transparent;
+    top: 50%;
+    transform: translateY(-100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    transition: opacity 0.4s ease-out;
+}
+
+.events-card .circle {
+    transform: translateY(calc(50% + 20px));
+}
+
+.ev-1 {
+    justify-content: flex-end;
+    left: 10vw;
+}
+
+.ev-2 {
+    justify-content: flex-start;
+    left: 30vw;
+    transform: translateY(0%);
+}
+
+.ev-3 {
+    justify-content: flex-end;
+    left: 50vw;
+}
+
+.ev-4 {
+    justify-content: flex-start;
+    left: 70vw;
+    transform: translateY(0%);
+}
+
+.ev-1 .event-date, .ev-3 .event-date {
+    bottom: -40px;
+    text-transform: uppercase;
+    position: absolute;
+}
+
+.ev-2 .event-date, .ev-4 .event-date {
+    top: -40px;
+    text-transform: uppercase;
+    position: absolute;
+}
+
+.ev-2 .circle, .ev-4 .circle {
+    transform: translateY(calc(-50% - 20px));
+}
+
+.curved-ul {
+    /* content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 7px;
+    width: 90%;
+    border: solid 2px #cb1829;
+    border-color: #cb1829 transparent transparent transparent;
+    border-radius: 50%; */
+    /* content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    transform: translateY(20px);
+    height: 5px;
+    border-radius: 10px;
+    background-color: red; */
+    padding: 8px 16px;
+    
+    border-bottom: 5px solid green;
+}

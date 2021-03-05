@@ -4,6 +4,7 @@
     padding-top: 80px;
     display: flex;
     flex-direction: row;
+    background-color: var(--background);
 }
 
 .left-side {
@@ -11,27 +12,17 @@
     display: flex;
     flex-direction: column;
     background-color: transparent;
-    padding: 20px;
+    
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.left-side h2 {
-    font-family: var(--bigHeadingFontFamily);
-    font-size: var(--heading1);
-    font-weight: var(--bold);
-    color: var(--tanText);
+.left-side .t2 {
+    margin-top: 30px;
 }
 
-.left-side p {
-    font-family: var(--smallHeadingFontFamily);
-    font-size: var(--heading6);
-    font-weight: var(--regular);
-    color: var(--tanText);
-    text-align: center;
-}
 
 .right-side {
     width: 50%;
@@ -43,13 +34,13 @@
 .team-members-core {
     box-sizing: border-box;
     padding: 10px 10%;
-    background-color: transparent;
+    background-color: var(--background);
 }
 
 .team-members-core-inner {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 .core-member-box {
@@ -87,22 +78,20 @@
     margin-top: 5px;
 }
 
-.core-member-box p {
+/* .core-member-box p {
     font-family: var(--smallHeadingFontFamily);
     font-size: var(--verySmallText);
     font-weight: var(--regular);
     color: var(--darkGrey);
     text-align: center;
     margin: 0;
-}
+} */
 
 .team-title {
-    font-family: var(--smallHeadingFontFamily);
-    font-size: var(--heading4);
-    font-weight: var(--medium);
-    color: var(--tanText);
-    text-align: center;
-    margin-top: 80px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 60px;
 }
 
 .complete-member-box {
@@ -110,7 +99,7 @@
     height: 60px;
     flex-direction: column;
     align-items: flex-start;
-    margin: 10px 20px;
+    margin: 20px 20px;
     background-color:transparent;
     width: 20%;
     padding: 5px 5px 20px 5px;
@@ -134,13 +123,13 @@
     margin-top: 5px;
 }
 
-.complete-member-box p {
+/* .complete-member-box p {
     font-family: var(--smallHeadingFontFamily);
     font-size: var(--verySmallText);
     font-weight: var(--regular);
     color: var(--darkGrey);
     margin: 0;
-}
+} */
 
 @media only screen and (max-width: 600px) {
     .team-main-container {

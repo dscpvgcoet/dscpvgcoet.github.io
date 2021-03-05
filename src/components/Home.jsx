@@ -17,6 +17,21 @@ import jigsaw from '../assets/images/Collaborate.svg'
 import codebuddy from '../assets/images/CodeBuddy.svg'
 import ama from '../assets/images/AMA.svg'
 import verboselog from '../assets/images/VerboseLog.svg'
+import spotify from '../assets/images/spotify.svg'
+import person1 from '../assets/images/person1.svg'
+import person2 from '../assets/images/person2.svg'
+import person3 from '../assets/images/person3.svg'
+import podcast from '../assets/images/podcast.svg'
+import bulbsmall from '../assets/images/bulb.svg'
+import books from '../assets/images/book.svg'
+import code from '../assets/images/code.svg'
+import r1 from '../assets/images/r1.svg'
+import r2 from '../assets/images/r2.svg'
+import r3 from '../assets/images/r3.svg'
+import r4 from '../assets/images/r4.svg' 
+import jig from '../assets/images/jig.svg'
+import dscjig from '../assets/images/dsc_jig.svg'
+
 
 const opportunitiesInfo = [
     {
@@ -84,12 +99,69 @@ const featuresEventsInfo = [
         description:'Weekly themed series where the DSC panel answers questions',
         image:ama
     },
+]
+
+const featuresBlogsInfo = [
     {
-        title:'VerboseLog',
-        description:'A Spotify podcast hosted by DSC panelists alongs with notable guest speakers',
-        image:verboselog
+        title:'Creating a WhatsApp Bot from scratch',
+        description:'Vinod Kamat',
+        image:ama
+    },
+    {
+        title:'How to make a codepen with Python',
+        description:'Mandar Bhide',
+        image:codebuddy
     },
 ]
+
+
+
+const verboseLogInfo = [
+    {
+        episode:2,
+        title:'Open Source',
+        speakers:'Ayush Bhardwaj & Sahil Jha',
+        link:'https://open.spotify.com/episode/2jWVnNGVSapAbyYpDlEIZi?si=ew5pFky4R9eDmRXD5yaiCQ',
+        image:'',
+    },
+    {
+        episode:3,
+        title:'Approaching GSoC',
+        speakers:'Ayush Bhardwaj & Sahil Jha',
+        link:'https://open.spotify.com/episode/3tpZ7iur7vnETCecOkQJUb?si=iBuRTeFIQIegzJOub1R7Lg',
+        image:'',
+    },
+    {
+        episode:4,
+        title:'Cyber Security',
+        speakers:'Aishwarya Gore',
+        link:'https://open.spotify.com/episode/3TevIQyTi1Dm77fjyuVbeI?si=nmJUX5SlT0iLhlVTkNhuwA',
+        image:'',
+    },
+    {
+        episode:5,
+        title:'About Hackathons',
+        speakers:'Vivek Raja PS',
+        link:'https://open.spotify.com/episode/2OyGdQp1FNzqdzkQNqSmfk?si=d0MIqKcMRRKI3Z7wyLwPfA',
+        image:'',
+    },
+]
+
+const FAQInfo = [
+    {
+        title:'Does DSC require one to have coding skills/technical expertise?',
+        description:'Nah. DSC is composed of students who are talented in every way, including coding. Think you are good at photography or video editing? Maybe you can speak well? DSC has a place for you. Rather than your technical skills, we prefer to focus on your enthusiasm for the job!'
+    },
+    {
+        title:'Is DSC related to Google?',
+        description:'In a way, but not completely. DSC is an initiative by Google, however, Google neither promotes nor controls DSC activities.'
+    },
+    {
+        title:'Can I apply if I am from mechanical or electrical department?',
+        description:'Ofcourse! DSC aims to have a diversified committee which means that students from any department can apply to join!'
+    },
+]
+
 
 const RenderOpportunity = ({icon, description, index}) => {
     return (
@@ -129,18 +201,40 @@ const RenderJoinDSCCard = ({title, description, index}) => {
     )
 }
 
-const RenderEventHomepage = ({title, description="", index, image}) => {
+const RenderEventHomepage = ({title, description="", index, image, text}) => {
     return (
         <div className="event-card">
             <div className="event-card-image">
                 <img src={image} className={`event-${index}`}/>
             </div>
             <div className="event-info">
-                <p className="h0 tanText" style={{opacity:0.2}}>0{index+1}</p>
-                <p className="h4 ultraLightGrey" style={{marginTop: 20}}>{title}</p>
-                <p className="t2 lightGrey" style={{marginTop: 20}}>{description}</p>
-                
+                {/* <p className="h0 tanText" style={{opacity:0.2}}>0{index+1}</p> */}
+                <p className="h5 ultraLightGrey ta-center" style={{marginTop: 20}}>{title}</p>
+                <p className="t2 lightGrey ta-center" style={{marginTop: 20}}>{description}</p>
+                <p className="t1 white ta-center" style={{marginTop: 20}}>{text}</p>
             </div>
+        </div>
+    )
+}
+
+const RenderSpotifyCard = ({episode, title, speakers, link, image, index}) => {
+    return (
+        
+        <div className="spotify-card" key={index}>
+            <a href={link} target="_blank">
+            <p className="t4 darkGrey">EPISODE {episode}</p>
+            <p className="h6 tanText">{title}</p>
+            <p className="t3 darkGrey">{speakers}</p>
+            </a>
+        </div>
+    )
+}
+
+const RenderFAQCard = ({title, description, index}) => {
+    return (
+        <div className="faq-card" key={index}>
+            <p className="t1 tanText">{title}</p>
+            <p className="t2 darkGrey">{description}</p>
         </div>
     )
 }
@@ -154,10 +248,11 @@ class Home extends React.Component {
         this.state = {
             showLogoInHeader: false,
             headerHeight: 0,
-            colors:['#FBA416', '#594DD2','#1E76E7'],
+            colors:['#FBA416', '#6659E8','#1E76E7'],
             widths:[95, 80, 95],
             activeColor:0,
-            activeWidth:0
+            activeWidth:0,
+            isInfographicVisible:false,
         }
     }
     
@@ -182,6 +277,9 @@ class Home extends React.Component {
         } else {
             this.setState({showLogoInHeader: false})
         }
+        const hasPassed = window.scrollY - (window.pageYOffset + document.querySelector('.infographic-container').getBoundingClientRect().top)
+        this.setState({isInfographicVisible: hasPassed})
+        console.log(hasPassed)
     }
 
     isBelowMainFrame = () => {
@@ -195,6 +293,7 @@ class Home extends React.Component {
           behavior: 'smooth'  
         })
     }
+
     
     render() {
 
@@ -229,9 +328,11 @@ class Home extends React.Component {
                                 <span>their talents and help them</span>
                                 <span className="change-word" style={{backgroundColor: this.state.colors[this.state.activeColor], width: this.state.widths[this.state.activeWidth], boxShadow:`3px 3px 15px #111111`}}>
                                     <ul className="flip">
+                                        
                                         <li>succeed</li>
                                         <li>ideate</li>
                                         <li>conquer</li>
+                                        
                                     </ul>
                                 </span>
                             </p>
@@ -241,12 +342,14 @@ class Home extends React.Component {
                         
                         <div className="home-main-content-image">
                             {/* <img src={homeMainImage}/> */}
+                            <img src={jig} style={{width:'70%', marginTop:150}}/>
+                            <img src={dscjig} style={{width:210, position:'absolute', margin:'auto', paddingLeft:80, animation:'float2 10s ease infinite'}}/>
                         </div>
                     
                     </div>
                     
                     <div className="home-main-content-down-arrow" style={{display: isBelowMainFrame}} onClick={this.handleArrowClick}>
-                        <ChevronDown size={isMobile ? 65 : 45} color='#434343' className="home-main-content-down-arrow-arrow"/>
+                        <ChevronDown size={isMobile ? 65 : 45} color='#878787' className="home-main-content-down-arrow-arrow"/>
                     </div>
                 
                 </div>
@@ -298,45 +401,162 @@ class Home extends React.Component {
 
                     <div className="blue-container">
 
-                        <p className="h3 background ta-center" style={{marginTop:50}}>DSC Events</p>
-                        <p className="t2 background ta-center" style={{marginTop:50, width: '60%'}}>In its first year, DSC conducted various events throughout the year successfully! <br/>Here are some of our featured events</p>
+                        <p className="h2 white ta-left" style={{width:'40%'}}>Some of our <br/>featured events</p>
+                        {/* <p className="t2 background ta-center" style={{marginTop:50, width: '60%'}}>In its first year, DSC conducted various events throughout the year successfully! <br/>Here are some of our featured events</p> */}
 
-                        <div className="join-dsc-container-inner" style={{height:'auto', marginTop: 80, flexDirection:'column'}}>
+                        <div className="join-dsc-container-inner" style={{height:'auto', marginTop: 50}}>
                             {
                                 featuresEventsInfo.map((item, index) => {
-                                    return <RenderEventHomepage title={item.title} description={item.description} index={index} image={item.image}/>
+                                    return <RenderEventHomepage title={item.title} description={item.description} index={index} image={item.image} text="read more"/>
                                 })
                             }
                         </div>
 
-                        <div className="secondary-button">
-                            <p className="h6 tanText">view more</p>
+                        <div className="secondary-button top-right">
+                            <p className="t2 tanText">see all</p>
                         </div>
                     </div>
 
 
+                    <div className="verbose-container">
+                        <div className="verbose-upper">
+                            <div className="verbose-heading">
+                                <p className="h1 tanText">VerboseLog</p>
+                                <p className="t2 darkGrey">A Spotify podcast by DSC PVGCOET</p>
+                                <a href="https://open.spotify.com/show/2rx52wlDkwR9DlAXq83IYH?si=D8Dn8w8NTEW1X35mD7NaIw" target="_blank">
+                                <div className="spotify-button">
+                                    
+                                        <img src={spotify}/>
+                                        <div>
+                                            <p className="h7 tanText">Listen on</p>
+                                            <p className="h5" style={{color:'#11C30E'}}>Spotify</p>
+                                        </div>
+                                    
+                                </div>
+                                </a>
+                            </div>
+                            <div className="verbose-featured">
+                                {/* <p className="t3 grey">EPISODE 1</p>
+                                <p className="h5 tanText">Game Development with Akshay Goel</p>
+                                <img className="play-button" src={play}/> */}
+                                <iframe src="https://open.spotify.com/embed-podcast/episode/0WDHQzIXLnx97XPbyQ91PZ" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                            </div>
+                        </div>
+                        <p className="h6 tanText">Featured episodes</p>
+                        <div className="verbose-lower">
+                            {
+                                verboseLogInfo.map(({title, speakers, episode, link, image}, index) => {
+                                    return <RenderSpotifyCard title={title} speakers={speakers} episode={episode} link={link} image={image} index={index}/>
+                                })
+                            }
+                        </div>
+                    </div>
 
 
-                    <h4>Who can be a part of DSC?</h4>
-                    <p>Anyone. Yep, that's right.</p>
-                    <p style={{fontSize: 15}}>DSC is open to any student, ranging from amateur developers who are just getting started, to experienced developers who want to further hone and showcase their skills</p>
-                    <br/>
-                    <h4>What do we do?</h4>
-                    <p style={{fontSize:15}}>
-                        DSC PVG's COET comprises of a very diverse community with members from various displines of engineering and expertise working towards this initiative. 
-                        <br/>
-                        <br/>
-                        Here at DSC PVG's COET, we plan for students to get to work with a remarkably dedicated group of developers, collaborate on projects, organise workshops, represent us in competitions and hackathons and much more. 
-                        <br/>
-                        <br/>
-                        Students also get to interact with industry experts as well as experts within and around our community, who are extremely keen to be in touch with us and guide us.
-                    </p>
+                    <div className="infographic-container">
+                        <infograph className="purple"><p className="h4" style={{color:'white'}}>Developer <br/> Students Club</p></infograph>
+                        <infograph className={this.state.isInfographicVisible > -100 ? "faint move-down-3":"faint"}><p className="h5 tanText">Creativity</p></infograph>
+                        <infograph className="green"><img src={person1}/></infograph>
+                        <infograph></infograph>
+                        <infograph></infograph>
+                        <infograph></infograph>
+                        <infograph></infograph>
+                        <infograph></infograph>
+                        <infograph className="bluebg"><p className="h5 tanText" style={{color:'#01347A'}}><span style={{fontSize: 50}}>7+</span><br/>events conducted</p></infograph>
+                        <infograph className="yellow"><img src={code} style={{width:'40%'}}/></infograph>
+                        <infograph></infograph>
+                        <infograph></infograph>
+                        <infograph></infograph>
+                        <infograph></infograph>
+                        <infograph className={this.state.isInfographicVisible > 50 ? "faint move-down-2" : "faint"}><img src={bulbsmall}/></infograph>
+                        <infograph></infograph>
+                        <infograph></infograph>
+                        <infograph className="faint"><img src={books}/></infograph>
+                        <infograph className={this.state.isInfographicVisible > 70 ?"green move-right-2":"green"}><p className="h5 tanText">Empower</p></infograph>
+                        <infograph></infograph>
+                        <infograph className={this.state.isInfographicVisible > 120 ? "purple move-up-2":"purple"}><img src={podcast}/></infograph>
+                        <infograph className="green"><p className="h5 tanText">Implement</p></infograph>
+                        <infograph></infograph>
+                        <infograph className="yellow"><img src={person2}/></infograph>
+                        <infograph className={this.state.isInfographicVisible > 150 ? "purple move-up" : "purple"}><p className="h5 tanText">Ideate</p></infograph>
+                        <infograph className="orange"><img src={DSCLogo}/></infograph>
+                        <infograph></infograph>
+                        <infograph className={this.state.isInfographicVisible > 150?  "faint move-down":"faint"}><img src={person3}/></infograph>
+                        <infograph></infograph>
+                        <infograph></infograph>
+                        <infograph></infograph>
+                        <infograph></infograph>
+                        <infograph></infograph>
+                        <infograph></infograph>
+                        <infograph className={this.state.isInfographicVisible > 300 ? "green move-up-2" : "green"}><p className="h5 tanText" style={{color:'#005F44'}}><span style={{fontSize: 50}}>30</span><br/>committee members</p></infograph>
+                        <infograph></infograph>
+                        <infograph className="yellow"><p className="h5 tanText">Think</p></infograph>
+                    
+                        <p className="h3 tanText i1">At DSC, there's a place for everyone</p>
+                    </div>
+
+                    
+
                 </div>
-                {/* <div style={{height: 500, backgroundColor: '#fff'}}>
 
-                </div> */}
+
+                <div className="faq-container">
+                    <p className="h3 darkText ta-center" style={{marginBottom: 60}}>Frequently Asked Questions</p>
+
+                    {
+                        FAQInfo.map((item, index) => {
+                            return <RenderFAQCard title={item.title} description={item.description} index={index}/>
+                        })
+                    }
+                </div>
+
+
+                <div className="blue-container" style={{backgroundColor:'#06956B'}}>
+
+                        <p className="h2 white ta-left" style={{width:'40%'}}>Some of our <br/>featured blogs</p>
+                        {/* <p className="t2 background ta-center" style={{marginTop:50, width: '60%'}}>In its first year, DSC conducted various events throughout the year successfully! <br/>Here are some of our featured events</p> */}
+
+                        <div className="join-dsc-container-inner" style={{height:'auto', marginTop: 50}}>
+                            {
+                                featuresBlogsInfo.map((item, index) => {
+                                    return <RenderEventHomepage title={item.title} description={item.description} index={index} image={item.image} text="read blog"/>
+                                })
+                            }
+                        </div>
+
+                        <div className="secondary-button top-right">
+                            <p className="t2 tanText">see all</p>
+                        </div>
+                </div>
+
+
+
+                {/* Reviews Section */}
+                <div className="reviews-container">
+                
+                    <p className="h2 tanText ta-center">Hear it from our team</p>
+                
+                    <img src={r1} className="review r1"/>
+                    <img src={r2} className="review r2"/>
+                    <img src={r3} className="review r3"/>
+                    <img src={r4} className="review r4"/>
+                </div>
+
+                
+                
+                
+                <p className="h2 tanText ta-center" style={{marginTop:160}}>Collaboration is a l<span style={{color:'#5018D8'}}><span style={{letterSpacing:-8}}>o</span>o</span>p, <br/> not a cycle.</p>
+                <p className="t1 darkGrey ta-center" style={{marginTop: 20}}>Join DSC PVGCOET today to be a part of this! &#128512;</p>
+
+                
+                
+                
                 <Footer/>
 
+                
+                
+                
+                {/* SVG Gradients */}
                 <svg width="0" height="0">
                     <linearGradient id="gradient-1" x1="100%" y1="100%" x2="0%" y2="0%">
                         <stop stopColor="#4111A1" offset="0%" />
@@ -351,6 +571,10 @@ class Home extends React.Component {
                         <stop stopColor="#0C9218" offset="100%" />
                     </linearGradient>
                 </svg>
+
+
+
+
             </div>
         )
     }

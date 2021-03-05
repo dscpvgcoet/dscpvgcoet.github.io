@@ -33,7 +33,9 @@ class Header extends React.Component {
             <>
             <div className="header-main-container" ref={headerElement => this.headerElement = headerElement} style={{boxShadow: boxShadow,}}>
                 <div className="header-logo">
+                    <Link to="/">
                     <img src={horizontalLogo} style={{opacity: displayValue }}/> 
+                    </Link>
                 </div>
                 <div onClick={this.handleMenuButtonClick}>
                     <MobileView>
@@ -50,9 +52,11 @@ class Header extends React.Component {
                             <li><Link to="/" className="link">Home</Link></li>
                             {/* <li><Link to="/blogs" className="link">Blogs</Link></li> */}
                             <li><Link to="/team" className="link">Team</Link></li>
-                            <li><Link to="/" className="link">Events</Link></li>
+                            <li><Link to="/events" className="link">Events</Link></li>
                             <li><Link to="/" className="link">Projects</Link></li>
+                            <li><Link to="/" className="link">Blogs</Link></li>
                             <li><Link to="/" className="link">Archives</Link></li>
+                            <li><Link to="/contact" className="link">Contact</Link></li>
                         </ul>
                     </div>
                 </BrowserView>

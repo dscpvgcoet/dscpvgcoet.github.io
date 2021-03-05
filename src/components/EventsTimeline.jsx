@@ -1,0 +1,159 @@
+import React from 'react'
+import { Fragment } from 'react'
+import { isMobile, BrowserView, MobileView } from 'react-device-detect'
+
+import Header from './Header'
+import Footer from './Footer'
+
+import '../css/events.css'
+import { ChevronLeft, ChevronRight } from 'react-feather'
+
+const numberOfEvents = 16
+
+const findCurrentPool = loc => {
+    let i = 1
+    let j = 0
+    while(i <= loc) {
+        i = i + 4
+        j++
+    }
+    return j
+}
+
+const eventsListInfo = [
+    {
+        title:'CodeBuddy Coding Event',
+        description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+    },
+    {
+        title:'CodeBuddy Coding Event',
+        description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+    },
+    {
+        title:'CodeBuddy Coding Event',
+        description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+    },
+    {
+        title:'CodeBuddy Coding Event',
+        description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+    },
+    {
+        title:'CodeBuddy Coding Event',
+        description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+    },
+    {
+        title:'CodeBuddy Coding Event',
+        description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+    },
+    {
+        title:'CodeBuddy Coding Event',
+        description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+    },
+    {
+        title:'CodeBuddy Coding Event',
+        description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+    },
+    {
+        title:'CodeBuddy Coding Event',
+        description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+    },
+]
+
+
+const EventsCard = ({eventLoc, pageNumber, title, description}) => {
+
+    const eventLocActual = eventLoc
+    const evClass = eventLocActual%4 === 0 ? 4 : eventLocActual%4
+    const left = eventLoc%4 === 1 ?  window.innerWidth*0.1 + (eventLocActual-1)*window.innerWidth*0.2 + pageNumber*window.innerWidth*0.2 : window.innerWidth*0.1 + (eventLocActual-1)*window.innerWidth*0.2 + pageNumber*window.innerWidth*0.2
+    const opacityVal = findCurrentPool(eventLoc) === pageNumber+1 ? 1 : 0
+    const color = eventLoc%4 === 1 ? "#2970E6" : eventLoc%4 === 2 ? "#F4B400" : eventLoc%4 === 3 ? "#0F9D58" : "#594DD2"
+
+    return (
+        <div 
+            className={`events-card ev-${evClass}`}
+            style={{left, opacity: opacityVal}}
+        >
+
+            <div className="circle" style={{display:eventLocActual%2 ? 'none' : 'flex'}}></div>
+
+            <p className="h6 tanText ta-center curved-ul" style={{marginBottom: 10, letterSpacing: 1.5, borderColor:color}}>{title}</p>
+            <p className="t2 darkGrey ta-center">{description}</p>
+            <p className="t2 ta-center" style={{color, cursor:'pointer'}}>read more</p>
+            
+            <div className="circle" style={{display:eventLocActual%2 ? 'flex' : 'none'}}></div>
+            <div className="t3 darkGrey event-date">26 dec 2020</div>
+        
+        </div>
+    )
+}
+
+class EventsTimeline extends React.Component {
+
+    constructor(props) {
+        super(props)
+
+        this.state  = {
+            headerHeight: 0,
+            pageNumber:0
+        }
+    }
+
+    componentDidMount() {
+        window.scroll({top: 0, left: 0, behavior:'smooth'})
+    }
+
+    goToNext = () => {
+        if(this.state.pageNumber > findCurrentPool(eventsListInfo.length)) return 
+        this.setState({pageNumber: this.state.pageNumber + 1})
+    }
+    
+    goToPrev = () => {
+        if(this.state.pageNumber === 0) return
+        this.setState({pageNumber: this.state.pageNumber - 1})
+    }
+    
+
+    render() {
+        return (
+        
+            <Fragment>
+                <Header 
+                    showLogoInHeader={true}
+                    passHeaderHeight={height => this.setState({headerHeight: height+20})}
+                />
+                <div className="eventstimeline-main-container" style={{paddingTop: isMobile? 0 : this.state.headerHeight + 0}}>
+                    
+                    <p className="h3 darkText ta-center" style={{height: 50}}>DSC Events</p>
+                    
+                    <div className="timeline-container-outer">
+                        <div 
+                            className="timeline-container"
+                            style={{transform:[`translateX(-${this.state.pageNumber*window.innerWidth}px)`]}}
+                        >
+                            
+                            {
+                                eventsListInfo.map((item, index) => {
+                                    return <EventsCard eventLoc={index+1} pageNumber={this.state.pageNumber} title={item.title} description={item.description}/>
+                                })
+                            }
+                
+    
+                            <div className="timeline-now circle"><div className="timeline-now-inner"></div></div>
+                            <p className="today t3 darkGrey">TODAY</p>
+
+                            
+                        </div>
+                        
+                        <div className="timeline" style={{width:`calc(80vw)`}}></div>
+                        <button className="next-button" onClick={this.goToNext} style={{display: this.state.pageNumber+2 > findCurrentPool(eventsListInfo.length) ? 'none' : 'flex'}}><ChevronRight className="tanText" size={25}/></button>
+                        <button className="prev-button" onClick={this.goToPrev} style={{display: this.state.pageNumber > 0 ? 'flex' : 'none'}}><ChevronLeft className="tanText" size={25}/></button>
+                    </div>
+                    
+                </div>
+            {/* <Footer/> */}
+            </Fragment>
+        )
+    }
+}
+
+export default EventsTimeline
