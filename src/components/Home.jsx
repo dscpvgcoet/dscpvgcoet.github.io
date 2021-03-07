@@ -31,6 +31,7 @@ import r3 from '../assets/images/r3.svg'
 import r4 from '../assets/images/r4.svg' 
 import jig from '../assets/images/jig.svg'
 import dscjig from '../assets/images/dsc_jig.svg'
+import { Spring } from '../helpers'
 
 
 const opportunitiesInfo = [
@@ -298,6 +299,7 @@ class Home extends React.Component {
     render() {
 
         const isBelowMainFrame = this.isBelowMainFrame() ? 'none' : ''
+        
         return (
             
             
@@ -399,50 +401,59 @@ class Home extends React.Component {
                         </div>
                     </div>
 
-                    <div className="blue-container">
+                    
+                    <Spring>
+                        <div className="blue-container">
 
-                        <p className="h2 white ta-left" style={{width:'40%'}}>Some of our <br/>featured events</p>
-                        {/* <p className="t2 background ta-center" style={{marginTop:50, width: '60%'}}>In its first year, DSC conducted various events throughout the year successfully! <br/>Here are some of our featured events</p> */}
+                            <p className="h2 white ta-left" style={{width:'40%'}}>Some of our <br/>featured events</p>
 
-                        <div className="join-dsc-container-inner" style={{height:'auto', marginTop: 50}}>
-                            {
-                                featuresEventsInfo.map((item, index) => {
-                                    return <RenderEventHomepage title={item.title} description={item.description} index={index} image={item.image} text="read more"/>
-                                })
-                            }
+                            <div className="join-dsc-container-inner" style={{height:'auto', marginTop: 50}}>
+                                {
+                                    featuresEventsInfo.map((item, index) => {
+                                        return <RenderEventHomepage title={item.title} description={item.description} index={index} image={item.image} text="read more"/>
+                                    })
+                                }
+                            </div>
+
+                            <div className="secondary-button top-right">
+                                <p className="t2 tanText">see all</p>
+                            </div>
                         </div>
-
-                        <div className="secondary-button top-right">
-                            <p className="t2 tanText">see all</p>
-                        </div>
-                    </div>
+                    </Spring>
 
 
                     <div className="verbose-container">
+                        
                         <div className="verbose-upper">
+                            
                             <div className="verbose-heading">
+                                
                                 <p className="h1 tanText">VerboseLog</p>
                                 <p className="t2 darkGrey">A Spotify podcast by DSC PVGCOET</p>
                                 <a href="https://open.spotify.com/show/2rx52wlDkwR9DlAXq83IYH?si=D8Dn8w8NTEW1X35mD7NaIw" target="_blank">
+                                
                                 <div className="spotify-button">
                                     
-                                        <img src={spotify}/>
-                                        <div>
-                                            <p className="h7 tanText">Listen on</p>
-                                            <p className="h5" style={{color:'#11C30E'}}>Spotify</p>
-                                        </div>
+                                    <img src={spotify}/>
+                                    <div>
+                                        <p className="h7 tanText">Listen on</p>
+                                        <p className="h5" style={{color:'#11C30E'}}>Spotify</p>
+                                    </div>
                                     
                                 </div>
                                 </a>
                             </div>
+                            
                             <div className="verbose-featured">
-                                {/* <p className="t3 grey">EPISODE 1</p>
-                                <p className="h5 tanText">Game Development with Akshay Goel</p>
-                                <img className="play-button" src={play}/> */}
+                                
                                 <iframe src="https://open.spotify.com/embed-podcast/episode/0WDHQzIXLnx97XPbyQ91PZ" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                            
                             </div>
+                        
                         </div>
+                        
                         <p className="h6 tanText">Featured episodes</p>
+                        
                         <div className="verbose-lower">
                             {
                                 verboseLogInfo.map(({title, speakers, episode, link, image}, index) => {
@@ -454,6 +465,7 @@ class Home extends React.Component {
 
 
                     <div className="infographic-container">
+                        
                         <infograph className="purple"><p className="h4" style={{color:'white'}}>Developer <br/> Students Club</p></infograph>
                         <infograph className={this.state.isInfographicVisible > -100 ? "faint move-down-3":"faint"}><p className="h5 tanText">Creativity</p></infograph>
                         <infograph className="green"><img src={person1}/></infograph>
@@ -493,6 +505,7 @@ class Home extends React.Component {
                         <infograph className="yellow"><p className="h5 tanText">Think</p></infograph>
                     
                         <p className="h3 tanText i1">At DSC, there's a place for everyone</p>
+                    
                     </div>
 
                     
@@ -501,6 +514,7 @@ class Home extends React.Component {
 
 
                 <div className="faq-container">
+                    
                     <p className="h3 darkText ta-center" style={{marginBottom: 60}}>Frequently Asked Questions</p>
 
                     {
@@ -511,10 +525,10 @@ class Home extends React.Component {
                 </div>
 
 
-                <div className="blue-container" style={{backgroundColor:'#06956B'}}>
+                <Spring>
+                    <div className="blue-container" style={{backgroundColor:'#06956B'}}>
 
                         <p className="h2 white ta-left" style={{width:'40%'}}>Some of our <br/>featured blogs</p>
-                        {/* <p className="t2 background ta-center" style={{marginTop:50, width: '60%'}}>In its first year, DSC conducted various events throughout the year successfully! <br/>Here are some of our featured events</p> */}
 
                         <div className="join-dsc-container-inner" style={{height:'auto', marginTop: 50}}>
                             {
@@ -527,7 +541,8 @@ class Home extends React.Component {
                         <div className="secondary-button top-right">
                             <p className="t2 tanText">see all</p>
                         </div>
-                </div>
+                    </div>
+                </Spring>
 
 
 

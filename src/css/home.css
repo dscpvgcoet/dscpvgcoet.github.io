@@ -348,8 +348,8 @@
 }
 
 .blue-container {
-    width: 80%;
-    margin: 50px 10%;
+    width: 80vw;
+    margin: 0;
     border-radius: 5px;
     padding: 3%;
     display: flex;
