@@ -254,3 +254,13 @@
     border-radius: 5px;
     float: left;
 }
+
+.event-content {
+    padding-top: 490px;
+    padding-right: calc(30% + 20px);
+}
+
+.event-content p {
+    text-align: justify;
+    line-height: 150%;
+}
