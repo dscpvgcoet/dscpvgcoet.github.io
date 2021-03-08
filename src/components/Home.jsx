@@ -254,6 +254,7 @@ class Home extends React.Component {
             activeColor:0,
             activeWidth:0,
             isInfographicVisible:false,
+            showVideo:false
         }
     }
     
@@ -279,8 +280,10 @@ class Home extends React.Component {
             this.setState({showLogoInHeader: false})
         }
         const hasPassed = window.scrollY - (window.pageYOffset + document.querySelector('.infographic-container').getBoundingClientRect().top)
-        this.setState({isInfographicVisible: hasPassed})
-        console.log(hasPassed)
+        const hasPassedVid = window.scrollY - (window.pageYOffset + document.querySelector('.video-container').getBoundingClientRect().top)
+        this.setState({isInfographicVisible: hasPassed, showVideo: hasPassedVid > (-window.innerHeight/2 - 100)})
+
+        console.log(this.state.showVideo)
     }
 
     isBelowMainFrame = () => {
@@ -377,6 +380,18 @@ class Home extends React.Component {
                                 return <RenderOpportunity icon={item.icon} description={item.text} index={index}/>
                             })
                         }
+                    </div>
+
+                    
+                    <p className="h3 darkText ta-center" style={{marginTop: 100}}>Watch what we do</p>
+                    
+                    <div className={this.state.showVideo ? 'animate-vid video-container' : 'video-container'}>
+                        <video 
+                            src="https://media.w3.org/2010/05/sintel/trailer.mp4" 
+                            muted 
+                            autoPlay 
+                            loop>
+                        </video>
                     </div>
 
                     <p className="h3 darkText ta-center" style={{marginTop: 100}}>What DSC does and how</p>

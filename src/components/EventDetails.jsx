@@ -14,6 +14,9 @@ const EventDetails = ({}) => {
     const [headerHeight, setHeaderHeight] = useState(0)
 
     useEffect(() => {
+        window.scroll({
+            top:0,
+        })
         const fullURL = window.location.pathname.split('/')
         console.log(fullURL)
     }, [])

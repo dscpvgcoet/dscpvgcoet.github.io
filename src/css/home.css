@@ -765,6 +765,32 @@ infograph:nth-child(34) {
     -webkit-animation: wheel 2s infinite;
 }
 
+.video-container {
+    width: 80%;
+    margin: 20px 20%;
+    height: 550px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container video {
+    height: 100%; 
+    margin: 0 auto;
+    will-change: transform;
+    transform: perspective(600px) rotateX(45deg) scale(0.5);
+    transition: 0.4s ease-out;
+    border-radius: 5px;
+    background-color: #1C67E1;
+    object-fit: cover;
+}
+
+.animate-vid video {
+    transform: perspective(600px) rotateX(0deg) scale(1.0) !important;
+    transition: 0.4s ease-out;
+}
+
 @keyframes wheel {
 	to {
 		opacity: 0;
