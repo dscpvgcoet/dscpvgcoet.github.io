@@ -8,8 +8,8 @@ import Footer from './Footer'
 import '../css/events.css'
 import { ChevronLeft, ChevronRight } from 'react-feather'
 import { Link } from 'react-router-dom'
+import eventhero from '../assets/images/events-hero.svg'
 
-const numberOfEvents = 16
 
 const findCurrentPool = loc => {
     let i = 1
@@ -125,9 +125,35 @@ class EventsTimeline extends React.Component {
                     showLogoInHeader={true}
                     passHeaderHeight={height => this.setState({headerHeight: height+20})}
                 />
+                
+                <div className="events-hero">
+                    
+                    <div className="home-main-content-inner" style={{paddingTop:40}}>
+                        <div className="home-main-content-text">
+                            
+                            <div className="home-main-content-logo-box">
+                                {/* <img src={DSCLogo} className="dsc-only-logo"/>
+                                <img src={DSCLogoText} className="dsc-only-text"/> */}
+                            </div>
+                            
+                            <p className="h4 darkText ta-center">At DSC PVGCOET, events <br/> are kind of a big deal</p>
+                            
+
+                            <p className="t1 ta-center" style={{marginTop: '10vh'}}>Check out the events timeline below to keep yourself updated with various programmes we conduct</p>
+                            
+                        </div>
+                        
+                        <div className="home-main-content-image">
+                            <img src={eventhero} style={{width:'60%', margin:'auto'}}/>
+                            
+                        </div>
+                    
+                    </div>
+                </div>
+                
                 <div className="eventstimeline-main-container" style={{paddingTop: isMobile? 0 : this.state.headerHeight + 0}}>
                     
-                    <p className="h3 darkText ta-center" style={{height: 50}}>DSC Events</p>
+                    <p className="h3 darkText ta-center" style={{height: 50}}>Events Timeline</p>
                     
                     <div className="timeline-container-outer">
                         <div 

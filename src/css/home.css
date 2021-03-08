@@ -742,6 +742,37 @@ infograph:nth-child(34) {
     background-color: var(--googleBlue);
 }
 
+.mouse {
+	width: 25px;
+	height: 50px;
+	border: 2.5px solid var(--grey);
+	border-radius: 60px;
+	position: relative;
+}
+
+.mouse::before {
+    content: '';
+    width: 6px;
+    height: 10px;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    border-radius: 6px;
+    opacity: 1;
+    animation: wheel 2s infinite;
+    -webkit-animation: wheel 2s infinite;
+}
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 30px;
+	}
+}
+
+
 @media only screen and (max-width: 600px) {
     .home-main-content {
         height: 95vh;
