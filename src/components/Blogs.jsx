@@ -3,11 +3,11 @@ import ReactDOM from "react-dom";
 import '../css/blogs.css'
 
 export default class Blogs extends React.Component {
-  state = {
-    isLoaded: false,
-    blogList: [],
-    blogTitles: null
-  };
+    state = {
+      isLoaded: false,
+      blogList: [],
+      blogTitles: null
+    }
 
   getBlogs = async () => {
     let blogTitles = [];
@@ -25,6 +25,7 @@ export default class Blogs extends React.Component {
   }
 
   render() {
+    
     if (!this.state.isLoaded || !this.state.blogTitles) {
       return <div className="blog-list">Loading.. .</div>;
     } else {

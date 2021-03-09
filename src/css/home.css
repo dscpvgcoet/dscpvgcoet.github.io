@@ -768,7 +768,7 @@ infograph:nth-child(34) {
 .video-container {
     width: 80%;
     margin: 20px 20%;
-    height: 550px;
+    height: 70vh;
     background-color: transparent;
     display: flex;
     justify-content: center;

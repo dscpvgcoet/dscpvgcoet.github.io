@@ -78,7 +78,7 @@ const EventsCard = ({eventLoc, pageNumber, title, description, index}) => {
             
                 <div className="circle" style={{display:eventLocActual%2 ? 'none' : 'flex'}}></div>
 
-                <p className="h6 tanText ta-center curved-ul" style={{marginBottom: 10, letterSpacing: 1.5, borderColor:color}}>{title}</p>
+                <p className="t1 tanText ta-center curved-ul" style={{marginBottom: 10, letterSpacing: 1.5, borderColor:color}}>{title}</p>
                 <p className="t2 darkGrey ta-center">{description}</p>
                 <p className="t2 ta-center" style={{color, cursor:'pointer'}}>read more</p>
                 
@@ -121,6 +121,7 @@ class EventsTimeline extends React.Component {
         return (
         
             <Fragment>
+                
                 <Header 
                     showLogoInHeader={true}
                     passHeaderHeight={height => this.setState({headerHeight: height+20})}
@@ -144,7 +145,7 @@ class EventsTimeline extends React.Component {
                         </div>
                         
                         <div className="home-main-content-image">
-                            <img src={eventhero} style={{width:'60%', margin:'auto'}}/>
+                            <img src={eventhero} style={{width:'55%', margin:'auto', marginTop:'10%'}}/>
                             
                         </div>
                     
@@ -153,7 +154,7 @@ class EventsTimeline extends React.Component {
                 
                 <div className="eventstimeline-main-container" style={{paddingTop: isMobile? 0 : this.state.headerHeight + 0}}>
                     
-                    <p className="h3 darkText ta-center" style={{height: 50}}>Events Timeline</p>
+                    <p className="t0 darkText ta-center" style={{height: 50, letterSpacing:2, margin:0, fontSize:25}}>Events Timeline</p>
                     
                     <div className="timeline-container-outer">
                         <div 
