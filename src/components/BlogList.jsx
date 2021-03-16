@@ -7,6 +7,7 @@ import { Fragment } from 'react'
 import eventhero from '../assets/images/events-hero.svg'
 
 import '../css/blogs.css'
+import { Link } from 'react-router-dom'
 
 
 const blogs = [
@@ -72,18 +73,20 @@ const RenderBlog = ({title, description, mainImage, author, tags, authorPhoto, i
     const descriptionShort = description.length > 30 ? description.slice(0,30).concat('...') : description.concat('...')
 
     return (
-        <div 
-            className="blog-card"
-            style={backgroundStyle}
-        >
-            <p className="t1 darkText ta-left">{title}</p>
-            <p className="t3 darkGrey ta-left">{descriptionShort}</p>
+        <Link to={`/blogs/${index}`} target="_blank">
+            <div 
+                className="blog-card"
+                style={backgroundStyle}
+            >
+                <p className="h6 darkText ta-left">{title}</p>
+                <p className="t3 darkGrey ta-left">{descriptionShort}</p>
 
-            <div className="author">
-                <img src={authorPhoto}/>
-                <p className="t2 tanText">{author}</p>
+                <div className="author">
+                    <img src={authorPhoto}/>
+                    <p className="t2 tanText">{author}</p>
+                </div>
             </div>
-        </div>
+        </Link>
     )
 }
 

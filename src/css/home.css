@@ -146,8 +146,17 @@
     line-height: 25px;
 }
 
+.dsc-def-container img {
+    width: 30%;
+    margin-left: 10%;
+}
+
 .dsc-def-container .t2 {
     width: 60%;
+}
+
+.fifty {
+    width: 50% !important;
 }
 
 .about-us-container {

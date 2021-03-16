@@ -10,6 +10,7 @@ import EventsTimeline from './EventsTimeline'
 import Contact from './Contact'
 import EventDetails from './EventDetails'
 import Resources from './Resources'
+import Blog from './Blogs'
 
 class App extends React.Component {
 
@@ -21,6 +22,7 @@ class App extends React.Component {
                         <Route path="/" exact component={Home}/>
                         <Route path="/team" exact component={OurTeam}/>
                         <Route path="/blogs" exact component={BlogList}/>
+                        <Route path="/blogs/*" exact component={Blog}/>
                         <Route path="/events" exact component={EventsTimeline}/>
                         <Route path="/event/*" exact component={EventDetails}/>
                         <Route path="/resources" exact component={Resources}/>

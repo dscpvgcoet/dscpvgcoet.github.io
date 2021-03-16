@@ -250,6 +250,8 @@
     padding: 20px;
     border-radius: 5px;
     background-color: var(--googleBlue);
+    display: flex;
+    flex-direction: column;
 }
 
 .featured-media {

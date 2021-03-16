@@ -280,10 +280,10 @@ class Home extends React.Component {
             this.setState({showLogoInHeader: false})
         }
         const hasPassed = window.scrollY - (window.pageYOffset + document.querySelector('.infographic-container').getBoundingClientRect().top)
-        const hasPassedVid = window.scrollY - (window.pageYOffset + document.querySelector('.video-container').getBoundingClientRect().top)
-        this.setState({isInfographicVisible: hasPassed, showVideo: hasPassedVid > (-window.innerHeight/2 - 100)})
+        // const hasPassedVid = window.scrollY - (window.pageYOffset + document.querySelector('.video-container').getBoundingClientRect().top)
+        this.setState({isInfographicVisible: hasPassed})
+        //showVideo: hasPassedVid > (-window.innerHeight/2 - 100)
 
-        console.log(this.state.showVideo)
     }
 
     isBelowMainFrame = () => {
@@ -382,42 +382,7 @@ class Home extends React.Component {
                         }
                     </div>
 
-                    
-                    <p className="h3 darkText ta-center" style={{marginTop: 100}}>Watch what we do</p>
-                    
-                    <div className={this.state.showVideo ? 'animate-vid video-container' : 'video-container'}>
-                        <video 
-                            src="https://media.w3.org/2010/05/sintel/trailer.mp4" 
-                            muted 
-                            autoPlay 
-                            loop>
-                        </video>
-                    </div>
 
-                    <p className="h3 darkText ta-center" style={{marginTop: 100}}>What DSC does and how</p>
-                   
-
-                    <div className="features">
-                        {
-                            featuresInfo.map((item, index) => {
-                                return <RenderFeature color={item.color} description={item.description} index={index} title={item.title} image={item.image}/>
-                            })
-                        }
-                    </div>
-
-
-                    <div className="join-dsc-container">
-
-                        <p className="h3 darkText ta-center" style={{marginTop:50}}>How do I join DSC ?</p>
-                        <p className="t2 darkGrey ta-center" style={{marginTop:50, width: '60%'}}>DSC is open to any student, ranging from amateur developers who are just getting started, to experienced developers who want to further hone and showcase their skills</p>
-                        <div className="join-dsc-container-inner">
-                            {
-                                joinDSCInfo.map((item, index) => {
-                                    return <RenderJoinDSCCard title={item.title} description={item.description} index={index}/>
-                                })
-                            }
-                        </div>
-                    </div>
 
                     
                     <Spring>
@@ -439,6 +404,8 @@ class Home extends React.Component {
                         </div>
                     </Spring>
 
+
+                   
 
                     <div className="verbose-container">
                         
@@ -481,6 +448,44 @@ class Home extends React.Component {
                         </div>
                     </div>
 
+                    
+                    {/* <p className="h3 darkText ta-center" style={{marginTop: 100}}>Watch what we do</p>
+                    
+                    <div className={this.state.showVideo ? 'animate-vid video-container' : 'video-container'}>
+                        <video 
+                            src="https://media.w3.org/2010/05/sintel/trailer.mp4" 
+                            muted 
+                            autoPlay 
+                            loop>
+                        </video>
+                    </div> */}
+
+                    <p className="h3 darkText ta-center" style={{marginTop: 100}}>What DSC does and how</p>
+                   
+
+                    <div className="features">
+                        {
+                            featuresInfo.map((item, index) => {
+                                return <RenderFeature color={item.color} description={item.description} index={index} title={item.title} image={item.image}/>
+                            })
+                        }
+                    </div>
+
+
+                    <div className="join-dsc-container">
+
+                        <p className="h3 darkText ta-center" style={{marginTop:50}}>How do I join DSC ?</p>
+                        <p className="t2 darkGrey ta-center" style={{marginTop:50, width: '60%'}}>DSC is open to any student, ranging from amateur developers who are just getting started, to experienced developers who want to further hone and showcase their skills</p>
+                        <div className="join-dsc-container-inner">
+                            {
+                                joinDSCInfo.map((item, index) => {
+                                    return <RenderJoinDSCCard title={item.title} description={item.description} index={index}/>
+                                })
+                            }
+                        </div>
+                    </div>
+
+                    
 
                     <div className="infographic-container">
                         
