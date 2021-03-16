@@ -47,8 +47,8 @@ class OurTeam extends React.Component {
                         
                     </div> */}
                     {/* <div> */}
-                        <p className="h6 tanText ta-left">{member.name}</p>    
-                        <p className="t2 darkGrey ta-left">{member.position}</p>
+                        <p className="h6 tanText ta-center">{member.name}</p>    
+                        <p className="t2 darkGrey ta-center">{member.position}</p>
                     {/* </div> */}
                 </div>
             )
@@ -65,7 +65,7 @@ class OurTeam extends React.Component {
                     showLogoInHeader={true}
                     passHeaderHeight={height => this.setState({headerHeight: height})}
                 />
-                <div className="team-main-container" style={{paddingTop: isMobile? 0 : this.state.headerHeight + 20}}>
+                <div className="team-main-container" style={{paddingTop: isMobile? 0 : this.state.headerHeight + 100}}>
                     <div className="left-side">
                         <p className="h3 darkText">Our Team</p>
                         <p className="t2 darkGrey">Presenting our passionate team for Developer Students Club PVGCOET 2020-2021</p>
@@ -82,17 +82,24 @@ class OurTeam extends React.Component {
                     <p className="team-title h6 tanText ta-center">Complete Team</p>
                     <BrowserView>
                         <div className="team-members-core-inner">
-                            {this.renderCompleteTeam(0,6)}
+                            {this.renderCompleteTeam(0,4)}
                         </div>
                         <div className="team-members-core-inner">
-                            {this.renderCompleteTeam(6,12)}
+                            {this.renderCompleteTeam(4,8)}
                         </div>
                         <div className="team-members-core-inner">
-                            {this.renderCompleteTeam(12,18)}
+                            {this.renderCompleteTeam(8,12)}
                         </div>
                         <div className="team-members-core-inner">
-                            {this.renderCompleteTeam(18,24)}
+                            {this.renderCompleteTeam(12,16)}
                         </div>
+                        <div className="team-members-core-inner">
+                            {this.renderCompleteTeam(16,20)}
+                        </div>
+                        <div className="team-members-core-inner">
+                            {this.renderCompleteTeam(20,24)}
+                        </div>
+                        
                     </BrowserView>
                     <MobileView>
                         <div className="team-members-core-inner-mobile">

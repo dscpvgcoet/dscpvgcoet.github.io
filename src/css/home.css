@@ -773,6 +773,7 @@ infograph:nth-child(34) {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
 }
 
 .video-container video {

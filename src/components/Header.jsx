@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { BarChart, X } from 'react-feather'
+import { AlignCenter, BarChart, Grid, Menu, X } from 'react-feather'
 import { isMobile, BrowserView, MobileView } from 'react-device-detect'
 
 import '../css/header.css'
@@ -17,6 +17,7 @@ class Header extends React.Component {
         if(this.props.passHeaderHeight) {
             this.props.passHeaderHeight(this.headerElement.clientHeight)
         }
+        // this.closeNav()
     }
 
     handleMenuButtonClick = () => {
@@ -24,10 +25,18 @@ class Header extends React.Component {
         this.setState({menuOpen: !this.state.menuOpen})
     }
 
+    // closeNav = () => {
+    //     document.querySelector(".overlay").style.height = "0%"
+    // }
+
+    // openNav = () => {
+    //     document.querySelector(".overlay").style.height = "100%"
+    // }
+
     render() {
 
         const displayValue = this.props.showLogoInHeader ? 1 : 0
-        const boxShadow = this.props.showLogoInHeader ? '4px 0 20px #0000002a' : '' 
+        const boxShadow = this.props.showLogoInHeader ? '4px 0 20px var(--lightGrey)' : '' 
         
         return (
             <>
@@ -49,16 +58,17 @@ class Header extends React.Component {
                 <BrowserView>
                     <div className="header-options">
                         <ul>
-                            <li><Link to="/" className="link">Home</Link></li>
-                            {/* <li><Link to="/blogs" className="link">Blogs</Link></li> */}
+                            {/* <li><Link to="/" className="link">Home</Link></li> */}
                             <li><Link to="/team" className="link">Team</Link></li>
                             <li><Link to="/events" className="link">Events</Link></li>
-                            <li><Link to="/" className="link">Projects</Link></li>
                             <li><Link to="/blogs" className="link">Blogs</Link></li>
-                            <li><Link to="/" className="link">Archives</Link></li>
+                            <li><Link to="/resources" className="link">Resources</Link></li>
+                            <li><Link to="/archives" className="link">Archives</Link></li>
                             <li><Link to="/contact" className="link">Contact</Link></li>
                         </ul>
                     </div>
+                    {/* <Menu onClick={this.openNav} className="white" style={{cursor: 'pointer'}}/> */}
+                    
                 </BrowserView>
             </div>
             <MobileView>
@@ -73,6 +83,23 @@ class Header extends React.Component {
                     </div>
                 </div>
             </MobileView>
+            {/* <div class="overlay">
+
+                <a href="javascript:void(0)" class="closebtn" onClick={this.closeNav}><X className="white" size={24} style={{cursor: 'pointer', zIndex:9999}}/></a>
+
+                <div class="overlay-content">
+                    <ul>
+                            <li><Link to="/" className="link">Home</Link></li>
+                            <li><Link to="/team" className="link">Team</Link></li>
+                            <li><Link to="/events" className="link">Events</Link></li>
+                            <li><Link to="/" className="link">Projects</Link></li>
+                            <li><Link to="/blogs" className="link">Blogs</Link></li>
+                            <li><Link to="/" className="link">Archives</Link></li>
+                            <li><Link to="/contact" className="link">Contact</Link></li>
+                    </ul>
+                </div>
+
+            </div> */}
             </>
         )
     }

@@ -181,7 +181,7 @@ class EventsTimeline extends React.Component {
                     </div>
                     
                 </div>
-            {/* <Footer/> */}
+            <Footer/>
             </Fragment>
         )
     }

@@ -11,7 +11,7 @@ const themeColors = {
         ultraLightGrey: '#eeeeee',
     },
     dark : {
-        background : '#1a1a1a',
+        background : '#141718',
         darkText : '#FFFFFF',
         tanText : '#EEEEEE',
         darkGrey: '#878787',

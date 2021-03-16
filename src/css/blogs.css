@@ -1,5 +1,15 @@
 @import url('./globalStyles.css');
 
+
+.blogs-main-container {
+	width: 100%;
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--background);
+}
+
 .blog-list {
 	padding-top: 120px;
 	text-align: center;
@@ -32,6 +42,69 @@
 	font-size: var(--heading6);
 	font-weight: bold;
 }
+
+.filter-option {
+	padding: 4px 16px;
+	border-radius:20px;
+	height:40px;
+	background-color:var(--lightGrey);
+	margin: 10px;
+	display: inline-block;
+	justify-items:center;
+	align-content: center;
+	cursor: pointer;
+}
+
+
+.filter-container {
+	width:600px;
+	display:inline-block;
+	margin: 30px auto;
+	align-items:center;
+	justify-content:center;
+	text-align: center;
+}
+
+.blog-list {
+	width:100%;
+	padding:30px 15%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 40px;
+	background-color:transparent;
+}
+
+.blog-card {
+	width: 100%;
+	border-radius:5px;
+	height:350px;
+	background-color:var(--lightGrey);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	cursor: pointer;
+}
+
+.blog-card .t1, .blog-card .t3 {
+	margin: 0px 15px;
+	margin-bottom: 5px;
+}
+
+.author {
+	display: flex;
+	flex-direction: row;
+	align-items:center;
+	margin: 5px 15px;
+	margin-bottom: 15px;
+}
+
+.author img {
+	width:30px;
+	height:30px;
+	border-radius:40px;
+	margin-right: 10px;
+}
+
 
 @media only screen and (max-width: 600px) {
 	.blog-list {
