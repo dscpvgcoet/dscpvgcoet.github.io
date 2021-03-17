@@ -11,6 +11,8 @@ import mail from "../assets/images/icons/mail.png";
 import phone from "../assets/images/icons/phone.png";
 import location from "../assets/images/icons/pin.png";
 import DSCdarkLogo from "../assets/images/DSC PVGCOET Dark Vertical-Logo.png";
+import { Fragment } from "react";
+import { Mail, Map, Phone } from "react-feather";
 
 const socialMediaInfo = [
   {
@@ -51,36 +53,39 @@ class Footer extends React.Component {
 
   render() {
     return (
+
+      <Fragment>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220"><path fill="#2970E6" fill-opacity="1" d="M0,64L60,69.3C120,75,240,85,360,106.7C480,128,600,160,720,165.3C840,171,960,149,1080,128C1200,107,1320,85,1380,74.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+      
       <div className="footer-main">
+        
         <div className="two-sections">
           <div className="two-sections-text">
-            <p className="h3 darkText">Get inside the hustle.</p>
-            <p className="h3">Join the community.</p>
+            <p className="h4 darkText">Get inside the hustle.</p>
+            <p className="h4" style={{color: '#1a1a1a'}}>Join the community.</p>
           </div>
           <div className="social-media-icons">
             {this.renderSocialMediaIcons()}
           </div>
         </div>
-        <div className="h-separator"></div>
-        {/* <div className="footer-text">
-                <h2>We are based in Delhi, India</h2>
-                <p>We work with clients all over the world. Get in touch with us</p>
-            </div> */}
+        
+        {/* <div className="h-separator"></div> */}
+       
 
         <div className="three-sections">
-          <div className="section footer-logo-box">
+          {/* <div className="section footer-logo-box">
             <img src={DSCdarkLogo} alt="DSC-dark-Logo" />
           </div>
-          {/* <div className="separator"></div> */}
-          <div className="section explore-links">
-            <h3>Explore</h3>
+           */}
+          
+          
+          
+          {/* <div className="section explore-links">
+            
+            
+            
             <ul>
-              <li>
-                <Link to="/" className="link">
-                  Home
-                </Link>
-              </li>
-              {/* <li><Link to="/blogs" className="link">Blogs</Link></li> */}
+              
               <li>
                 <Link to="/team" className="link">
                   Team
@@ -107,12 +112,16 @@ class Footer extends React.Component {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
+
+         
+
+
           <div className="section section-icons">
-            <h3>Collaborate with us</h3>
+            
             <span>
-              <img src={mail} />
-              <p style={{ textAlign: "left" }}>
+              <Mail className="white" size={20}/>
+              <p style={{ textAlign: "left" , marginLeft: 20}} className="t2 white">
                 <a
                   className="footer-link"
                   href="mailto:dscpvgcoet@pvgcoet.ac.in"
@@ -122,13 +131,15 @@ class Footer extends React.Component {
                 </a>
               </p>
             </span>
+
             <span>
-              <img src={phone} />
-              <p style={{ textAlign: "left" }}>+91 90213 93816</p>
+              <Phone className="white" size={20}/>
+              <p style={{ textAlign: "left" , marginLeft: 20}} className="t2 white">+91 90213 93816</p>
             </span>
+
             <span>
-              <img src={location} />
-              <p style={{ textAlign: "left" }}>
+              <Map className="white" size={20}/>
+              <p style={{ textAlign: "left" , marginLeft: 20}} className="t2 white">
                 <a
                   className="footer-link"
                   href="https://goo.gl/maps/8ExcK48y1z6F4ykG6"
@@ -138,10 +149,36 @@ class Footer extends React.Component {
                 </a>
               </p>
             </span>
+
           </div>
+
+          <div className="newsletter-section">
+
+          <p className="t2 white ta-right">Get notified with latest news by subscribing  <br/> to the monthly <span style={{color:'#1a1a1a', fontWeight: 800}}> DSC PVGCOET Newsletter </span></p>
+          <div className="newsletter-container">
+              <input
+                type="text"
+                placeholder="johndoe@email.com"
+              />
+              <div className="secondary-button" style={{margin:'0px 0px 0 20px', height: 45}}>
+                <p className="t2 white ta-center">Subscribe</p>
+              </div>
+          </div>
+          </div>
+
+
+
         </div>
+
+        {/* <p className="t2 white ta-center">Designed by Yatish Kelkar</p>
+        <p className="t2 white ta-center">Developed by Yatish Kelkar and Rohit Dalvi</p> */}
+
       </div>
-    );
+
+    
+
+      </Fragment>
+    )
   }
 }
 

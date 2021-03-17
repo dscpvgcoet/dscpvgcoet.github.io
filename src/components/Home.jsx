@@ -307,6 +307,9 @@ class Home extends React.Component {
             
             
             <div className="main-container">
+
+                
+
                 
                 
                 <Header 
@@ -316,7 +319,7 @@ class Home extends React.Component {
                 
                 
                 <div className="home-main-content">
-                    <div className="home-main-content-inner" style={{paddingTop: this.state.headerHeight}}>
+                    <div className="home-main-content-inner">
                         <div className="home-main-content-text">
                             
                             <div className="home-main-content-logo-box">
@@ -587,14 +590,6 @@ class Home extends React.Component {
                 <p className="t1 darkGrey ta-center" style={{marginTop: 20}}>Join DSC PVGCOET today to be a part of this! &#128512;</p>
 
                 
-                
-                
-                <Footer/>
-
-                
-                
-                
-                {/* SVG Gradients */}
                 <svg width="0" height="0">
                     <linearGradient id="gradient-1" x1="100%" y1="100%" x2="0%" y2="0%">
                         <stop stopColor="#4111A1" offset="0%" />
@@ -609,7 +604,14 @@ class Home extends React.Component {
                         <stop stopColor="#0C9218" offset="100%" />
                     </linearGradient>
                 </svg>
+                
+                <Footer/>
 
+                
+                
+                
+                {/* SVG Gradients */}
+                
 
 
 

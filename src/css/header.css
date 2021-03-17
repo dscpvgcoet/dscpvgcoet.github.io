@@ -13,6 +13,7 @@
     position: fixed;
     z-index: 999999999;
     transition: 0.3s ease-in-out;
+    top: 0;
 }
 
 .header-options ul {
@@ -124,12 +125,16 @@
     z-index: 9999;
 }
 
+.mobile-menu {
+    transition: 0.3s ease-out;
+}
+
 @media only screen and (max-width: 600px) {
     .header-logo {
         width: auto;
     }
     .header-logo img {
-        width: 60vw;
+        width: 15vw;
     }
     .rotate {
         transform: rotate(-90deg);
@@ -142,11 +147,23 @@
         display: flex;
         flex-direction: column;
         transition: height 0.3s ease;
+        height:auto;
+    }
+    .header-options {
+        height: 100%;
     }
     .header-options ul {
         flex-direction: column;
-        align-items: flex-end;
-        justify-content: flex-start;
+        align-items: center;
+        justify-content: center;
         padding-left: 0;
+        margin: auto 0;
+    }
+    .header-options ul li {
+        font-size: 25px;
+        text-align: center;
+    }
+    .header-options ul li a {
+        text-align: center;
     }
 }

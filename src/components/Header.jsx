@@ -72,12 +72,15 @@ class Header extends React.Component {
                 </BrowserView>
             </div>
             <MobileView>
-                <div className="mobile-menu" style={{visibility: this.state.menuOpen ? '' : 'hidden', paddingTop: 70, height: this.state.menuOpen ? 150 : 0, overflow:'hidden'}}>
+                <div className="mobile-menu" style={{visibility: this.state.menuOpen ? '' : 'hidden', paddingTop: 70, height: this.state.menuOpen ? 'auto' : 0, overflow:'hidden'}}>
                     <div className="header-options">
                         <ul>
-                            <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/" className="link">Home</Link></li>
-                            {/* <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/blogs" className="link">Blogs</Link></li> */}
+                            
+                            <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/blogs" className="link">Blogs</Link></li>
                             <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/team" className="link">Team</Link></li>
+                            <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/events" className="link">Events</Link></li>
+                            <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/resources" className="link">Resources</Link></li>
+                            <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/archives" className="link">Archives</Link></li>
                             <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/" className="link">Contact</Link></li> 
                         </ul>
                     </div>
