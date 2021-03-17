@@ -2,6 +2,7 @@ import React from "react";
 
 import Header from "./Header";
 import Footer from "./Footer";
+import Input from "./Input";
 import "../css/globalStyles.css";
 import "../css/contact.css";
 
@@ -11,8 +12,16 @@ class Contact extends React.Component {
 
     this.state = {
       headerHeight: 0,
+      valueAttr: "",
     };
   }
+
+  handleChange = (e) => {
+    this.setState({ valueAttr: e.target.value });
+  };
+  handleClick = () => {
+    this.setState({ valueAttr: "" });
+  };
 
   componentDidMount() {
     window.scroll({ top: 0, left: 0, behavior: "smooth" });
@@ -50,27 +59,25 @@ class Contact extends React.Component {
                   </div>
                 </div>
                 <div className="screen-body-item">
-                  <div className="app-form-group">
-                    <input className="app-form-control" placeholder="NAME" />
-                  </div>
-                  <div className="app-form-group">
-                    <input className="app-form-control" placeholder="EMAIL" />
-                  </div>
-                  <div className="app-form-group">
-                    <input
-                      className="app-form-control"
-                      placeholder="CONTACT NO"
-                    />
-                  </div>
+                  <Input placeholder="NAME" />
+                  <Input placeholder="EMAIL" />
+                  <Input placeholder="CONTACT NO" />
                   <div className="app-form-group message">
                     <textarea
+                      value={this.state.valueAttr}
+                      onChange={this.handleChange}
                       className="app-form-control"
                       rows="6"
                       placeholder="MESSAGE"
                     ></textarea>
                   </div>
                   <div class="app-form-group buttons">
-                    <button className="app-form-button">CANCEL</button>
+                    <button
+                      onClick={this.handleClick}
+                      className="app-form-button"
+                    >
+                      CANCEL
+                    </button>
                     <button className="app-form-button">SEND</button>
                   </div>
                 </div>
