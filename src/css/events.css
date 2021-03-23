@@ -273,3 +273,49 @@
     text-align: justify;
     line-height: 150%;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+    .mobile-timeline-container {
+        width: 100%;
+        padding: 20px 20px;
+        /* background-color: red; */
+        position: relative;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+
+    .events-card-mobile {
+        width: calc(100% - 60px);
+        min-height: 120px;
+        border-radius: 5px;
+        margin-bottom: 60px;
+        margin-left: 50px;
+        position: relative;
+    }
+    .circle-mobile {
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+        background-color:var(--grey);
+        left: -38px;
+        z-index: 100 !important;
+        position: absolute;
+        top: 20px;
+    }
+    
+    .mobile-timeline {
+        position: absolute;
+        top: 0;left: 0;
+        width: 7px;
+        height: 100%;
+        background-color: var(--grey);
+        border-radius: 5px;
+        margin-left: 40px;
+        z-index: 99;
+    }
+}

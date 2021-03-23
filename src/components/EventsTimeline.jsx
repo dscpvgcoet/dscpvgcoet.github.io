@@ -91,6 +91,33 @@ const EventsCard = ({eventLoc, pageNumber, title, description, index}) => {
     )
 }
 
+const EventsCardMobile = ({eventLoc, pageNumber, title, description, index}) => {
+
+    
+
+    return (
+        <Link to={`/event/${index}`}>
+            <div 
+                className={`events-card-mobile`}
+            >
+            
+                <div className="circle-mobile"></div>
+
+                <div className="t3 darkGrey event-date" style={{textTransform:'uppercase', marginBottom: 10}}>26 dec 2020</div>
+
+                <p className="h6 tanText ta-left" style={{marginBottom: 10, letterSpacing: 1.5}}>{title}</p>
+                <p className="t2 darkGrey ta-left">{description}</p>
+                <p className="t2 ta-left" style={{color: 'var(--googleBlue)'}}>read more</p>
+                
+                {/* <div className="circle" style={{display:eventLocActual%2 ? 'flex' : 'none'}}></div> */}
+                
+                
+            
+            </div>
+        </Link>
+    )
+}
+
 class EventsTimeline extends React.Component {
 
     constructor(props) {
@@ -129,7 +156,7 @@ class EventsTimeline extends React.Component {
                 
                 <div className="events-hero">
                     
-                    <div className="home-main-content-inner" style={{paddingTop:40}}>
+                    <div className="home-main-content-inner" style={{paddingTop:isMobile ? 10 : 40}}>
                         <div className="home-main-content-text">
                             
                             <div className="home-main-content-logo-box">
@@ -140,18 +167,19 @@ class EventsTimeline extends React.Component {
                             <p className="h4 darkText ta-center">At DSC PVGCOET, events <br/> are kind of a big deal</p>
                             
 
-                            <p className="t1 ta-center" style={{marginTop: '10vh'}}>Check out the events timeline below to keep yourself updated with various programmes we conduct</p>
+                            <p className="t1 ta-center" style={{marginTop: isMobile ? 20 : '10vh'}}>Check out the events timeline below to keep yourself updated with various programmes we conduct</p>
                             
                         </div>
                         
                         <div className="home-main-content-image">
-                            <img src={eventhero} style={{width:'55%', margin:'auto', marginTop:'10%'}}/>
+                            <img src={eventhero} style={{width: isMobile ? '80%' : '55%', margin:'auto', marginTop:'10%'}}/>
                             
                         </div>
                     
                     </div>
                 </div>
                 
+                <BrowserView>
                 <div className="eventstimeline-main-container" style={{paddingTop: isMobile? 0 : this.state.headerHeight + 0}}>
                     
                     <p className="t0 darkText ta-center" style={{height: 50, letterSpacing:2, margin:0, fontSize:25}}>Events Timeline</p>
@@ -181,6 +209,27 @@ class EventsTimeline extends React.Component {
                     </div>
                     
                 </div>
+                </BrowserView>
+
+                <MobileView>
+                
+                    <p className="t2 darkText ta-center" style={{height: 50, letterSpacing:2, margin:0, fontSize:20, marginTop: 50}}>Events Timeline</p>
+                
+                    <p className="t3 darkGrey" style={{margin:'20px 0px 10px 40px'}}>TODAY</p>
+                    <div className="mobile-timeline-container">
+     
+                        {
+                                eventsListInfo.map((item, index) => {
+                                    return <EventsCardMobile eventLoc={index+1} pageNumber={this.state.pageNumber} title={item.title} description={item.description} index={index}/>
+                                })
+                        }
+
+                        <div className="mobile-timeline"></div>
+
+                    </div>
+                
+                </MobileView>
+
             <Footer/>
             </Fragment>
         )

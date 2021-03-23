@@ -30,6 +30,7 @@ import r2 from '../assets/images/r2.svg'
 import r3 from '../assets/images/r3.svg'
 import r4 from '../assets/images/r4.svg' 
 import jig from '../assets/images/jig.svg'
+import jigmobile from '../assets/images/jigmobile.svg'
 import dscjig from '../assets/images/dsc_jig.svg'
 import { Spring } from '../helpers'
 
@@ -212,7 +213,7 @@ const RenderEventHomepage = ({title, description="", index, image, text}) => {
                 {/* <p className="h0 tanText" style={{opacity:0.2}}>0{index+1}</p> */}
                 <p className="h5 ultraLightGrey ta-center" style={{marginTop: 20}}>{title}</p>
                 <p className="t2 lightGrey ta-center" style={{marginTop: 20}}>{description}</p>
-                <p className="t1 white ta-center" style={{marginTop: 20}}>{text}</p>
+                <p className="t2 white ta-center" style={{marginTop: 20}}>{text}</p>
             </div>
         </div>
     )
@@ -330,7 +331,7 @@ class Home extends React.Component {
                             <p className="h2 ta-center">A developers community by students, for students</p>
                             
 
-                            <p className="t1 ta-center" style={{marginTop: '10vh'}}>We at DSC PVGCOET hope to empower young developers discover </p>
+                            <p className="t1 ta-center" style={{marginTop: isMobile ? '30px' : '10vh'}}>We at DSC PVGCOET hope to empower young developers discover </p>
                                 
                             <p className="t1 ta-center">
                                 <span>their talents and help them</span>
@@ -350,8 +351,8 @@ class Home extends React.Component {
                         
                         <div className="home-main-content-image">
                             {/* <img src={homeMainImage}/> */}
-                            <img src={jig} style={{width:'70%', marginTop:100}}/>
-                            <img src={dscjig} style={{width:210, position:'absolute', margin:'auto', paddingLeft:80, animation:'float2 10s ease infinite'}}/>
+                            <img src={ isMobile ? jigmobile : jig} style={{width:isMobile ? '90%' : '70%', marginTop: isMobile ? 30 : 100, marginBottom: 0}}/>
+                            <img src={dscjig} style={{width: isMobile ? 110 : 210, position:'absolute', margin:'auto', paddingLeft: isMobile ? 0 : 80, animation:'float2 10s ease infinite'}}/>
                         </div>
                     
                     </div>
@@ -375,7 +376,7 @@ class Home extends React.Component {
                 <div className="about-us-container">
                     
                     
-                    <p className="h3 darkText ta-center">Opportunities DSC provides</p>
+                    <p className="h3 darkText ta-center" style={{width: isMobile ? '80%' : 'auto'}}>Opportunities DSC provides</p>
                     
                     <div className="grid-opportunities">
                         {
@@ -478,7 +479,7 @@ class Home extends React.Component {
                     <div className="join-dsc-container">
 
                         <p className="h3 darkText ta-center" style={{marginTop:50}}>How do I join DSC ?</p>
-                        <p className="t2 darkGrey ta-center" style={{marginTop:50, width: '60%'}}>DSC is open to any student, ranging from amateur developers who are just getting started, to experienced developers who want to further hone and showcase their skills</p>
+                        <p className="t2 darkGrey ta-center" style={{marginTop:50, width: isMobile ? '100%' : '60%'}}>DSC is open to any student, ranging from amateur developers who are just getting started, to experienced developers who want to further hone and showcase their skills</p>
                         <div className="join-dsc-container-inner">
                             {
                                 joinDSCInfo.map((item, index) => {
@@ -587,7 +588,7 @@ class Home extends React.Component {
                 
                 
                 <p className="h2 tanText ta-center" style={{marginTop:160}}>Collaboration is a l<span style={{color:'#5018D8'}}><span style={{letterSpacing:-8}}>o</span>o</span>p, <br/> not a cycle.</p>
-                <p className="t1 darkGrey ta-center" style={{marginTop: 20}}>Join DSC PVGCOET today to be a part of this! &#128512;</p>
+                <p className="t1 darkGrey ta-center join-line" style={{marginTop: 20}}>Join DSC PVGCOET today to be a part of this! &#128512;</p>
 
                 
                 <svg width="0" height="0">

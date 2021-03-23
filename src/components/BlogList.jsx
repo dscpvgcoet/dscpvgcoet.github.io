@@ -8,6 +8,7 @@ import eventhero from '../assets/images/events-hero.svg'
 
 import '../css/blogs.css'
 import { Link } from 'react-router-dom'
+import { isMobile } from 'react-device-detect'
 
 
 const blogs = [
@@ -134,12 +135,12 @@ class BlogList extends React.Component {
                             <div className="home-main-content-text">
                                 
                                 <p className="h4 darkText ta-center">Blogs from DSC PVGCOET team</p>
-                                <p className="t1 ta-center" style={{marginTop: '10vh'}}>Curated blogs, articles and tutorials <br/> written by DSC members</p>
+                                <p className="t1 ta-center" style={{marginTop: isMobile ? '20px' : '10vh'}}>Curated blogs, articles and tutorials <br/> written by DSC members</p>
                                 
                             </div>
                             
                             <div className="home-main-content-image">
-                                <img src={eventhero} style={{width:'55%', margin:'auto', marginTop:'10%'}}/>
+                                <img src={eventhero} style={{width: isMobile ? '90%' : '55%', margin:'auto', marginTop:'10%'}}/>
                                 
                             </div>
                         
@@ -148,7 +149,7 @@ class BlogList extends React.Component {
                 
                 <div className='blogs-main-container'>
 
-                    <p className="t0 darkText ta-center" style={{height: 50, letterSpacing:2, margin:0, fontSize:25}}>Read the blogs you're interested in</p>
+                    <p className="t0 darkText ta-center" style={{height: 50, letterSpacing:2, margin:0, fontSize: isMobile ? 17: 25, width : isMobile ? '70%' : 'auto'}}>Read the blogs you're interested in</p>
 
                     <div className="filter-container">
                         {

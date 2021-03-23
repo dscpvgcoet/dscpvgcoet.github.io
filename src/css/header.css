@@ -130,11 +130,14 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .header-main-container {
+        padding: 20px;
+    }
     .header-logo {
         width: auto;
     }
     .header-logo img {
-        width: 15vw;
+        width: 12vw;
     }
     .rotate {
         transform: rotate(-90deg);
@@ -146,21 +149,25 @@
         background-color: transparent;
         display: flex;
         flex-direction: column;
-        transition: height 0.3s ease;
-        height:auto;
+        transition: 0.3s ease;
+        height:100vh;
     }
     .header-options {
         height: 100%;
+        background-color: var(--background);
     }
     .header-options ul {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding-left: 0;
+        height: 100%;
+        padding: 50% 0;
         margin: auto 0;
     }
     .header-options ul li {
-        font-size: 25px;
+        font-size: 20px;
+        margin-left: 0;
         text-align: center;
     }
     .header-options ul li a {

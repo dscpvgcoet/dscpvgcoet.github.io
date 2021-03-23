@@ -36,22 +36,22 @@ class Header extends React.Component {
     render() {
 
         const displayValue = this.props.showLogoInHeader ? 1 : 0
-        const boxShadow = this.props.showLogoInHeader ? '4px 0 20px var(--lightGrey)' : '' 
+        const boxShadow = this.props.showLogoInHeader &&  !this.state.menuOpen ? '4px 0 20px var(--lightGrey)' : '' 
         
         return (
             <>
             <div className="header-main-container" ref={headerElement => this.headerElement = headerElement} style={{boxShadow: boxShadow,}}>
                 <div className="header-logo">
                     <Link to="/">
-                    <img src={horizontalLogo} style={{opacity: displayValue }}/> 
+                        <img src={horizontalLogo} style={{opacity: displayValue }}/> 
                     </Link>
                 </div>
                 <div onClick={this.handleMenuButtonClick}>
                     <MobileView>
                         {
                             this.state.menuOpen 
-                            ? <X size={30} color="#434343" className="rotate"/>
-                            : <BarChart size={30} color="#434343" className="rotate"/>  
+                            ? <X size={30} color="#ababab" className="rotate"/>
+                            : <BarChart size={30} color="#ababab" className="rotate"/>  
                         }
                     </MobileView>
                 </div>
@@ -72,16 +72,16 @@ class Header extends React.Component {
                 </BrowserView>
             </div>
             <MobileView>
-                <div className="mobile-menu" style={{visibility: this.state.menuOpen ? '' : 'hidden', paddingTop: 70, height: this.state.menuOpen ? 'auto' : 0, overflow:'hidden'}}>
+                <div className="mobile-menu" style={{visibility: this.state.menuOpen ? '' : 'hidden', paddingTop: 70, height: this.state.menuOpen ? '100vh' : 0, overflow:'hidden'}}>
                     <div className="header-options">
                         <ul>
-                            
+                            <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/" className="link">Home</Link></li>
                             <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/blogs" className="link">Blogs</Link></li>
                             <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/team" className="link">Team</Link></li>
                             <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/events" className="link">Events</Link></li>
                             <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/resources" className="link">Resources</Link></li>
                             <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/archives" className="link">Archives</Link></li>
-                            <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/" className="link">Contact</Link></li> 
+                            <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/contact" className="link">Contact</Link></li> 
                         </ul>
                     </div>
                 </div>
