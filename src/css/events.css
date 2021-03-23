@@ -1,0 +1,321 @@
+@import './globalStyles.css';
+
+.eventstimeline-main-container {
+    height: 100vh;
+    background-color: var(--background);
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 50px; */
+}
+
+.timeline-container-outer {
+    width: 100%;
+    flex-grow: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-container {
+    width: 200%;
+    flex-grow: 1;
+    background-color: transparent;
+    padding: 20px 0;
+    position: relative;
+    transition: 0.5s ease-out;
+    z-index:101;
+}
+
+.timeline {
+    min-width: calc(90vw);
+    height: 10px;
+    background-color: var(--grey);
+    border-radius: 10px;
+    position: absolute;
+    margin: auto 5vw;
+    top: 50%;
+    z-index: 99;
+    /* margin-top: 50px; */
+    /* transform: translateY(calc(-50% - 0px)); */
+    top: 50%;
+    transform: translateY(calc(-50% + 75px));
+}
+
+.circle {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: var(--grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-out;
+    z-index: 100;
+}
+
+
+.circle:hover , .circle *:hover {
+    cursor: pointer;
+    filter: brightness(1.4);
+    transition: 0.3s ease-out;
+}
+
+.today {
+    position: absolute;
+    left: 5vw;
+    top: 50%;
+    transform: translateX(-50%) translateY(-40px);
+}
+
+.timeline-now {
+    position: absolute;
+    left: 5vw;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%); 
+    border: 5px solid var(--googleGreen); 
+}
+
+.timeline-now-inner {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--googleGreen);
+}
+
+.next-button, .prev-button {
+    position: absolute;
+    right: 5vw;
+    top: 50%;
+    transform: translateY(calc(-50% + 70px)) translateX(50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--grey);
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 15px var(--lightGrey);
+    cursor: pointer;
+    transition: 0.2s ease-out;
+    z-index: 102;
+}
+
+.next-button:hover {
+    transform: scale(1.1) translateY(calc(-50% + 65px)) translateX(50%);
+    transition: 0.3s ease-out;
+}
+
+.prev-button {
+    left: 5vw;
+    transform: translateY(calc(-50% + 70px)) translateX(-50%);
+}
+
+.prev-button:hover {
+    transform: scale(1.1) translateY(calc(-50% + 65px)) translateX(-50%);
+    transition: 0.3s ease-out;
+}
+
+
+.events-card {
+    position: absolute;
+    width: 20vw;
+    height: 45%;
+    background-color: transparent;
+    top: 50%;
+    transform: translateY(-100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    transition: opacity 0.4s ease-out;
+}
+
+.events-card .circle {
+    transform: translateY(calc(50% + 20px));
+}
+
+.ev-1 {
+    justify-content: flex-end;
+    left: 10vw;
+}
+
+.ev-2 {
+    justify-content: flex-start;
+    left: 30vw;
+    transform: translateY(0%);
+}
+
+.ev-3 {
+    justify-content: flex-end;
+    left: 50vw;
+}
+
+.ev-4 {
+    justify-content: flex-start;
+    left: 70vw;
+    transform: translateY(0%);
+}
+
+.ev-1 .event-date, .ev-3 .event-date {
+    bottom: -40px;
+    text-transform: uppercase;
+    position: absolute;
+}
+
+.ev-2 .event-date, .ev-4 .event-date {
+    top: -40px;
+    text-transform: uppercase;
+    position: absolute;
+}
+
+.ev-2 .circle, .ev-4 .circle {
+    transform: translateY(calc(-50% - 20px));
+}
+
+.events-hero {
+    width: 100%;
+    padding: 50px 0;
+    padding-bottom: 0;
+    background-color: var(--background);
+}
+.curved-ul {
+    /* content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 7px;
+    width: 90%;
+    border: solid 2px #cb1829;
+    border-color: #cb1829 transparent transparent transparent;
+    border-radius: 50%; */
+    /* content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    transform: translateY(20px);
+    height: 5px;
+    border-radius: 10px;
+    background-color: red; */
+    padding: 8px 16px;
+    
+    border-bottom: 5px solid green;
+}
+
+.event-details-container {
+    width: 100%;
+    background-color: var(--background);
+    padding: 50px 10%;
+}
+
+/* .top-headings {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+} */
+
+.go-back a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: 0.3s ease-out;
+    width:max-content;
+    will-change: transform;
+}
+
+.go-back a:hover  {
+    transform: translateX(-10px);
+    transition: 0.3s ease-out;
+}
+
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.registration-box {
+    position: sticky;
+    top: 120px;
+    margin: 20px 0;
+    float: right;
+    width: 30%;
+    height: 450px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--googleBlue);
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-media {
+    margin: 20px 0;
+    width: calc(70% - 20px);
+    height: 450px;
+    margin-right: 20px;
+    background-color: black;
+    border-radius: 5px;
+    float: left;
+}
+
+.event-content {
+    padding-top: 490px;
+    padding-right: calc(30% + 20px);
+}
+
+.event-content p {
+    text-align: justify;
+    line-height: 150%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .mobile-timeline-container {
+        width: 100%;
+        padding: 20px 20px;
+        /* background-color: red; */
+        position: relative;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+
+    .events-card-mobile {
+        width: calc(100% - 60px);
+        min-height: 120px;
+        border-radius: 5px;
+        margin-bottom: 60px;
+        margin-left: 50px;
+        position: relative;
+    }
+    .circle-mobile {
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+        background-color:var(--grey);
+        left: -38px;
+        z-index: 100 !important;
+        position: absolute;
+        top: 20px;
+    }
+    
+    .mobile-timeline {
+        position: absolute;
+        top: 0;left: 0;
+        width: 7px;
+        height: 100%;
+        background-color: var(--grey);
+        border-radius: 5px;
+        margin-left: 40px;
+        z-index: 99;
+    }
+}

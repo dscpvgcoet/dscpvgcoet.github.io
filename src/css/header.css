@@ -2,8 +2,8 @@
 
 .header-main-container {
     width: 100%;
-    min-height: 60px;
-    background-color: #ffffff;
+    min-height: 80px;
+    background-color: var(--background);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -11,8 +11,9 @@
     padding: 0 10%;
     justify-content: space-between;
     position: fixed;
-    z-index: 100;
+    z-index: 999999999;
     transition: 0.3s ease-in-out;
+    top: 0;
 }
 
 .header-options ul {
@@ -24,13 +25,14 @@
 
 .header-options ul li  {
     list-style-type: none;
-    margin: auto 20px;
+    margin: auto 0px auto 30px;
     padding: 5px 10px;
     background-color: transparent;
     border-radius: 50px;
-    font-family: var(--mediumHeadingFontFamily);
-    font-size: var(--heading6);
-    font-weight: var(--regular);
+    font-family: Averta;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing:1px;
     transition: 0.2s ease-in-out;
     cursor: pointer;
     text-decoration: none;
@@ -46,21 +48,96 @@
 
 .header-logo {
     width: auto;
+    margin: auto 0;
 }
 
 .header-logo img {
-    width: 350px;
+    width: 60px;
     visibility: visible;
-    transition: visibility 0s, opacity 2.5s ease-in-out;
-    margin-top: 20px;
+    margin: auto 0;
+    transition: opacity 0.25s ease-in;
+}
+
+.menu-box {
+    width:100%;
+    height:100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: red;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed; 
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.9); 
+    overflow-x: hidden; 
+    transition: 0.5s;
+    overflow: hidden; 
+}
+  
+.overlay-content {
+    position: relative;
+    top: 0; 
+    width: 100%; 
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px; 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+  
+  /* The navigation links inside the overlay */
+.overlay ul li {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #818181;
+    display: block; 
+    transition: 0.3s; 
+    font-family: Averta;
+    overflow: hidden;
+}
+  
+  /* When you mouse over the navigation links, change their color */
+.overlay li:hover, .overlay li:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    z-index: 9999;
+}
+
+.mobile-menu {
+    transition: 0.3s ease-out;
 }
 
 @media only screen and (max-width: 600px) {
+    .header-main-container {
+        padding: 20px;
+    }
     .header-logo {
         width: auto;
     }
     .header-logo img {
-        width: 60vw;
+        width: 12vw;
     }
     .rotate {
         transform: rotate(-90deg);
@@ -72,12 +149,28 @@
         background-color: transparent;
         display: flex;
         flex-direction: column;
-        transition: height 0.3s ease;
+        transition: 0.3s ease;
+        height:100vh;
+    }
+    .header-options {
+        height: 100%;
+        background-color: var(--background);
     }
     .header-options ul {
         flex-direction: column;
-        align-items: flex-end;
-        justify-content: flex-start;
+        align-items: center;
+        justify-content: center;
         padding-left: 0;
+        height: 100%;
+        padding: 50% 0;
+        margin: auto 0;
+    }
+    .header-options ul li {
+        font-size: 20px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .header-options ul li a {
+        text-align: center;
     }
 }

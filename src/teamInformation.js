@@ -111,7 +111,7 @@ export const teamInformation  = {
             position: 'Outreach Officer',
         },
         {
-            name : 'Sagar Patil',
+            name : 'Shweta Sonawane',
             position: 'Design Specialist',
         },
         {

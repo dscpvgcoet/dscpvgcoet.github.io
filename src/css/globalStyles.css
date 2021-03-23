@@ -2,13 +2,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('/assets/fonts/AvertaDemoPE-Regular.ttf');
+
+
+@font-face {
+    font-family: 'Averta';
+    src: url('../assets/fonts/AvertaDemoPE-Regular.woff');
+}
+
+@font-face {
+    font-family: 'Wavehaus';
+    src: url('../assets/fonts/Wavehaus-128Bold.otf');
+}
+
+@font-face {
+    font-family: 'Wavehaus-Light';
+    src: url('../assets/fonts/Wavehaus-66Book.otf');
+}
 
 :root {
 
     /* Typefaces */
 
     --bigHeadingFontFamily : 'Lexend Deca', sans-serif;
-    --mediumHeadingFontFamily : 'Montserrat', sans-serif;
+    --mediumHeadingFontFamily : 'Averta', sans-serif;
     --smallHeadingFontFamily: 'Poppins', sans-serif;
 
     --darkText : #2a2b2b;
@@ -33,7 +50,9 @@
     --light: 400;
 
     /* Colors */
-    --googleBlue : #4285F4;
+
+    --background: #FFFFFF;
+    --googleBlue : #2970E6;
     --googleRed : #DB4437;
     --googleGreen : #0F9D58;
     --googleYellow : #F4B400;
@@ -42,20 +61,329 @@
 .main-container {
     margin: 0;
     padding: 0;
+    background-color: var(--background);
 }
 
 html{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
+    background-color: var(--background);
 }
 
 body{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    background-color: var(--background);
 }
 
 a {
     text-decoration: none;
+    color: unset;
+}
+a:visited {
+    color: unset;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.ta-left {
+    text-align: left;
+}
+
+.ta-right {
+    text-align: right;
+}
+
+.h0 {
+    font-family: 'Wavehaus';
+    font-size: 80px;
+    font-weight: 800;
+    letter-spacing: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+.h1 {
+    font-family: 'Wavehaus';
+    font-size: 55px;
+    font-weight: 800;
+    letter-spacing: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+.h2 {
+    font-family: 'Wavehaus';
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.h3 {
+    font-family: 'Wavehaus';
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.h4 {
+    font-family: 'Wavehaus';
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.h5 {
+    font-family: 'Wavehaus';
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin: 0;
+    padding: 0;
+}
+
+.h6 {
+    font-family: 'Wavehaus-light';
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.h7 {
+    font-family: 'Wavehaus-light';
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.t0 {
+    font-family: 'Averta';
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    margin: 5px 0;
+    padding: 0;
+}
+
+
+.t1 {
+    font-family: 'Averta';
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    margin: 5px 0;
+    padding: 0;
+    line-height: 24px;
+}
+
+.t2 {
+    font-family: 'Averta';
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.t3 {
+    font-family: 'Averta';
+    font-size: 12.5px;
+    letter-spacing: 0.8px;
+    margin: 0;
+    padding: 0;
+}
+
+.t4 {
+    font-family: 'Averta';
+    font-size: 10.5px;
+    letter-spacing: 0.8px;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes flip {
+    0% { margin-top: -270px; }
+    5% { margin-top: -180px; }
+    33% { margin-top: -180px; }
+    38% { margin-top: -90px; }
+    66% { margin-top: -90px; }
+    71% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+.darkText {
+    color: var(--darkText);
+}
+
+.tanText {
+    color: var(--tanText);
+}
+
+.darkGrey {
+    color: var(--darkGrey);
+}
+
+.grey {
+    color: var(--grey);
+}
+
+.lightGrey {
+    color: var(--lightGrey);
+}
+
+.ultraLightGrey {
+    color: var(--ultraLightGrey);
+}
+
+.secondary-button {
+    margin: 0 auto;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #FFFFFF33;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+.secondary-button:hover {
+    background-color: #FFF;
+    transition: 0.3s ease-out;
+}
+.secondary-button:hover * {
+    color: #2a2b2b !important;
+}
+
+
+.spring {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    transition: box-shadow 0.5s;
+    will-change: transform;
+    width: 80vw;
+    margin: 50px 10%;
+}
+
+.timer {
+    width: 100%;
+    margin: 10px 0px 20px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    place-content: center;
+}
+
+.timer .timer-box {
+    background-color: #FFFFFF34;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px 5px 10px;
+}
+
+.primary-button {
+    width: calc(100% - 40px);
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 20px;
+}
+
+
+@keyframes changecolor {
+    0% { background-color: #F4B400; }
+    /* 32.99% { background-color: #4285F4; }
+    33% { background-color: #0F9D58; }
+    65.99% { background-color: #F4B400; }
+    66% { background-color: #F4B400; } */
+    50% { background-color: #0F9D58;}
+    99.99% { background-color: #4285F4; }
+    100% { background-color: #4285F4; }
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px) translateX(-3px) rotate(1deg);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes float2 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-7px) translateX(-4px) rotate(-3deg);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes float3 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(3px) translateX(3px) rotate(1.5deg);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes float4 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px) translateX(-7px) rotate(-4deg);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .h2 {
+        font-size: 32px;
+    }
+    .h3 {
+        font-size: 30px;
+    }
+    .h4 {
+        font-size: 26px
+    }
 }
