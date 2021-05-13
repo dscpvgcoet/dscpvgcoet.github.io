@@ -34,3 +34,4 @@ This will build the current branch and push the compiled files onto the ```gh-pa
 
 ### Contributing
 - To add a new feature request, create an issue.
+- To take up any [existing issue](https://github.com/dscpvgcoet/dscpvgcoet.github.io/issues), comment your name on that issue. You can clone the repo, and create a branch with your name and issue number, eg : Ramesh#8 and submit a pull request [here](https://github.com/dscpvgcoet/dscpvgcoet.github.io/pulls)
