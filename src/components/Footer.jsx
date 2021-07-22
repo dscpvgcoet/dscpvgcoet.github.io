@@ -26,7 +26,7 @@ const socialMediaInfo = [
   },
   {
     image: linkedinLogo,
-    href: "https://www.linkedin.com/company/dscpvgcoet",
+    href: "https://www.linkedin.com/company/gdscpvgcoet",
   },
   {
     image: twitterLogo,
