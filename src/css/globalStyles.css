@@ -1,11 +1,11 @@
 /* define all global fonts, typefaces and colors here */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-@import url('/assets/fonts/AvertaDemoPE-Regular.ttf');
+@import url('/assets/fonts/AvertaDemoPE-Regular.ttf'); */
 
 
-@font-face {
+/* @font-face {
     font-family: 'Averta';
     src: url('../assets/fonts/AvertaDemoPE-Regular.woff');
 }
@@ -18,6 +18,21 @@
 @font-face {
     font-family: 'Wavehaus-Light';
     src: url('../assets/fonts/Wavehaus-66Book.otf');
+} */
+
+@font-face {
+    font-family: Google Sans Regular;
+    src: url('../assets/fonts/GoogleSansDisplay-Regular-v1.27.ttf');
+}
+
+@font-face {
+    font-family: Google Sans Medium;
+    src: url('../assets/fonts/GoogleSansDisplay-Medium-v1.27.ttf');
+}
+
+@font-face {
+    font-family: Google Sans Bold;
+    src: url('../assets/fonts/GoogleSansDisplay-Bold-v1.27.ttf');
 }
 
 :root {
@@ -70,6 +85,7 @@ html{
     scroll-behavior: smooth;
     box-sizing: border-box;
     background-color: var(--background);
+    font-family: Google Sans Regular, sans-serif;
 }
 
 body{
@@ -104,63 +120,63 @@ a:visited {
 }
 
 .h0 {
-    font-family: 'Wavehaus';
+    font-family: Google Sans Bold;
     font-size: 80px;
-    font-weight: 800;
+    /* font-weight: 800; */
     letter-spacing: 0px;
     margin: 0;
     padding: 0;
 }
 
 .h1 {
-    font-family: 'Wavehaus';
+    font-family: Google Sans Bold;
     font-size: 55px;
-    font-weight: 800;
+    /* font-weight: 800; */
     letter-spacing: 0px;
     margin: 0;
     padding: 0;
 }
 
 .h2 {
-    font-family: 'Wavehaus';
+    font-family: Google Sans Medium;
     font-size: 40px;
-    font-weight: 800;
+    /* font-weight: 800; */
     letter-spacing: 1px;
     margin: 0;
     padding: 0;
 }
 
 .h3 {
-    font-family: 'Wavehaus';
+    font-family: Google Sans Medium;
     font-size: 35px;
-    font-weight: 800;
+    /* font-weight: 800; */
     letter-spacing: 1px;
     margin: 0;
     padding: 0;
 }
 
 .h4 {
-    font-family: 'Wavehaus';
+    font-family: Google Sans Medium;
     font-size: 30px;
-    font-weight: 800;
+    /* font-weight: 800; */
     letter-spacing: 1px;
     margin: 0;
     padding: 0;
 }
 
 .h5 {
-    font-family: 'Wavehaus';
+    font-family: Google Sans Medium;
     font-size: 20px;
-    font-weight: 600;
+    /* font-weight: 600; */
     letter-spacing: 0.3px;
     margin: 0;
     padding: 0;
 }
 
 .h6 {
-    font-family: 'Wavehaus-light';
+    font-family: Google Sans Regular;
     font-size: 16px;
-    font-weight: 600;
+    /* font-weight: 600; */
     letter-spacing: 1px;
     margin: 0;
     padding: 0;
@@ -168,16 +184,16 @@ a:visited {
 
 
 .h7 {
-    font-family: 'Wavehaus-light';
+    font-family: Google Sans Regular;
     font-size: 13px;
-    font-weight: 500;
+    /* font-weight: 500; */
     letter-spacing: 1px;
     margin: 0;
     padding: 0;
 }
 
 .t0 {
-    font-family: 'Averta';
+    font-family: Google Sans Medium;
     font-size: 20px;
     letter-spacing: 0.8px;
     margin: 5px 0;
@@ -186,8 +202,8 @@ a:visited {
 
 
 .t1 {
-    font-family: 'Averta';
-    font-size: 18px;
+    font-family: Google Sans Regular;
+    font-size: 19px;
     letter-spacing: 0.8px;
     margin: 5px 0;
     padding: 0;
@@ -195,24 +211,24 @@ a:visited {
 }
 
 .t2 {
-    font-family: 'Averta';
-    font-size: 15px;
+    font-family: Google Sans Regular;
+    font-size: 16.5px;
     letter-spacing: 0.8px;
     margin: 5px 0;
     padding: 0;
 }
 
 .t3 {
-    font-family: 'Averta';
-    font-size: 12.5px;
+    font-family: Google Sans Regular;
+    font-size: 13.5px;
     letter-spacing: 0.8px;
     margin: 0;
     padding: 0;
 }
 
 .t4 {
-    font-family: 'Averta';
-    font-size: 10.5px;
+    font-family: Google Sans Regular;
+    font-size: 11.5px;
     letter-spacing: 0.8px;
     margin: 0;
     padding: 0;

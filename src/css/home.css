@@ -55,7 +55,7 @@
 }
 
 .home-main-content-text .t1 {
-    font-family: 'Wavehaus-Light';
+    /* font-family: 'Wavehaus-Light'; */
     font-size: 18px;
     color: var(--darkGrey);
     letter-spacing: 0.8px;
@@ -86,7 +86,7 @@
 }
 
 .change-word ul li {
-    font-family: 'Wavehaus-Light';
+    /* font-family: 'Wavehaus-Light'; */
     padding: 0 10px;
     height: 45px;
     margin-bottom: 45px;

@@ -351,7 +351,7 @@ class Home extends React.Component {
                         
                         <div className="home-main-content-image">
                             {/* <img src={homeMainImage}/> */}
-                            <img src={ isMobile ? jigmobile : jig} style={{width:isMobile ? '90%' : '70%', marginTop: isMobile ? 30 : 100, marginBottom: 0}}/>
+                            <img src={ isMobile ? jigmobile : jig} style={{width:isMobile ? '90%' : '70%', marginTop: isMobile ? 30 : 60, marginBottom: 0}}/>
                             <img src={dscjig} style={{width: isMobile ? 110 : 210, position:'absolute', margin:'auto', paddingLeft: isMobile ? 0 : 80, animation:'float2 10s ease infinite'}}/>
                         </div>
                     

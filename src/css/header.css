@@ -29,7 +29,7 @@
     padding: 5px 10px;
     background-color: transparent;
     border-radius: 50px;
-    font-family: Averta;
+    /* font-family: Averta; */
     font-size: 0.8rem;
     font-weight: 400;
     letter-spacing:1px;
@@ -107,7 +107,7 @@
     color: #818181;
     display: block; 
     transition: 0.3s; 
-    font-family: Averta;
+    /* font-family: Averta; */
     overflow: hidden;
 }
   
