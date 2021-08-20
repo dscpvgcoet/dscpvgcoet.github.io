@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d24b7f8de93d037794bb1aca4c5de480",
+    "revision": "faef0ac066ec29c1272fb0e74109c3c4",
     "url": "/index.html"
   },
   {
-    "revision": "6fbf9190c289a1e3197b",
-    "url": "/static/css/main.ccf47dd6.chunk.css"
+    "revision": "28090ac93e23e045601a",
+    "url": "/static/css/main.01e742ab.chunk.css"
   },
   {
     "revision": "acff60f27ec51f21797b",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.62edb476.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6fbf9190c289a1e3197b",
-    "url": "/static/js/main.f7d7f0a1.chunk.js"
+    "revision": "28090ac93e23e045601a",
+    "url": "/static/js/main.45b65dc3.chunk.js"
   },
   {
     "revision": "b915b02aa9a50b563bf9",
@@ -26,10 +26,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "697716942766488dfa3d97e49c33a3a7",
     "url": "/static/media/AMA.69771694.svg"
-  },
-  {
-    "revision": "e58665502371f7a10b87add8990ac0c0",
-    "url": "/static/media/AvertaDemoPE-Regular.e5866550.woff"
   },
   {
     "revision": "4f1ed3273e807373f812ef4492459c3c",
@@ -56,20 +52,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/DSCPVGCOETOnlyTextWhite.fe0a7bb3.svg"
   },
   {
+    "revision": "1c74364382611d0847cb409be8922169",
+    "url": "/static/media/GoogleSansDisplay-Bold-v1.27.1c743643.ttf"
+  },
+  {
+    "revision": "d4373a4426bc10a849be7f89a843a007",
+    "url": "/static/media/GoogleSansDisplay-Medium-v1.27.d4373a44.ttf"
+  },
+  {
+    "revision": "e4ea236b3ef749fa293905025b92365f",
+    "url": "/static/media/GoogleSansDisplay-Regular-v1.27.e4ea236b.ttf"
+  },
+  {
     "revision": "7a853510382e2bcba10af53c488d4d49",
     "url": "/static/media/Ideate.7a853510.svg"
   },
   {
     "revision": "ff4ab4b091f7b0cc8939e1fc370c5b3b",
     "url": "/static/media/VerboseLog.ff4ab4b0.svg"
-  },
-  {
-    "revision": "0c26b5700d1a775e6bf965374c27c143",
-    "url": "/static/media/Wavehaus-128Bold.0c26b570.otf"
-  },
-  {
-    "revision": "219b62993d9f20dbec30c640fe0cefa6",
-    "url": "/static/media/Wavehaus-66Book.219b6299.otf"
   },
   {
     "revision": "021248fa62f427c6f3c27b74378ce326",

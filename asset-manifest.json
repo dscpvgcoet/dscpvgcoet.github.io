@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.ccf47dd6.chunk.css",
-    "main.js": "/static/js/main.f7d7f0a1.chunk.js",
-    "main.js.map": "/static/js/main.f7d7f0a1.chunk.js.map",
+    "main.css": "/static/css/main.01e742ab.chunk.css",
+    "main.js": "/static/js/main.45b65dc3.chunk.js",
+    "main.js.map": "/static/js/main.45b65dc3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d2e4bddf.js",
     "runtime-main.js.map": "/static/js/runtime-main.d2e4bddf.js.map",
     "static/js/2.62edb476.chunk.js": "/static/js/2.62edb476.chunk.js",
     "static/js/2.62edb476.chunk.js.map": "/static/js/2.62edb476.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.814bbdb838252321f51e6ea33e5aff3d.js": "/precache-manifest.814bbdb838252321f51e6ea33e5aff3d.js",
+    "precache-manifest.aace9092241d8e496b5e74a3a6c9ae61.js": "/precache-manifest.aace9092241d8e496b5e74a3a6c9ae61.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.ccf47dd6.chunk.css.map": "/static/css/main.ccf47dd6.chunk.css.map",
+    "static/css/main.01e742ab.chunk.css.map": "/static/css/main.01e742ab.chunk.css.map",
     "static/js/2.62edb476.chunk.js.LICENSE.txt": "/static/js/2.62edb476.chunk.js.LICENSE.txt",
     "static/media/AMA.svg": "/static/media/AMA.69771694.svg",
-    "static/media/our-team.css": "/static/media/Wavehaus-66Book.219b6299.otf",
     "static/media/CodeBuddy.svg": "/static/media/CodeBuddy.4f1ed327.svg",
     "static/media/Collaborate.svg": "/static/media/Collaborate.8be0482d.svg",
     "static/media/Communicate2.svg": "/static/media/Communicate2.31acb7aa.svg",
     "static/media/DSC PVGCOET Dark Vertical-Logo.png": "/static/media/DSC PVGCOET Dark Vertical-Logo.24a4b32c.png",
     "static/media/DSCPVGCOETOnlyLogo.svg": "/static/media/DSCPVGCOETOnlyLogo.f4703c49.svg",
     "static/media/DSCPVGCOETOnlyTextWhite.svg": "/static/media/DSCPVGCOETOnlyTextWhite.fe0a7bb3.svg",
+    "static/media/our-team.css": "/static/media/GoogleSansDisplay-Regular-v1.27.e4ea236b.ttf",
     "static/media/Ideate.svg": "/static/media/Ideate.7a853510.svg",
     "static/media/VerboseLog.svg": "/static/media/VerboseLog.ff4ab4b0.svg",
     "static/media/book.svg": "/static/media/book.021248fa.svg",
@@ -46,7 +46,7 @@
   "entrypoints": [
     "static/js/runtime-main.d2e4bddf.js",
     "static/js/2.62edb476.chunk.js",
-    "static/css/main.ccf47dd6.chunk.css",
-    "static/js/main.f7d7f0a1.chunk.js"
+    "static/css/main.01e742ab.chunk.css",
+    "static/js/main.45b65dc3.chunk.js"
   ]
 }
