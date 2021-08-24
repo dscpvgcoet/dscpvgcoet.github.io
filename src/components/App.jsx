@@ -11,6 +11,7 @@ import Contact from './Contact'
 import EventDetails from './EventDetails'
 import Resources from './Resources'
 import Blog from './Blogs'
+import Archives from './Archive'
 
 class App extends React.Component {
 
@@ -27,6 +28,7 @@ class App extends React.Component {
                         <Route path="/event/*" exact component={EventDetails}/>
                         <Route path="/resources" exact component={Resources}/>
                         <Route path="/contact" exact component={Contact}/>
+                        <Route path="/archives" exact component={Archives}/>
                         
                     </div>
                 </Router>
