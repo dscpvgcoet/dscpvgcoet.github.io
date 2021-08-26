@@ -1,0 +1,197 @@
+{
+    "core": [
+        {
+            "timestamp": "2021-08-19T14:22:54.495Z",
+            "fullName": "Rohit Dalvi",
+            "email": "rohit.dalvi2001@gmail.com",
+            "linkedinProfile": "https://www.linkedin.com/in/rohit-dalvi/",
+            "githubLink": "https://github.com/rohitdalvi18",
+            "baseUrl": "https://docs.google.com/uc?id=",
+            "id": "1Jns1PQ4xt8FDx-dcoe7FamtVy5v-qvRY",
+            "imageUrl": "https://docs.google.com/uc?id=1Jns1PQ4xt8FDx-dcoe7FamtVy5v-qvRY",
+            "role": "GDSC Lead"
+        },
+        {
+            "timestamp": "2021-08-19T14:07:40.199Z",
+            "fullName": "Rasika Deshpande",
+            "email": "rasikadp01@gmail.com",
+            "linkedinProfile": "https://www.linkedin.com/in/rasikadeshpande2401",
+            "githubLink": "https://github.com/rasikadeshpande24",
+            "baseUrl": "https://docs.google.com/uc?id=",
+            "imageUrl": "https://docs.google.com/uc?id=1d9ph97_KsVhlF84W3DYojl-mEyeg4ICM",
+            "role": "Mgmt & Operations Head"
+        },
+        {
+            "timestamp": "2021-08-19T14:09:47.420Z",
+            "fullName": "Neha Koshti ",
+            "email": "Nehakoshti1103@gmail.com ",
+            "linkedinProfile": "https://www.linkedin.com/in/neha-koshti-9b6186201",
+            "baseUrl": "https://docs.google.com/uc?id=",
+            "id": "15kqXXPgf707AheGaZQuD97MAF68DtBL3",
+            "imageUrl": "https://docs.google.com/uc?id=15kqXXPgf707AheGaZQuD97MAF68DtBL3",
+            "role": "Design & Production Head"
+        },
+        {
+            "timestamp": "2021-08-19T14:18:46.652Z",
+            "fullName": "Tanmay Bhosale",
+            "email": "tanmaybhosale24@gmail.com",
+            "linkedinProfile": "https://www.linkedin.com/in/tanmay-bhosale/",
+            "githubLink": "https://github.com/TanmayBhosale",
+            "baseUrl": "https://docs.google.com/uc?id=",
+            "id": "1AJh_03u0UcGohu33M1GwlyrJln_NgAL_",
+            "imageUrl": "https://docs.google.com/uc?id=1AJh_03u0UcGohu33M1GwlyrJln_NgAL_",
+            "role": "Technical Head"
+        },
+        {
+            "timestamp": "2021-08-19T18:03:20.467Z",
+            "fullName": "Nisarg Kudgunti",
+            "email": "nisarg6502@gmail.com",
+            "linkedinProfile": "https://www.linkedin.com/in/nisarg-kudgunti-948024206/",
+            "githubLink": "https://github.com/Nisarg6502",
+            "personalWebsite": "https://www.quora.com/profile/Nisarg-Kudgunti",
+            "baseUrl": "https://docs.google.com/uc?id=",
+            "imageUrl": "https://docs.google.com/uc?id=1ic3ITo0pLJj6aDG5ER-QgcveFVIA5uOg",
+            "role": "Chief Editor"
+        },
+        {
+            "timestamp": "2021-08-19T16:25:36.741Z",
+            "fullName": "Adwait Bhope",
+            "email": "adwaitbhope@gmail.com",
+            "linkedinProfile": "https://www.linkedin.com/in/adwaitbhope",
+            "githubLink": "https://github.com/adwaitbhope",
+            "baseUrl": "https://docs.google.com/uc?id=",
+            "id": "1TxuPMWh_OT9G8Yikg5MuBI7ALHMr6keW",
+            "imageUrl": "https://docs.google.com/uc?id=1TxuPMWh_OT9G8Yikg5MuBI7ALHMr6keW",
+            "role": "Student Mentor"
+        },
+        {
+            "fullName": "Urmila Kalshetti",
+            "email": "",
+            "baseUrl": "https://docs.google.com/uc?id=",
+            "id": "1L1aP9EwMRs0yUfdvAEn1gKnhDSyUN5eS",
+            "imageUrl": "https://docs.google.com/uc?id=1L1aP9EwMRs0yUfdvAEn1gKnhDSyUN5eS",
+            "role": "Faculty Advisor"
+        }
+    ],
+    "complete": [
+        {
+            "timestamp": "2021-08-20T13:56:16.921Z",
+            "fullName": "Yatish Kelkar",
+            "email": "yatish1606@gmail.com",
+            "linkedinProfile": "https://www.linkedin.com/in/yatish-kelkar-850507190/",
+            "githubLink": "https://github.com/yatish1606",
+            "personalWebsite": "https://yatishkelkar.netlify.app/",
+            "baseUrl": "https://docs.google.com/uc?id=",
+            "id": "1syqLuxxfg5rTcnz_275aRbP9z8wqBd3b",
+            "imageUrl": "https://docs.google.com/uc?id=1syqLuxxfg5rTcnz_275aRbP9z8wqBd3b",
+            "role": "Web Expert"
+        },
+        {
+            "timestamp": "2021-08-19T14:10:33.103Z",
+            "fullName": "Pradnya Deshmukh",
+            "email": "pradnyad8426@gmail.com",
+            "linkedinProfile": "https://www.linkedin.com/in/pradnya-deshmukh-5a57071b3",
+            "githubLink": "https://github.com/pradnya809",
+            "baseUrl": "https://docs.google.com/uc?id=",
+            "id": "1Qi3rqw-p8dDlQhBOVwKJ9zDjK5NzneKu",
+            "imageUrl": "https://docs.google.com/uc?id=1Qi3rqw-p8dDlQhBOVwKJ9zDjK5NzneKu",
+            "role": "Flutter Expert"
+        },
+        {
+            "fullName": "Mandar Bhide",
+            "email": "mandarbhide62@gmail.com",
+            "linkedinProfile": "https://www.linkedin.com/in/mandar-bhide",
+            "githubLink": "https://github.com/mdb2301",
+            "personalWebsite": "https://mandarbhide.web.app/",
+            "baseUrl": "https://docs.google.com/uc?id=",
+            "id": "17JNRd33awNv6r9e0DvV7-GPI6s9RrB5u",
+            "imageUrl": "https://docs.google.com/uc?id=17JNRd33awNv6r9e0DvV7-GPI6s9RrB5u",
+            "role": "Android Expert"
+        },
+        {
+            "timestamp": "2021-08-19T14:07:16.089Z",
+            "fullName": "Aanchal Agarwal ",
+            "email": "aanchalpvg@gmail.com",
+            "linkedinProfile": "https://www.linkedin.com/in/aanchal-agarwal-6409b7197",
+            "baseUrl": "https://docs.google.com/uc?id=",
+            "id": "1L_0ol-0rdeh5t2pNxa4zjL8UxzvUwXTA",
+            "imageUrl": "https://docs.google.com/uc?id=1L_0ol-0rdeh5t2pNxa4zjL8UxzvUwXTA",
+            "role": "Logistics Officer"
+        }, 
+        {
+            "timestamp": "2021-08-19T14:10:30.959Z",
+            "fullName": "Pranav Patne",
+            "email": "pranavpatne491@gmail.com",
+            "linkedinProfile": "https://www.linkedin.com/in/pranav-patne-9450681a8",
+            "baseUrl": "https://docs.google.com/uc?id=",
+            "id": "1bgYJcrFWX1uRaO5Lkf1ZnZZkJmnVnYi_",
+            "imageUrl": "https://docs.google.com/uc?id=1bgYJcrFWX1uRaO5Lkf1ZnZZkJmnVnYi_",
+            "role": "Design Specialist"
+        },
+        {
+            "timestamp": "2021-08-19T14:14:26.669Z",
+            "fullName": "Chinmayee Gade ",
+            "email": "Chinmayeepgade@gmail.com ",
+            "linkedinProfile": "https://www.linkedin.com/in/chinmayee-gade-a96665212",
+            "githubLink": "https://github.com/CG-python",
+            "personalWebsite": "https://syntaxpython.blogspot.com/?m=1 and https://youtube.com/channel/UCeEqDibjr0iYngaZq8pAakQ",
+            "baseUrl": "https://docs.google.com/uc?id=",
+            "id": "1LjR55zQK3_uizFwxmUI89nVI3S56n3wq",
+            "imageUrl": "https://docs.google.com/uc?id=1LjR55zQK3_uizFwxmUI89nVI3S56n3wq",
+            "role": "Equity Facilitator"
+        },
+        {
+            "timestamp": "2021-08-19T14:45:11.528Z",
+            "fullName": "Aanchal Sarda",
+            "email": "aanchalsarda@gmail.com",
+            "linkedinProfile": "https://www.linkedin.com/in/aanchal-sarda-0987641a6",
+            "baseUrl": "https://docs.google.com/uc?id=",
+            "id": "1yvBxoAU2R83xcrdMOoJbXwpzORIelAi8",
+            "imageUrl": "https://docs.google.com/uc?id=1yvBxoAU2R83xcrdMOoJbXwpzORIelAi8",
+            "role": "Marketing Specialist"
+        },
+        {
+            "timestamp": "2021-08-19T15:03:03.134Z",
+            "fullName": "Ajinkya Sahu",
+            "email": "ajinksahu11@gmail.com",
+            "linkedinProfile": "https://www.linkedin.com/in/ajinkya-sahu",
+            "githubLink": "github.com/AjinkyaSahu",
+            "baseUrl": "https://docs.google.com/uc?id=",
+            "id": "1ccRdeeedKcD3vCzz9mt6osmcxXZ15UkR",
+            "imageUrl": "https://docs.google.com/uc?id=1ccRdeeedKcD3vCzz9mt6osmcxXZ15UkR",
+            "role": "Event Organiser"
+        },
+        {
+            "timestamp": "2021-08-23T06:25:21.011Z",
+            "fullName": "Chaitanya Nirantar",
+            "email": "chaitanyanirantar20@gmail.com",
+            "linkedinProfile": "https://www.linkedin.com/in/chaitanya-nirantar-0918841b3/",
+            "baseUrl": "https://docs.google.com/uc?id=",
+            "id": "10liEOv4d-s8tjQjAhqII2YXdATIX30J-",
+            "imageUrl": "https://docs.google.com/uc?id=10liEOv4d-s8tjQjAhqII2YXdATIX30J-",
+            "role": "Content Writer"
+        },
+        {
+            "timestamp": "2021-08-23T06:37:45.485Z",
+            "fullName": "Shambhavi Kulkarni",
+            "email": "skulkarni1435@gmail.com",
+            "linkedinProfile": "https://www.linkedin.com/in/shambhavi-kulkarni18/",
+            "baseUrl": "https://docs.google.com/uc?id=",
+            "id": "1MhfgII5dXC8qsOotsQD_Qg006dasQdCJ",
+            "imageUrl": "https://docs.google.com/uc?id=1MhfgII5dXC8qsOotsQD_Qg006dasQdCJ",
+            "role": "Outreach Officer"
+        },
+        {
+            "timestamp": "2021-08-24T17:29:17.607Z",
+            "fullName": "Shravani Paraswar",
+            "email": "shravani.paraswar@gmail.com",
+            "linkedinProfile": "https://www.linkedin.com/in/shravani-paraswar-677ab51b7/",
+            "githubLink": "https://github.com/shravaniparaswar",
+            "baseUrl": "https://docs.google.com/uc?id=",
+            "id": "153JxP-a_-iOHDvDrNgu8HnubPAylB8Jb",
+            "imageUrl": "https://docs.google.com/uc?id=153JxP-a_-iOHDvDrNgu8HnubPAylB8Jb",
+            "role": "Competitive Coding Expert"
+        }
+       
+    ]
+}

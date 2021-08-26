@@ -1,0 +1,61 @@
+@import './globalStyles.css';
+
+.year-container {
+    width: 84%;
+    padding: 0 8%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+.year-name {
+    width: 20%;
+}
+.link-cards {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.link-card {
+    flex: 1;
+    background-color: var(--lightGrey);
+    border-radius: 5px;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+.link-info {
+    flex: 1;
+}
+.open-button {
+    padding: 8px 16px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey);
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+.open-button:hover {
+    background-color: var(--darkGrey);
+    transition: 0.3s ease-out;
+}
+
+@media only screen and (max-width: 600px) {
+    .year-container {
+        flex-direction: column;
+        padding: 0;
+    }
+    .year-name {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .link-card {
+        flex-direction: column;
+        padding: 12px 20px;
+    }
+}

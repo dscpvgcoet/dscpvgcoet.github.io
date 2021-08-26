@@ -20,7 +20,7 @@
     text-align: center;
 }
 
-.left-side .t2 {
+.left-side .t1 {
     margin-top: 30px;
 }
 
@@ -39,16 +39,18 @@
 }
 
 .team-members-core-inner {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .core-member-box {
     /* display: inline-block; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 10px 20px;
     background-color:transparent;
-    width: 20%;
+    /* width: 20%; */
     padding: 5px 5px 20px 5px;
 }
 
@@ -57,16 +59,21 @@
     height: 140px;
     border-radius: 100px;
     margin: 10% auto;
-    background-color: #f6f6f6;
+    background-color: var(--lightGrey);
     overflow: hidden;
+    /* background-color: var(--googleYellow); */
 }
+/* .randomize:first-child {
+    background-color: var(--googleBlue) !important;
+} */
 
 .core-member-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: relative;
-    margin-top: 0;
+    margin-bottom: 0;
+    
 }
 
 .core-member-box h3 {
@@ -88,11 +95,35 @@
     margin: 0;
 } */
 
+.socials {
+    display: flex;
+    margin-top: 30px;
+    padding: 0 10%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.social {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--darkGrey);
+    transition: 0.3s ease-out;
+    cursor: pointer;
+    margin: 0 8px;
+}
+.social:hover {
+    background-color: var(--lightGrey);
+    transition: 0.3s ease-out;
+}
 .team-title {
-    margin-top: 50px;
+    margin-top: 60px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .complete-member-box {
@@ -134,19 +165,24 @@
 
 @media only screen and (max-width: 600px) {
     .team-main-container {
-        padding-top: 0;
+        padding-top: 100px;
     }
     .team-title {
-        margin-top: 0;
+        margin-top: 30px;
+        margin-bottom: 10px;
     }
-    .team-members-core-inner {
+    /* .team-members-core-inner {
         flex-direction: column;
         align-items: center;
+    } */
+    .team-members-core-inner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
     .core-member-box {
         width: 100%;
         padding: 0;
-        margin: 0;
+        margin: 15px 0;
     }
     .complete-member-box {
         box-sizing: border-box;
@@ -156,5 +192,8 @@
         height: 50px;
         justify-content: space-between;
         align-items: center;
+    }
+    .socials {
+        margin: 10px 0;
     }
 }

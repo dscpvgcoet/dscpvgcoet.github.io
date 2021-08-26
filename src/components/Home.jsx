@@ -151,16 +151,16 @@ const verboseLogInfo = [
 
 const FAQInfo = [
     {
-        title:'Does DSC require one to have coding skills/technical expertise?',
-        description:'Nah. DSC is composed of students who are talented in every way, including coding. Think you are good at photography or video editing? Maybe you can speak well? DSC has a place for you. Rather than your technical skills, we prefer to focus on your enthusiasm for the job!'
+        title:'Does GDSC require one to have coding skills/technical expertise?',
+        description:'Nah. GDSC is composed of students who are talented in every way, including coding. Think you are good at photography or video editing? Maybe you can speak well? DSC has a place for you. Rather than your technical skills, we prefer to focus on your enthusiasm for the job!'
     },
     {
-        title:'Is DSC related to Google?',
-        description:'In a way, but not completely. DSC is an initiative by Google, however, Google neither promotes nor controls DSC activities.'
+        title:'Is GDSC related to Google?',
+        description:'In a way, but not completely. GDSC is an initiative by Google, however, Google neither promotes nor controls DSC activities.'
     },
     {
         title:'Can I apply if I am from mechanical or electrical department?',
-        description:'Ofcourse! DSC aims to have a diversified committee which means that students from any department can apply to join!'
+        description:'Ofcourse! GDSC aims to have a diversified committee which means that students from any department can apply to join!'
     },
 ]
 
@@ -331,7 +331,7 @@ class Home extends React.Component {
                             <p className="h2 ta-center">A developers community by students, for students</p>
                             
 
-                            <p className="t1 ta-center" style={{marginTop: isMobile ? '30px' : '10vh'}}>We at DSC PVGCOET hope to empower young developers discover </p>
+                            <p className="t1 ta-center" style={{marginTop: isMobile ? '30px' : '10vh'}}>We at GDSC PVGCOET hope to empower young developers discover </p>
                                 
                             <p className="t1 ta-center">
                                 <span>their talents and help them</span>
@@ -368,15 +368,15 @@ class Home extends React.Component {
 
 
                 <div className="dsc-def-container">
-                    <p className="h5 ta-right">What is Developer Student's Club<br/> and what does it mean?</p>
-                    <p className="t2 ta-left">Developers Students Club is a group of like minded individuals with the sole aim of teaching, learning and helping our fellow students to excel. <br/><br/> Every year, DSC conducts various events and activites intended to promote an environment of ideation, help, collaboration and community.</p>
+                    <p className="h5 ta-right">What is Google Developer Student's Club<br/> and what does it mean?</p>
+                    <p className="t2 ta-left">Google Developers Students Club is a group of like minded individuals with the sole aim of teaching, learning and helping our fellow students to excel. <br/><br/> Every year, DSC conducts various events and activites intended to promote an environment of ideation, help, collaboration and community.</p>
                 </div>
 
                 
                 <div className="about-us-container">
                     
                     
-                    <p className="h3 darkText ta-center" style={{width: isMobile ? '80%' : 'auto'}}>Opportunities DSC provides</p>
+                    <p className="h3 darkText ta-center" style={{width: isMobile ? '80%' : 'auto'}}>Opportunities GDSC provides</p>
                     
                     <div className="grid-opportunities">
                         {
@@ -418,7 +418,7 @@ class Home extends React.Component {
                             <div className="verbose-heading">
                                 
                                 <p className="h1 tanText">VerboseLog</p>
-                                <p className="t2 darkGrey">A Spotify podcast by DSC PVGCOET</p>
+                                <p className="t2 darkGrey">A Spotify podcast by GDSC PVGCOET</p>
                                 <a href="https://open.spotify.com/show/2rx52wlDkwR9DlAXq83IYH?si=D8Dn8w8NTEW1X35mD7NaIw" target="_blank">
                                 
                                 <div className="spotify-button">
@@ -464,7 +464,7 @@ class Home extends React.Component {
                         </video>
                     </div> */}
 
-                    <p className="h3 darkText ta-center" style={{marginTop: 100}}>What DSC does and how</p>
+                    <p className="h3 darkText ta-center" style={{marginTop: 100}}>What GDSC does and how</p>
                    
 
                     <div className="features">
@@ -478,7 +478,7 @@ class Home extends React.Component {
 
                     <div className="join-dsc-container">
 
-                        <p className="h3 darkText ta-center" style={{marginTop:50}}>How do I join DSC ?</p>
+                        <p className="h3 darkText ta-center" style={{marginTop:50}}>How do I join GDSC ?</p>
                         <p className="t2 darkGrey ta-center" style={{marginTop:50, width: isMobile ? '100%' : '60%'}}>DSC is open to any student, ranging from amateur developers who are just getting started, to experienced developers who want to further hone and showcase their skills</p>
                         <div className="join-dsc-container-inner">
                             {
@@ -493,7 +493,7 @@ class Home extends React.Component {
 
                     <div className="infographic-container">
                         
-                        <infograph className="purple"><p className="h4" style={{color:'white'}}>Developer <br/> Students Club</p></infograph>
+                        <infograph className="purple"><p className="h4" style={{color:'white'}}>Google Developer <br/> Students Club</p></infograph>
                         <infograph className={this.state.isInfographicVisible > -100 ? "faint move-down-3":"faint"}><p className="h5 tanText">Creativity</p></infograph>
                         <infograph className="green"><img src={person1}/></infograph>
                         <infograph></infograph>
@@ -527,11 +527,11 @@ class Home extends React.Component {
                         <infograph></infograph>
                         <infograph></infograph>
                         <infograph></infograph>
-                        <infograph className={this.state.isInfographicVisible > 300 ? "green move-up-2" : "green"}><p className="h5 tanText" style={{color:'#005F44'}}><span style={{fontSize: 50}}>30</span><br/>committee members</p></infograph>
+                        <infograph className={this.state.isInfographicVisible > 300 ? "green move-up-2" : "green"}><p className="h5 tanText" style={{color:'#005F44'}}><span style={{fontSize: 50}}>16</span><br/>committee members</p></infograph>
                         <infograph></infograph>
                         <infograph className="yellow"><p className="h5 tanText">Think</p></infograph>
                     
-                        <p className="h3 tanText i1">At DSC, there's a place for everyone</p>
+                        <p className="h3 tanText i1">At GDSC, there's a place for everyone</p>
                     
                     </div>
 

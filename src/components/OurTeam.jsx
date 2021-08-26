@@ -5,8 +5,10 @@ import Header from './Header'
 import Footer from './Footer'
 import { DSCLeadInformation, teamInformation } from '../teamInformation'
 import team from '../assets/images/team.jpg'
+import teamInfo from '../teamInfo.json'
 
 import '../css/our-team.css'
+import { GitHub, Link2, Linkedin, Mail } from 'react-feather'
 
 class OurTeam extends React.Component {
 
@@ -23,41 +25,92 @@ class OurTeam extends React.Component {
     }
 
     renderCoreTeam = (start, end) => {
-        return teamInformation.core.slice(start,end).map(member => {
-            return (
+        const { core } = teamInfo
+        return core.slice(start,end).map(member => {
+            return member ? (
                 <div className="core-member-box">
                     <div className="core-member-photo">
-                        <img src={member.photo.replace('open?', 'uc?')}/>
+                        <img src={member.imageUrl.replace('open?', 'uc?')}/>
                     </div>
-                    <p className="h6 tanText ta-center">{member.name}</p>    
-                    <p className="t2 darkGrey ta-center">{member.position}</p>
+                    <p className="h5 tanText ta-center" style={{fontFamily: 'Google Sans Regular', marginBottom: 10}}>{member.fullName}</p>    
+                    <p className="t2 darkGrey ta-center">{member.role}</p>
+                    <div className="socials">
+                        {member.email ? 
+                        <a href={`mailto:${member.email}`} target="_blank" rel="noopener noreferrer">
+                        <div className="social">
+                            <Mail size={15} color="white"/>
+                        </div></a> : null }
+
+                        {member.githubLink ? 
+                        <a href={member.githubLink} target="_blank" rel="noopener noreferrer">
+                        <div className="social">
+                            <GitHub size={15} color="white"/>
+                        </div></a> : null }
+
+                        {member.linkedinProfile ? 
+                        <a href={member.linkedinProfile} target="_blank" rel="noopener noreferrer">
+                        <div className="social">
+                            <Linkedin size={15} color="white"/>
+                        </div></a> : null }
+
+                        {member.personalWebsite ? 
+                        <a href={member.personalWebsite} target="_blank" rel="noopener noreferrer">
+                        <div className="social">
+                            <Link2 size={15} color="white"/>
+                        </div></a> : null }
+
+                        
+                    </div>
                 </div>
-            )
+            ) : <div className="core-member-box"></div>
         })
     }
 
     renderCompleteTeam = (start, end) => {
-        return teamInformation.team.slice(start,end).map(member => {
-            return (
-                <div className="complete-member-box">
-                    {/* <div className="complete-member-photo-box">
-                        <div className="complete-member-photo-box-photo">
-                            <img src={member.photo}/>
-                        </div>
+        const { complete } = teamInfo
+        return complete.slice(start,end).map(member => {
+            return member ? (
+                <div className="core-member-box">
+                    <div className="core-member-photo randomize">
+                        <img src={member.imageUrl.replace('open?', 'uc?')}/>
+                    </div>
+                    <p className="h5 tanText ta-center" style={{fontFamily: 'Google Sans Regular', marginBottom: 10}}>{member.fullName}</p>    
+                    <p className="t2 darkGrey ta-center">{member.role}</p>
+                    <div className="socials">
+                        {member.email ? 
+                        <a href={`mailto:${member.email}`} target="_blank" rel="noopener noreferrer">
+                        <div className="social">
+                            <Mail size={15} color="white"/>
+                        </div></a> : null }
+
+                        {member.githubLink ? 
+                        <a href={member.githubLink} target="_blank" rel="noopener noreferrer">
+                        <div className="social">
+                            <GitHub size={15} color="white"/>
+                        </div></a> : null }
+
+                        {member.linkedinProfile ? 
+                        <a href={member.linkedinProfile} target="_blank" rel="noopener noreferrer">
+                        <div className="social">
+                            <Linkedin size={15} color="white"/>
+                        </div></a> : null }
+
+                        {member.personalWebsite ? 
+                        <a href={member.personalWebsite} target="_blank" rel="noopener noreferrer">
+                        <div className="social">
+                            <Link2 size={15} color="white"/>
+                        </div></a> : null }
+
                         
-                    </div> */}
-                    {/* <div> */}
-                        <p className="h6 tanText ta-center">{member.name}</p>    
-                        <p className="t2 darkGrey ta-center">{member.position}</p>
-                    {/* </div> */}
+                    </div>
                 </div>
-            )
+            ) : <div className="core-member-box"></div>
         })
     }
 
     render() {
 
-        console.log(this.state.headerHeight)
+        
         return (
             
             <div>
@@ -65,21 +118,21 @@ class OurTeam extends React.Component {
                     showLogoInHeader={true}
                     passHeaderHeight={height => this.setState({headerHeight: height})}
                 />
-                <div className="team-main-container" style={{paddingTop: isMobile? 0 : this.state.headerHeight + 100}}>
+                <div className="team-main-container" style={{paddingTop: isMobile? 100 : this.state.headerHeight + 100}}>
                     <div className="left-side">
                         <p className="h3 darkText">Our Team</p>
-                        <p className="t2 darkGrey">Presenting our passionate team for Developer Students Club PVGCOET 2020-2021</p>
+                        <p className="t1 darkGrey">Presenting our passionate team for Developer Students Club PVGCOET 2020-2021</p>
                     </div>
                 </div>
                 <div className="team-members-core">
-                    <p className="team-title h6 tanText ta-center">Core Team</p>
+                    <p className="team-title h5 tanText ta-center">Core Team</p>
                     <div className="team-members-core-inner">
                         {this.renderCoreTeam(0,4)}
                     </div>
                     <div className="team-members-core-inner">
                         {this.renderCoreTeam(4,8)}
                     </div>
-                    <p className="team-title h6 tanText ta-center">Complete Team</p>
+                    <p className="team-title h5 tanText ta-center">Complete Team</p>
                     <BrowserView>
                         <div className="team-members-core-inner">
                             {this.renderCompleteTeam(0,4)}
@@ -90,15 +143,7 @@ class OurTeam extends React.Component {
                         <div className="team-members-core-inner">
                             {this.renderCompleteTeam(8,12)}
                         </div>
-                        <div className="team-members-core-inner">
-                            {this.renderCompleteTeam(12,16)}
-                        </div>
-                        <div className="team-members-core-inner">
-                            {this.renderCompleteTeam(16,20)}
-                        </div>
-                        <div className="team-members-core-inner">
-                            {this.renderCompleteTeam(20,24)}
-                        </div>
+                        
                         
                     </BrowserView>
                     <MobileView>
