@@ -13,6 +13,10 @@ class Contact extends React.Component {
     this.state = {
       headerHeight: 0,
       valueAttr: "",
+      name : "",
+      email : "",
+      contactNo : "",
+      message : ""
     };
   }
 
@@ -21,6 +25,26 @@ class Contact extends React.Component {
   };
   handleClick = () => {
     this.setState({ valueAttr: "" });
+  };
+  handleInput = (e) => {
+    this.setState({[e.target.name] : e.target.value })
+  };
+  handleSubmit = async(e)=>{
+    const url = process.env.REACT_APP_SHEET_URL
+    const data = {
+      "Name" : this.state.name,
+      "Email" : this.state.email,
+      "Contact No" : this.state.contactNo,
+      "Message" : this.state.valueAttr
+    }
+    try{
+      await fetch(url,{method:"POST",headers:{"Content-type":"Application/json"},body:JSON.stringify(data)})
+      alert("Your response has been submitted! Thank you")
+      
+    }catch(e){
+      alert("Sorry something went wrong could not submit your response")
+
+    }
   };
 
   componentDidMount() {
@@ -59,9 +83,9 @@ class Contact extends React.Component {
                   </div>
                 </div>
                 <div className="screen-body-item">
-                  <Input placeholder="NAME" />
-                  <Input placeholder="EMAIL" />
-                  <Input placeholder="CONTACT NO" />
+                  <Input onChange={this.handleInput} name="name" placeholder="NAME" />
+                  <Input onChange={this.handleInput} name="email" placeholder="EMAIL" />
+                  <Input onChange={this.handleInput} name="contactNo" placeholder="CONTACT NO" />
                   <div className="app-form-group message">
                     <textarea
                       value={this.state.valueAttr}
@@ -78,7 +102,7 @@ class Contact extends React.Component {
                     >
                       CANCEL
                     </button>
-                    <button className="app-form-button">SEND</button>
+                    <button onClick={this.handleSubmit} className="app-form-button">SEND</button>
                   </div>
                 </div>
               </div>

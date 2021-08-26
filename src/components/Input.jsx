@@ -8,6 +8,8 @@ class Input extends React.Component {
     return (
       <div className="app-form-group">
         <input
+          onChange={this.props.onChange}
+          name = {this.props.name}
           className="app-form-control"
           placeholder={this.props.placeholder}
         />
