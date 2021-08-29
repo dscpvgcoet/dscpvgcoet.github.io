@@ -123,28 +123,28 @@ const verboseLogInfo = [
         episode:2,
         title:'Open Source',
         speakers:'Ayush Bhardwaj & Sahil Jha',
-        link:'https://open.spotify.com/episode/2jWVnNGVSapAbyYpDlEIZi?si=ew5pFky4R9eDmRXD5yaiCQ',
+        link:'https://open.spotify.com/embed/episode/2jWVnNGVSapAbyYpDlEIZi?theme=0',
         image:'',
     },
     {
         episode:3,
         title:'Approaching GSoC',
         speakers:'Ayush Bhardwaj & Sahil Jha',
-        link:'https://open.spotify.com/episode/3tpZ7iur7vnETCecOkQJUb?si=iBuRTeFIQIegzJOub1R7Lg',
+        link:'https://open.spotify.com/embed/episode/3tpZ7iur7vnETCecOkQJUb?theme=0',
         image:'',
     },
     {
         episode:4,
         title:'Cyber Security',
         speakers:'Aishwarya Gore',
-        link:'https://open.spotify.com/episode/3TevIQyTi1Dm77fjyuVbeI?si=nmJUX5SlT0iLhlVTkNhuwA',
+        link:'https://open.spotify.com/embed/episode/3TevIQyTi1Dm77fjyuVbeI?theme=0',
         image:'',
     },
     {
         episode:5,
         title:'About Hackathons',
         speakers:'Vivek Raja PS',
-        link:'https://open.spotify.com/episode/2OyGdQp1FNzqdzkQNqSmfk?si=d0MIqKcMRRKI3Z7wyLwPfA',
+        link:'https://open.spotify.com/embed/episode/2OyGdQp1FNzqdzkQNqSmfk?theme=0',
         image:'',
     },
 ]
@@ -223,11 +223,12 @@ const RenderSpotifyCard = ({episode, title, speakers, link, image, index}) => {
     return (
         
         <div className="spotify-card" key={index}>
-            <a href={link} target="_blank">
+            {/* <a href={link} target="_blank">
             <p className="t4 darkGrey">EPISODE {episode}</p>
             <p className="h6 tanText">{title}</p>
             <p className="t3 darkGrey">{speakers}</p>
-            </a>
+            </a> */}
+            <iframe src={link} width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
     )
 }
@@ -501,7 +502,7 @@ class Home extends React.Component {
                         <infograph></infograph>
                         <infograph></infograph>
                         <infograph></infograph>
-                        <infograph className="bluebg"><p className="h5 tanText" style={{color:'#01347A'}}><span style={{fontSize: 50}}>7+</span><br/>events conducted</p></infograph>
+                        <infograph className="bluebg"><p className="h5 tanText">Ambition</p></infograph>
                         <infograph className="yellow"><img src={code} style={{width:'40%'}}/></infograph>
                         <infograph></infograph>
                         <infograph></infograph>
@@ -527,7 +528,7 @@ class Home extends React.Component {
                         <infograph></infograph>
                         <infograph></infograph>
                         <infograph></infograph>
-                        <infograph className={this.state.isInfographicVisible > 300 ? "green move-up-2" : "green"}><p className="h5 tanText" style={{color:'#005F44'}}><span style={{fontSize: 50}}>16</span><br/>committee members</p></infograph>
+                        <infograph className={this.state.isInfographicVisible > 300 ? "green move-up-2" : "green"}><p className="h5 tanText" style={{color:'#fff'}}><span style={{fontSize: 40}}>16</span><br/>committee members</p></infograph>
                         <infograph></infograph>
                         <infograph className="yellow"><p className="h5 tanText">Think</p></infograph>
                     
@@ -552,7 +553,7 @@ class Home extends React.Component {
                 </div>
 
 
-                <Spring>
+                {/* <Spring>
                     <div className="blue-container" style={{backgroundColor:'#06956B'}}>
 
                         <p className="h2 white ta-left" style={{width:'40%'}}>Some of our <br/>featured blogs</p>
@@ -569,7 +570,7 @@ class Home extends React.Component {
                             <p className="t2 tanText">see all</p>
                         </div>
                     </div>
-                </Spring>
+                </Spring> */}
 
 
 
