@@ -214,9 +214,10 @@ class EventsTimeline extends React.Component {
                 <MobileView>
                 
                     <p className="t2 darkText ta-center" style={{height: 50, letterSpacing:2, margin:0, fontSize:20, marginTop: 50}}>Events Timeline</p>
+                    <p className="t0 darkText ta-center" style={{height: 50, letterSpacing:2, marginTop:"10px",marginBottom:"100px", fontSize:25}}>Coming Soon ! <br/>Stay tuned !</p>
                 
-                    <p className="t3 darkGrey" style={{margin:'20px 0px 10px 40px'}}>TODAY</p>
-                    <div className="mobile-timeline-container">
+                    {/* <p className="t3 darkGrey" style={{margin:'20px 0px 10px 40px'}}>TODAY</p> */}
+                    {/* <div className="mobile-timeline-container">
      
                         {
                                 eventsListInfo.map((item, index) => {
@@ -226,7 +227,7 @@ class EventsTimeline extends React.Component {
 
                         <div className="mobile-timeline"></div>
 
-                    </div>
+                    </div> */}
                 
                 </MobileView>
 
