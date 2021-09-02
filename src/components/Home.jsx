@@ -89,7 +89,7 @@ const joinDSCInfo = [
   {
     title: "Fill the form",
     description:
-      "Every year, we circulate a form for interested students to apply for joining DSC. Filling the form is the first step to get started!",
+      "Every year, we circulate a form for interested students to apply for joining GDSC. Filling the form is the first step to get started!",
   },
   {
     title: "Give the interview",
@@ -99,7 +99,7 @@ const joinDSCInfo = [
   {
     title: "Contribute and Learn",
     description:
-      "It doesnt end here. Be an active part of DSC and its events to gain maximum knowledge, experience, and to participate in various projects!",
+      "It doesnt end here. Be an active part of GDSC and its events to gain maximum knowledge, experience, and to participate in various projects!",
   },
 ];
 
@@ -112,7 +112,7 @@ const featuresEventsInfo = [
   },
   {
     title: "Ask Me Anything",
-    description: "Weekly themed series where the DSC panel answers questions",
+    description: "Weekly themed series where the GDSC panel answers questions",
     image: ama,
   },
 ];
@@ -165,12 +165,12 @@ const FAQInfo = [
   {
     title: "Does GDSC require one to have coding skills/technical expertise?",
     description:
-      "Nah. GDSC is composed of students who are talented in every way, including coding. Think you are good at photography or video editing? Maybe you can speak well? DSC has a place for you. Rather than your technical skills, we prefer to focus on your enthusiasm for the job!",
+      "Nah. GDSC is composed of students who are talented in every way, including coding. Think you are good at photography or video editing? Maybe you can speak well? GDSC has a place for you. Rather than your technical skills, we prefer to focus on your enthusiasm for the job!",
   },
   {
     title: "Is GDSC related to Google?",
     description:
-      "In a way, but not completely. GDSC is an initiative by Google, however, Google neither promotes nor controls DSC activities.",
+      "In a way, but not completely. GDSC is an initiative by Google, however, Google neither promotes nor controls GDSC activities.",
   },
   {
     title: "Can I apply if I am from mechanical or electrical department?",
@@ -437,7 +437,7 @@ class Home extends React.Component {
             Google Developers Students Club is a group of like minded
             individuals with the sole aim of teaching, learning and helping our
             fellow students to excel. <br />
-            <br /> Every year, DSC conducts various events and activites
+            <br /> Every year, GDSC conducts various events and activites
             intended to promote an environment of ideation, help, collaboration
             and community.
           </p>
@@ -583,7 +583,7 @@ class Home extends React.Component {
               className="t2 darkGrey ta-center"
               style={{ marginTop: 50, width: isMobile ? "100%" : "60%" }}
             >
-              DSC is open to any student, ranging from amateur developers who
+              GDSC is open to any student, ranging from amateur developers who
               are just getting started, to experienced developers who want to
               further hone and showcase their skills
             </p>
