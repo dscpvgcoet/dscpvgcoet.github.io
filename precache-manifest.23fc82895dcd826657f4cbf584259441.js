@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d451f514ea43e3bda59bc76081042f95",
+    "revision": "397f81e61b8d922e98ad0cdda795384e",
     "url": "/index.html"
   },
   {
-    "revision": "3af05b78556d89a10699",
-    "url": "/static/css/main.121ae54c.chunk.css"
+    "revision": "a18685e6ef99975a9192",
+    "url": "/static/css/main.3527cf60.chunk.css"
   },
   {
-    "revision": "9b523ad720e1d6972a0b",
-    "url": "/static/js/2.d322b250.chunk.js"
+    "revision": "fb0f981b46db4ee1099d",
+    "url": "/static/js/2.ace48b20.chunk.js"
   },
   {
     "revision": "9ee1d11e4fb7fb7378917db6bce4eed8",
-    "url": "/static/js/2.d322b250.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.ace48b20.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3af05b78556d89a10699",
-    "url": "/static/js/main.26776c7d.chunk.js"
+    "revision": "a18685e6ef99975a9192",
+    "url": "/static/js/main.79fbd429.chunk.js"
   },
   {
     "revision": "b915b02aa9a50b563bf9",
@@ -48,8 +48,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/DSCPVGCOETOnlyLogo.f4703c49.svg"
   },
   {
-    "revision": "fe0a7bb3a83bde6897430638017e80b0",
-    "url": "/static/media/DSCPVGCOETOnlyTextWhite.fe0a7bb3.svg"
+    "revision": "976dcd99e59ed0bf6c2c95736c4bc768",
+    "url": "/static/media/GDSCLogoText.976dcd99.png"
   },
   {
     "revision": "1c74364382611d0847cb409be8922169",

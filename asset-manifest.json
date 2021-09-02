@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.121ae54c.chunk.css",
-    "main.js": "/static/js/main.26776c7d.chunk.js",
-    "main.js.map": "/static/js/main.26776c7d.chunk.js.map",
+    "main.css": "/static/css/main.3527cf60.chunk.css",
+    "main.js": "/static/js/main.79fbd429.chunk.js",
+    "main.js.map": "/static/js/main.79fbd429.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d2e4bddf.js",
     "runtime-main.js.map": "/static/js/runtime-main.d2e4bddf.js.map",
-    "static/js/2.d322b250.chunk.js": "/static/js/2.d322b250.chunk.js",
-    "static/js/2.d322b250.chunk.js.map": "/static/js/2.d322b250.chunk.js.map",
+    "static/js/2.ace48b20.chunk.js": "/static/js/2.ace48b20.chunk.js",
+    "static/js/2.ace48b20.chunk.js.map": "/static/js/2.ace48b20.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.7e1e9651db90a35b40a2b9fbc70f4e85.js": "/precache-manifest.7e1e9651db90a35b40a2b9fbc70f4e85.js",
+    "precache-manifest.23fc82895dcd826657f4cbf584259441.js": "/precache-manifest.23fc82895dcd826657f4cbf584259441.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.121ae54c.chunk.css.map": "/static/css/main.121ae54c.chunk.css.map",
-    "static/js/2.d322b250.chunk.js.LICENSE.txt": "/static/js/2.d322b250.chunk.js.LICENSE.txt",
+    "static/css/main.3527cf60.chunk.css.map": "/static/css/main.3527cf60.chunk.css.map",
+    "static/js/2.ace48b20.chunk.js.LICENSE.txt": "/static/js/2.ace48b20.chunk.js.LICENSE.txt",
     "static/media/AMA.svg": "/static/media/AMA.69771694.svg",
     "static/media/CodeBuddy.svg": "/static/media/CodeBuddy.4f1ed327.svg",
     "static/media/Collaborate.svg": "/static/media/Collaborate.8be0482d.svg",
     "static/media/Communicate2.svg": "/static/media/Communicate2.31acb7aa.svg",
     "static/media/DSC PVGCOET Dark Vertical-Logo.png": "/static/media/DSC PVGCOET Dark Vertical-Logo.24a4b32c.png",
     "static/media/DSCPVGCOETOnlyLogo.svg": "/static/media/DSCPVGCOETOnlyLogo.f4703c49.svg",
-    "static/media/DSCPVGCOETOnlyTextWhite.svg": "/static/media/DSCPVGCOETOnlyTextWhite.fe0a7bb3.svg",
+    "static/media/GDSCLogoText.png": "/static/media/GDSCLogoText.976dcd99.png",
     "static/media/archive.css": "/static/media/GoogleSansDisplay-Regular-v1.27.e4ea236b.ttf",
     "static/media/Ideate.svg": "/static/media/Ideate.7a853510.svg",
     "static/media/VerboseLog.svg": "/static/media/VerboseLog.ff4ab4b0.svg",
@@ -45,8 +45,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d2e4bddf.js",
-    "static/js/2.d322b250.chunk.js",
-    "static/css/main.121ae54c.chunk.css",
-    "static/js/main.26776c7d.chunk.js"
+    "static/js/2.ace48b20.chunk.js",
+    "static/css/main.3527cf60.chunk.css",
+    "static/js/main.79fbd429.chunk.js"
   ]
 }
