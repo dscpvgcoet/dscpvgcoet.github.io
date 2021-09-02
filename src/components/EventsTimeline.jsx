@@ -22,42 +22,42 @@ const findCurrentPool = loc => {
 }
 
 const eventsListInfo = [
-    {
-        title:'CodeBuddy Coding Event',
-        description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
-    },
-    {
-        title:'CodeBuddy Coding Event',
-        description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
-    },
-    {
-        title:'CodeBuddy Coding Event',
-        description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
-    },
-    {
-        title:'CodeBuddy Coding Event',
-        description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
-    },
-    {
-        title:'CodeBuddy Coding Event',
-        description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
-    },
-    {
-        title:'CodeBuddy Coding Event',
-        description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
-    },
-    {
-        title:'CodeBuddy Coding Event',
-        description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
-    },
-    {
-        title:'CodeBuddy Coding Event',
-        description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
-    },
-    {
-        title:'CodeBuddy Coding Event',
-        description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
-    },
+    // {
+    //     title:'CodeBuddy Coding Event',
+    //     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+    // },
+    // {
+    //     title:'CodeBuddy Coding Event',
+    //     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+    // },
+    // {
+    //     title:'CodeBuddy Coding Event',
+    //     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+    // },
+    // {
+    //     title:'CodeBuddy Coding Event',
+    //     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+    // },
+    // {
+    //     title:'CodeBuddy Coding Event',
+    //     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+    // },
+    // {
+    //     title:'CodeBuddy Coding Event',
+    //     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+    // },
+    // {
+    //     title:'CodeBuddy Coding Event',
+    //     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+    // },
+    // {
+    //     title:'CodeBuddy Coding Event',
+    //     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+    // },
+    // {
+    //     title:'CodeBuddy Coding Event',
+    //     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+    // },
 ]
 
 
@@ -183,8 +183,9 @@ class EventsTimeline extends React.Component {
                 <div className="eventstimeline-main-container" style={{paddingTop: isMobile? 0 : this.state.headerHeight + 0}}>
                     
                     <p className="t0 darkText ta-center" style={{height: 50, letterSpacing:2, margin:0, fontSize:25}}>Events Timeline</p>
+                    <p className="t0 darkText ta-center" style={{height: 50, letterSpacing:2, marginTop:"100px", fontSize:35}}>Coming Soon ! <br/>Stay tuned !</p>
                     
-                    <div className="timeline-container-outer">
+                    {/* <div className="timeline-container-outer">
                         <div 
                             className="timeline-container"
                             style={{transform:[`translateX(-${this.state.pageNumber*window.innerWidth}px)`]}}
@@ -195,7 +196,6 @@ class EventsTimeline extends React.Component {
                                     return <EventsCard eventLoc={index+1} pageNumber={this.state.pageNumber} title={item.title} description={item.description} index={index}/>
                                 })
                             }
-                
     
                             <div className="timeline-now circle"><div className="timeline-now-inner"></div></div>
                             <p className="today t3 darkGrey">TODAY</p>
@@ -206,7 +206,7 @@ class EventsTimeline extends React.Component {
                         <div className="timeline" style={{width:`calc(80vw)`}}></div>
                         <button className="next-button" onClick={this.goToNext} style={{display: this.state.pageNumber+2 > findCurrentPool(eventsListInfo.length) ? 'none' : 'flex'}}><ChevronRight className="tanText" size={25}/></button>
                         <button className="prev-button" onClick={this.goToPrev} style={{display: this.state.pageNumber > 0 ? 'flex' : 'none'}}><ChevronLeft className="tanText" size={25}/></button>
-                    </div>
+                    </div> */}
                     
                 </div>
                 </BrowserView>
@@ -214,9 +214,10 @@ class EventsTimeline extends React.Component {
                 <MobileView>
                 
                     <p className="t2 darkText ta-center" style={{height: 50, letterSpacing:2, margin:0, fontSize:20, marginTop: 50}}>Events Timeline</p>
+                    <p className="t0 darkText ta-center" style={{height: 50, letterSpacing:2, marginTop:"10px",marginBottom:"100px", fontSize:25}}>Coming Soon ! <br/>Stay tuned !</p>
                 
-                    <p className="t3 darkGrey" style={{margin:'20px 0px 10px 40px'}}>TODAY</p>
-                    <div className="mobile-timeline-container">
+                    {/* <p className="t3 darkGrey" style={{margin:'20px 0px 10px 40px'}}>TODAY</p> */}
+                    {/* <div className="mobile-timeline-container">
      
                         {
                                 eventsListInfo.map((item, index) => {
@@ -226,7 +227,7 @@ class EventsTimeline extends React.Component {
 
                         <div className="mobile-timeline"></div>
 
-                    </div>
+                    </div> */}
                 
                 </MobileView>
 
