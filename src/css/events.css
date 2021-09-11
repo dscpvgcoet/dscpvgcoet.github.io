@@ -318,4 +318,22 @@
         margin-left: 40px;
         z-index: 99;
     }
+
+    .registration-box {
+        width: 100%;
+        height: auto;
+        position: inherit;
+        overflow: hidden;
+    }
+    .registration-box .primary-button {
+        position: unset;
+        width: 100%;
+    }
+    .featured-media {
+        width: 100%;
+    }
+    .event-content {
+        width: 100%;
+        padding-right: 0;
+    }
 }

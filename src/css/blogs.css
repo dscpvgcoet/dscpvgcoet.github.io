@@ -83,12 +83,17 @@
 	flex-direction: column;
 	justify-content: flex-end;
 	cursor: pointer;
+	transition: 0.3s ease-out;
 }
 
-.blog-card .h6, .blog-card .t3 {
+.blog-card .h5, .blog-card .t3 {
 	margin: 0px 15px;
 	margin-bottom: 5px;
 	flex-wrap: nowrap;
+}
+.blog-card .h5 {
+	font-family: Google Sans Regular, sans-serif;
+	letter-spacing: 0.5px;
 }
 
 .author {
@@ -104,6 +109,11 @@
 	height:30px;
 	border-radius:40px;
 	margin-right: 10px;
+	background-color: black;
+}
+.blog-card:hover {
+	transform: scale(1.02);
+	transition: 0.3s ease-out;
 }
 
 .about-author {

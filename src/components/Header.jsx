@@ -62,7 +62,7 @@ class Header extends React.Component {
                             <li><Link to="/team" className="link">Team</Link></li>
                             <li><Link to="/events" className="link">Events</Link></li>
                             <li><Link to="/blogs" className="link">Blogs</Link></li>
-                            <li><Link to="/resources" className="link">Resources</Link></li>
+                            {/* <li><Link to="/resources" className="link">Resources</Link></li> */}
                             <li><Link to="/archives" className="link">Archives</Link></li>
                             <li><Link to="/contact" className="link">Contact</Link></li>
                         </ul>
@@ -79,7 +79,7 @@ class Header extends React.Component {
                             <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/blogs" className="link">Blogs</Link></li>
                             <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/team" className="link">Team</Link></li>
                             <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/events" className="link">Events</Link></li>
-                            <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/resources" className="link">Resources</Link></li>
+                            {/* <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/resources" className="link">Resources</Link></li> */}
                             <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/archives" className="link">Archives</Link></li>
                             <li onClick={() => this.setState({menuOpen: !this.state.menuOpen})}><Link to="/contact" className="link">Contact</Link></li> 
                         </ul>
