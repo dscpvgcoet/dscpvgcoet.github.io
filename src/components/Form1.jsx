@@ -1,85 +1,4 @@
-/* import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Modal from '@material-ui/core/Modal';
-import RegisterForm from './Register';
-import Button from '@material-ui/core/Button';
-// or
-//import { Button } from '@material-ui/core';
-
-function rand() {
-  return Math.round(Math.random() * 20) - 10;
-}
-
-function getModalStyle() {
-
-
-  const top = 50 + rand();
-  const left = 50 + rand();
-
-  return {
-    top: `${top}%`,
-    left: `${left}%`,
-    transform: `translate(-${top}%, -${left}%)`,
-  };
-}
-
-const useStyles = makeStyles((theme) => ({
-  paper: {
-    position: 'absolute',
-    width: 400,
-    backgroundColor: theme.palette.background.paper,
-    border: '2px solid #000',
-    boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
-  },
-}));
-
-export default function Form1() {
-  const classes = useStyles();
-  // getModalStyle is not a pure function, we roll the style only on the first render
-  const [modalStyle] = React.useState(getModalStyle);
-  const [open, setOpen] = React.useState(false);
-
-  const handleOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
-  const body = (
-    <div style={modalStyle} className={classes.paper}>
-      <h2 id="simple-modal-title">REGISTER</h2>
-
-      <p id="simple-modal-description">
-        {<RegisterForm handleClose={handleClose}/>
-        }
-
-      </p>
-  //    {/* <Form1 /> */
-//     </div>
-//   );
-
-//   return (
-//     <div>
-//       <button type="button" onClick={handleOpen}>
-//             Sign Me up
-//       </button>
-//       <Modal
-//         open={open}
-//         onClose={handleClose}
-//         aria-labelledby="simple-modal-title"
-//         aria-describedby="simple-modal-description"
-//       >
-//         {body}
-//       </Modal>
-//     </div>
-//   );
-// }
-//  */
-
-import React from 'react';
+import React,{useState} from 'react';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import Dialog from '@material-ui/core/Dialog';
@@ -87,12 +6,19 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import RegisterForm from './Register';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
+import { Select } from '@material-ui/core';
+import { MenuItem } from '@material-ui/core';
+import { InputLabel } from '@material-ui/core';
+import { FormControl } from '@material-ui/core';
 
-export default function FormDialog() {
+export default function FormDialog({isOpen}) {
 
 
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(isOpen);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -102,18 +28,139 @@ export default function FormDialog() {
     setOpen(false);
   };
 
+  const [registration,setResgistration] = useState({
+    "First name" : "",
+    "Last name" : "",
+    "Email-id" : "",
+    "College Name" : "",
+    "Branch" : "",
+    "Year" : "",
+    "Phone Number" : ""
+    
+  })
+
+  const handleChange = (e)=>{
+    setResgistration({
+      ...registration,
+      [e.target.name] : e.target.value
+    })
+    console.log(registration)
+  }
+
+  const handleSubmit = (e)=>{
+    console.log(registration)
+  }
+
   return (
     <div>
-      <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-       SIGN UP 
-      </Button>
+      <div onClick={handleClickOpen} className="primary-button">
+
+      <p className="h6 blue" >Register Now !</p>
+
+
+      </div>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
         <DialogTitle id="form-dialog-title">EVENT NAME </DialogTitle>
-        <DialogContent>
+        <DialogContent onChange={handleChange}>
           <DialogContentText>
-            <form>
-            <RegisterForm/>
-              </form>
+          <FormControl onSubmit={handleSubmit}>
+            <Typography variant="h6" gutterBottom>
+              REGISTRATION FORM 
+            </Typography>
+            <Grid container spacing={3}>
+              <Grid item xs={12} sm={6}>
+                <TextField
+                  required
+                  id="firstName"
+                  name="First name"
+                  label="First name"
+                  fullWidth
+                  onChange={handleChange}
+                  autoComplete="given-name"
+                />
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                <TextField
+                  required
+                  id="lastName"
+                  name="Last name"
+                  label="Last name"
+                  onChange={handleChange}
+                  fullWidth
+                  autoComplete="family-name"
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                required
+                  label="Email-id"
+                  name = "Email-id"
+                  onChange={handleChange}
+                  fullWidth
+                
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  label="College Name"
+                  name="College Name"
+                  onChange={handleChange}
+                  fullWidth
+                />
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                <Select
+                  labelId="branch-label"
+                  name="Branch"
+                  label="Branch"
+                  fullWidth
+                  onChange={handleChange}
+                  value={registration["Branch"]}
+                  defaultValue="Branch"
+                >
+                  <MenuItem value="CS">CS</MenuItem>
+                  <MenuItem value="IT">IT</MenuItem>
+                  <MenuItem value="Mech">Mech</MenuItem>
+                  <MenuItem value="Entc">Entc</MenuItem>
+                  <MenuItem value="Electrical">Electrical</MenuItem>
+                  <MenuItem value="Other">Other</MenuItem>
+                </Select>
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                {registration["Branch"] === "Other" && <TextField
+                  label="Branch"
+                  name="Other Branch"
+                  fullWidth
+                  onChange={handleChange}
+                />}
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                <Select
+                    labelId="branch-label"
+                    name="Year"
+                    label="Year"
+                    fullWidth
+                    onChange={handleChange}
+                    value={registration["Year"]}
+                    defaultValue="Year"
+                  >
+                    <MenuItem value="FE">FE</MenuItem>
+                    <MenuItem value="SE">SE</MenuItem>
+                    <MenuItem value="TE">TE</MenuItem>
+                    <MenuItem value="BE">BE</MenuItem>
+                  </Select>
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                <TextField
+                  required
+                  name="Phone Number"
+                  label="Phone Number"
+                  onChange={handleChange}
+                  fullWidth
+                />
+              </Grid>
+            </Grid> 
+          </FormControl>
           
           </DialogContentText>
          {/*  <TextField
@@ -129,7 +176,7 @@ export default function FormDialog() {
           <Button onClick={handleClose} color="primary">
             Cancel
           </Button>
-          <Button onClick={handleClose} color="primary">
+          <Button onClick={handleSubmit} color="primary">
             SUBMIT
           </Button>
         </DialogActions>
