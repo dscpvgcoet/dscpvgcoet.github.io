@@ -34,6 +34,7 @@ export default function FormDialog({isOpen}) {
     "Email-id" : "",
     "College Name" : "",
     "Branch" : "",
+    "Other Branch" : "",
     "Year" : "",
     "Phone Number" : ""
     
@@ -47,8 +48,22 @@ export default function FormDialog({isOpen}) {
     console.log(registration)
   }
 
-  const handleSubmit = (e)=>{
-    console.log(registration)
+  const handleSubmit = async(e)=>{
+    const postUrl = process.env.REACT_APP_INFO_SESSION
+    if(registration["First name"] !== "" && registration["Last name"] !== "" && registration["Email-id"] !== "" && registration["College Name"] !== "" && registration["Branch"] !== "" && registration["Year"] !== "" && registration["Phone Number"] !== ""){
+      try{
+        await fetch(postUrl,{
+          method: "POST",
+          headers: { "Content-type": "Application/json" },
+          body: JSON.stringify(registration),
+        })
+        alert(postUrl)
+      }catch(e){
+        alert("Could not register")
+      }
+    }else{
+      alert("Please provide the required details")
+    }
   }
 
   return (

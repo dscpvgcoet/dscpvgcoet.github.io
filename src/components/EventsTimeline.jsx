@@ -21,10 +21,12 @@ const findCurrentPool = (loc) => {
 };
 
 const eventsListInfo = [
-  // {
-  //     title:'CodeBuddy Coding Event',
-  //     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
-  // },
+  {
+      title:'Information Session',
+      description:'This session is going to be an introduction to the new GDSC PVGCOET.',
+      date : "18th Sep 2021",
+      url : "info-session"
+  },
   // {
   //     title:'CodeBuddy Coding Event',
   //     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
@@ -59,7 +61,7 @@ const eventsListInfo = [
   // },
 ];
 
-const EventsCard = ({ eventLoc, pageNumber, title, description, index }) => {
+const EventsCard = ({ eventLoc, pageNumber, title, description, index,date,url }) => {
   const eventLocActual = eventLoc;
   const evClass = eventLocActual % 4 === 0 ? 4 : eventLocActual % 4;
   const left =
@@ -81,7 +83,7 @@ const EventsCard = ({ eventLoc, pageNumber, title, description, index }) => {
       : "#594DD2";
 
   return (
-    <Link to={`/event/${index}`}>
+    <Link to={`/event/${url}`}>
       <div
         className={`events-card ev-${evClass}`}
         style={{ left, opacity: opacityVal }}
@@ -107,7 +109,7 @@ const EventsCard = ({ eventLoc, pageNumber, title, description, index }) => {
           style={{ display: eventLocActual % 2 ? "flex" : "none" }}
         ></div>
 
-        <div className="t3 darkGrey event-date">26 dec 2020</div>
+        <div className="t3 darkGrey event-date">{date}</div>
       </div>
     </Link>
   );
@@ -119,9 +121,10 @@ const EventsCardMobile = ({
   title,
   description,
   index,
+  date,url
 }) => {
   return (
-    <Link to={`/event/${index}`}>
+    <Link to={`/event/${url}`}>
       <div className={`events-card-mobile`}>
         <div className="circle-mobile"></div>
 
@@ -129,7 +132,7 @@ const EventsCardMobile = ({
           className="t3 darkGrey event-date"
           style={{ textTransform: "uppercase", marginBottom: 10 }}
         >
-          26 dec 2020
+          {date}
         </div>
 
         <p
@@ -231,7 +234,7 @@ class EventsTimeline extends React.Component {
             >
               Events Timeline
             </p>
-            <p
+            {/* <p
               className="t0 darkText ta-center"
               style={{
                 height: 50,
@@ -242,9 +245,9 @@ class EventsTimeline extends React.Component {
             >
               Coming Soon ! <br />
               Stay tuned !
-            </p>
+            </p> */}
 
-            {/* <div className="timeline-container-outer">
+            <div className="timeline-container-outer">
                         <div 
                             className="timeline-container"
                             style={{transform:[`translateX(-${this.state.pageNumber*window.innerWidth}px)`]}}
@@ -252,7 +255,7 @@ class EventsTimeline extends React.Component {
                             
                             {
                                 eventsListInfo.map((item, index) => {
-                                    return <EventsCard eventLoc={index+1} pageNumber={this.state.pageNumber} title={item.title} description={item.description} index={index}/>
+                                    return <EventsCard url={item.url} date={item.date} eventLoc={index+1} pageNumber={this.state.pageNumber} title={item.title} description={item.description} index={index}/>
                                 })
                             }
     
@@ -265,7 +268,7 @@ class EventsTimeline extends React.Component {
                         <div className="timeline" style={{width:`calc(80vw)`}}></div>
                         <button className="next-button" onClick={this.goToNext} style={{display: this.state.pageNumber+2 > findCurrentPool(eventsListInfo.length) ? 'none' : 'flex'}}><ChevronRight className="tanText" size={25}/></button>
                         <button className="prev-button" onClick={this.goToPrev} style={{display: this.state.pageNumber > 0 ? 'flex' : 'none'}}><ChevronLeft className="tanText" size={25}/></button>
-                    </div> */}
+                    </div>
           </div>
         </BrowserView>
 
@@ -282,7 +285,7 @@ class EventsTimeline extends React.Component {
           >
             Events Timeline
           </p>
-          <p
+          {/* <p
             className="t0 darkText ta-center"
             style={{
               height: 50,
@@ -294,20 +297,20 @@ class EventsTimeline extends React.Component {
           >
             Coming Soon ! <br />
             Stay tuned !
-          </p>
+          </p> */}
 
-          {/* <p className="t3 darkGrey" style={{margin:'20px 0px 10px 40px'}}>TODAY</p> */}
-          {/* <div className="mobile-timeline-container">
+          <p className="t3 darkGrey" style={{margin:'20px 0px 10px 40px'}}>TODAY</p>
+          <div className="mobile-timeline-container">
      
                         {
                                 eventsListInfo.map((item, index) => {
-                                    return <EventsCardMobile eventLoc={index+1} pageNumber={this.state.pageNumber} title={item.title} description={item.description} index={index}/>
+                                    return <EventsCardMobile url={item.url} date={item.date}  eventLoc={index+1} pageNumber={this.state.pageNumber} title={item.title} description={item.description} index={index}/>
                                 })
                         }
 
                         <div className="mobile-timeline"></div>
 
-                    </div> */}
+                    </div>
         </MobileView>
 
         <Footer />
