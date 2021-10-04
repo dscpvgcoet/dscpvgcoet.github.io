@@ -7,22 +7,45 @@ import { Link } from "react-router-dom";
 import "../css/events.css";
 import { Timer } from "../helpers";
 import Footer from "./Footer";
+import FormDialog from "./Form1";
+//import  from "./Form1";
 import Header from "./Header";
+import {events} from "../EnevtDetailsData"
+
+
+
+
+
+
+
 
 const EventDetails = ({}) => {
+
+ 
+
   const [currentIndex, setCurrentIndex] = useState(null);
   const [headerHeight, setHeaderHeight] = useState(0);
-
+  const [event,setEvent] = useState({})
+  
+  
   useEffect(() => {
     window.scroll({
       top: 0,
     });
-    const fullURL = window.location.pathname.split("/");
-    console.log(fullURL);
+    const fullURL = window.location.href;
+    const eventUrl = fullURL.split("/")[fullURL.split("/").length-1]
+    if(events[eventUrl]){
+      setEvent(events[eventUrl])
+      console.log(new Date(`${events[eventUrl].dateTime}`).getTime() , new Date().getTime())
+    }
   }, []);
-
+ 
   return (
+
+    
     <Fragment>
+
+
       <Header
         showLogoInHeader={true}
         passHeaderHeight={(height) => setHeaderHeight(height + 20)}
@@ -44,10 +67,10 @@ const EventDetails = ({}) => {
             className="h3 darkText ta-center"
             style={{ margin: isMobile ? "50px 20px" : 50 }}
           >
-            Name of the event
+            {event.name}
           </p>
           <p className="t2 tanText ta-center">organised by GDSC PVGCOET</p>
-          <p className="t2 darkGrey ta-center">26th December 2020</p>
+          <p className="t2 darkGrey ta-center">{event.date}</p>
 
           <div className="registration-box">
             <p
@@ -61,15 +84,16 @@ const EventDetails = ({}) => {
               className="t2 ta-center white"
               style={{ marginTop: isMobile ? 5 : 30 }}
             >
-              event begins in
+              {/* event begins in */}
+              event had expired
             </p>
-            <Timer startDate={new Date().getTime() + 10000000} />
+            {/* <Timer startDate={new Date(event.start).getTime()} /> */}
 
             <p
               className="t1 ta-center white"
               style={{ marginTop: isMobile ? 5 : 30 }}
             >
-              26th December 2020
+              {event.date}
             </p>
             <p className="t3 ta-center white" style={{ marginTop: 10 }}>
               VIRTUAL GOOGLE MEET
@@ -78,67 +102,26 @@ const EventDetails = ({}) => {
               className="t3 ta-center white"
               style={{ marginTop: 40, display: isMobile ? "none" : "" }}
             >
-              Over 100 participants were provided guidance from experts and
-              study material to cover major parts of DSA within 2 months
+              {event.post_event_desc}
             </p>
-
-            <div className="primary-button">
-              <p className="h6 blue">Sign Me Up</p>
-            </div>
+              {/* {new Date(`${event.dateTime}`).getTime() < new Date().getTime() && <FormDialog className="primary-button" />} */}
+          
           </div>
 
-          <div className="featured-media"></div>
+          <div className="featured-media">
+            <img className="poster-image" alt="poster" src={event.image} />
+          </div>
 
           <div className="event-content">
             <p className="t2 darkGrey">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse metus eros, pulvinar sed velit nec, volutpat luctus
-              lacus. Morbi neque lorem, dictum sed pharetra pretium, pharetra
-              sit amet diam. Pellentesque et bibendum enim, ac laoreet tellus.
-              In sed mollis nunc, in tincidunt ligula. Phasellus justo lorem,
-              rhoncus at maximus non, molestie vestibulum nunc. Sed est erat,
-              convallis nec est vitae, ultrices lobortis ipsum. Nunc consequat
-              sapien at eros rutrum, ac dictum lectus vestibulum. Curabitur ut
-              lacus sed justo rhoncus ullamcorper. Proin turpis turpis, placerat
-              quis tristique et, dapibus sit amet arcu. Aliquam vitae dolor
-              posuere, consequat diam ac, finibus libero. Donec sollicitudin
-              elementum varius. Morbi lorem leo, malesuada molestie metus
-              rutrum, dictum maximus tellus. Sed finibus orci non augue mattis,
-              id imperdiet erat fringilla. Quisque in ultricies dolor. Maecenas
-              nulla leo, vestibulum quis mauris et, posuere iaculis nisi.
-              <br />
-              <br />
-              <br />
-              Donec mauris enim, tempor eget convallis ac, ultricies et diam.
-              Praesent auctor magna at est vestibulum tempus. Pellentesque
-              habitant morbi tristique senectus et netus et malesuada fames ac
-              turpis egestas. Fusce eleifend mattis sem eu suscipit. Sed gravida
-              sapien sit amet odio porttitor tincidunt. Nullam quis dolor nisl.
-              Nam laoreet, risus id fermentum commodo, dui lectus vulputate
-              tortor, commodo volutpat turpis leo eu risus. Aenean viverra
-              cursus ligula sit amet sodales. Suspendisse fermentum consectetur
-              magna vitae commodo. Nullam vehicula, sem id rutrum sagittis,
-              lorem ligula posuere enim, et posuere diam tellus in eros. Nam ac
-              elit gravida, cursus risus et, accumsan ante. Curabitur eu
-              imperdiet tellus. Cras mollis aliquam justo nec aliquet. Cras
-              ultrices elit sed nisl vestibulum, vitae suscipit nunc dictum.
-              <br />
-              <br />
-              <br />
-              In eu dui at diam egestas ullamcorper eget in orci. Maecenas nec
-              vulputate risus. Duis dictum tristique ligula quis tempus. Etiam
-              tempor metus sit amet leo convallis mattis. Quisque feugiat,
-              ligula sit amet condimentum tempor, nisl ex euismod nibh, a
-              egestas lorem leo et augue. Nullam ligula mi, gravida nec nunc
-              suscipit, sollicitudin imperdiet ante. Interdum et malesuada fames
-              ac ante ipsum primis in faucibus.
+              {event.description}
             </p>
           </div>
         </div>
 
-        <p className="h4 darkText ta-center" style={{ margin: "50px auto" }}>
+        {/* <p className="h4 darkText ta-center" style={{ margin: "50px auto" }}>
           Image gallery
-        </p>
+        </p> */}
       </div>
 
       <Footer />
