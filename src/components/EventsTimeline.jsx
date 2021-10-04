@@ -9,6 +9,7 @@ import "../css/events.css";
 import { ChevronLeft, ChevronRight } from "react-feather";
 import { Link } from "react-router-dom";
 import eventhero from "../assets/images/events-hero.svg";
+import { events } from "../EnevtDetailsData";
 
 const findCurrentPool = (loc) => {
   let i = 1;
@@ -20,16 +21,13 @@ const findCurrentPool = (loc) => {
   return j;
 };
 
-const eventsListInfo = [
-  {
-      title:'Information Session',
-      description:'This session is going to be an introduction to the new GDSC PVGCOET.',
-      date : "18th Sep 2021",
-      url : "info-session"
-  },
+const eventsListInfo = Object.values(events)
+  // [
   // {
-  //     title:'CodeBuddy Coding Event',
-  //     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+  //     title:'Information Session',
+  //     description:'This session is going to be an introduction to the new GDSC PVGCOET.',
+  //     date : "18th Sep 2021",
+  //     url : "info-session"
   // },
   // {
   //     title:'CodeBuddy Coding Event',
@@ -59,7 +57,11 @@ const eventsListInfo = [
   //     title:'CodeBuddy Coding Event',
   //     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
   // },
-];
+  // {
+  //     title:'CodeBuddy Coding Event',
+  //     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+  // },
+  // ];
 
 const EventsCard = ({ eventLoc, pageNumber, title, description, index,date,url }) => {
   const eventLocActual = eventLoc;
@@ -255,7 +257,7 @@ class EventsTimeline extends React.Component {
                             
                             {
                                 eventsListInfo.map((item, index) => {
-                                    return <EventsCard url={item.url} date={item.date} eventLoc={index+1} pageNumber={this.state.pageNumber} title={item.title} description={item.description} index={index}/>
+                                    return <EventsCard url={item.url} date={item.date} eventLoc={index+1} pageNumber={this.state.pageNumber} title={item.name} description={item.short_desc} index={index}/>
                                 })
                             }
     
@@ -304,7 +306,7 @@ class EventsTimeline extends React.Component {
      
                         {
                                 eventsListInfo.map((item, index) => {
-                                    return <EventsCardMobile url={item.url} date={item.date}  eventLoc={index+1} pageNumber={this.state.pageNumber} title={item.title} description={item.description} index={index}/>
+                                    return <EventsCardMobile url={item.url} date={item.date}  eventLoc={index+1} pageNumber={this.state.pageNumber} title={item.name} description={item.short_desc} index={index}/>
                                 })
                         }
 

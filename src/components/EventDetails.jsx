@@ -10,7 +10,7 @@ import Footer from "./Footer";
 import FormDialog from "./Form1";
 //import  from "./Form1";
 import Header from "./Header";
-import {events} from "../EnevtDetails"
+import {events} from "../EnevtDetailsData"
 
 
 
@@ -36,6 +36,7 @@ const EventDetails = ({}) => {
     const eventUrl = fullURL.split("/")[fullURL.split("/").length-1]
     if(events[eventUrl]){
       setEvent(events[eventUrl])
+      console.log(new Date(`${events[eventUrl].dateTime}`).getTime() , new Date().getTime())
     }
   }, []);
  
@@ -83,9 +84,10 @@ const EventDetails = ({}) => {
               className="t2 ta-center white"
               style={{ marginTop: isMobile ? 5 : 30 }}
             >
-              event begins in
+              {/* event begins in */}
+              event had expired
             </p>
-            <Timer startDate={new Date(event.start).getTime()} />
+            {/* <Timer startDate={new Date(event.start).getTime()} /> */}
 
             <p
               className="t1 ta-center white"
@@ -100,14 +102,15 @@ const EventDetails = ({}) => {
               className="t3 ta-center white"
               style={{ marginTop: 40, display: isMobile ? "none" : "" }}
             >
-              {event.short_desc}
+              {event.post_event_desc}
             </p>
-
-              <FormDialog className="primary-button" /> 
+              {/* {new Date(`${event.dateTime}`).getTime() < new Date().getTime() && <FormDialog className="primary-button" />} */}
           
           </div>
 
-          <div className="featured-media"></div>
+          <div className="featured-media">
+            <img className="poster-image" alt="poster" src={event.image} />
+          </div>
 
           <div className="event-content">
             <p className="t2 darkGrey">
@@ -116,9 +119,9 @@ const EventDetails = ({}) => {
           </div>
         </div>
 
-        <p className="h4 darkText ta-center" style={{ margin: "50px auto" }}>
+        {/* <p className="h4 darkText ta-center" style={{ margin: "50px auto" }}>
           Image gallery
-        </p>
+        </p> */}
       </div>
 
       <Footer />
