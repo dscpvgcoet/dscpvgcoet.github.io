@@ -179,11 +179,11 @@ class Footer extends React.Component {
                 </div>
               </div> */}
               <p className="t2 white ta-right">
-                <span style={{ color: "#1a1a1a", fontWeight: 800 }}>
+                <span style={{ display:"flex",color: "#1a1a1a", fontWeight: 800 }}>
                   {" "}
                   GDSC PVGCOET Newsletter
                 </span>
-                &nbsp; Coming Soon!
+                <iframe title="news-letter" src="https://gdscpvgcoet.substack.com/embed" width="480" height="180" style={{ background:"#2970E6",}}frameborder="0" scrolling="no"></iframe>
               </p>
             </div>
           </div>
