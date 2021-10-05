@@ -1,8 +1,8 @@
 <p align="center">
-<img src="https://gdscpvgcoet.in/static/media/DSCPVGCOETOnlyLogo.f4703c49.svg" style="width: 10%; "/>
+<img src="https://gdscpvgcoet.in/static/media/DSCPVGCOETOnlyLogo.f4703c49.svg" style="width: 13%; "/>
 </p>
 <p align="center">
-<img src="https://gdscpvgcoet.in/static/media/GDSCLogoText.976dcd99.png" style="width: 30%;"/>
+<img src="https://gdscpvgcoet.in/static/media/GDSCLogoText.976dcd99.png" style="width: 43%;"/>
 </p>
 
 <!-- 
