@@ -1,36 +1,28 @@
-# Website for DSC PVGCOET
+# GDSC PVGCOET
 
-Find the live website [here](https://dscpvgcoet.github.io/).
+### What is GDSC ?
 
+Google Developers Students Club is a group of like minded individuals with the sole aim of teaching, learning and helping our fellow students to excel.
+Every year, GDSC conducts various events and activites intended to promote an environment of ideation, help, collaboration and community. 
 
-Created using React JS and React Router
+Find out more about our events and activities on our official website, [gdscpvgcoet.ac.in](https://gdscpvgcoet.in/#/)
 
-Following routes are currently defined :
+<br/>
 
-| Path | Component | Functionality |
-|------|-----------|---------------|
-|  /   |  Home     |   Homepage    |
-| /team| OurTeam| Team info |
-| /blogs| BlogList | Renders the blogs |
+### How do I join GDSC ?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+GDSC is open to any student, ranging from amateur developers who are just getting started, to experienced developers who want to further hone and showcase their skills.
 
-## Available Scripts
+##### 1. Fill the form
+Every year, we circulate a form for interested students to apply for joining GDSC. Filling the form is the first step to get started!
 
-To install all dependencies, run ```npm install``` from the project directory.  
-Run this the first time you clone the repo to install the required libraries.
+##### 2. Give the interview
+Our core committee will conduct a one-to-one interview with you to assess your skills, interests and passion. Based on this interview, suitable canditates will be shortlisted.
 
-Use ```npm start``` to run the app in development mode.  
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+##### 3. Contribute and Learn
+It doesnt end here. Be an active part of GDSC and its events to gain maximum knowledge, experience, and to participate in various projects!
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-## Deploying
-
-To deploy the code, run ```npm run deploy```.
-This will build the current branch and push the compiled files onto the ```gh-pages``` branch on GitHub.
-> Before doing this, make sure your local repo is cloned directly from this repo, and not from a fork. 
+<br/>
 
 ### Contributing
 - To add a new feature request, create an issue.
