@@ -5,12 +5,13 @@
 <img src="https://gdscpvgcoet.in/static/media/GDSCLogoText.976dcd99.png" style="width: 30%;"/>
 </p>
 
-
+<!-- 
 <h2 align="center">
 Google Developer Students Club PVGCOET
 </h2>
+ -->
+<br/>
 
-<br>
 ### What is GDSC ?
 
 Google Developers Students Club is a group of like minded individuals with the sole aim of teaching, learning and helping our fellow students to excel.
