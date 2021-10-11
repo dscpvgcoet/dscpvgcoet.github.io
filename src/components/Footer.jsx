@@ -21,7 +21,7 @@ const socialMediaInfo = [
   },
   {
     image: instagramLogo,
-    href: "https://instagram.com/dscpvgcoet",
+    href: "https://instagram.com/gdscpvgcoet",
   },
   {
     image: linkedinLogo,
@@ -29,7 +29,7 @@ const socialMediaInfo = [
   },
   {
     image: twitterLogo,
-    href: "https://twitter.com/dscpvgcoet",
+    href: "https://twitter.com/gdscpvgcoet",
   },
   {
     image: youtubeLogo,
@@ -41,9 +41,13 @@ class Footer extends React.Component {
   renderSocialMediaIcons = () => {
     return socialMediaInfo.map((item) => {
       return (
-        <a href={item.href} target="_blank">
+        <a href={item.href} target="_blank" rel="noopener noreferrer">
           <div className="social-media-icons-card">
-            <img src={item.image} className="social-media-icons-image" />
+            <img
+              src={item.image}
+              className="social-media-icons-image"
+              alt="social-media-icon"
+            />
           </div>
         </a>
       );
@@ -77,45 +81,6 @@ class Footer extends React.Component {
           {/* <div className="h-separator"></div> */}
 
           <div className="three-sections">
-            {/* <div className="section footer-logo-box">
-            <img src={DSCdarkLogo} alt="DSC-dark-Logo" />
-          </div>
-           */}
-
-            {/* <div className="section explore-links">
-            
-            
-            
-            <ul>
-              
-              <li>
-                <Link to="/team" className="link">
-                  Team
-                </Link>
-              </li>
-              <li>
-                <Link to="/events" className="link">
-                  Events
-                </Link>
-              </li>
-              <li>
-                <Link to="/" className="link">
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link to="/blogs" className="link">
-                  Blogs
-                </Link>
-              </li>
-              <li>
-                <Link to="/" className="link">
-                  Archives
-                </Link>
-              </li>
-            </ul>
-          </div> */}
-
             <div className="section section-icons">
               <span>
                 <Mail className="white" size={20} />
@@ -127,6 +92,7 @@ class Footer extends React.Component {
                     className="footer-link"
                     href="mailto:dscpvgcoet@pvgcoet.ac.in"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     dscpvgcoet@pvgcoet.ac.in
                   </a>
@@ -179,11 +145,25 @@ class Footer extends React.Component {
                 </div>
               </div> */}
               <p className="t2 white ta-right">
-                <span style={{ display:"flex",color: "#1a1a1a", fontWeight: 800 }}>
+                <span
+                  style={{
+                    display: "flex",
+                    fontWeight: 800,
+                    justifyContent: "center",
+                  }}
+                >
                   {" "}
-                  GDSC PVGCOET Newsletter
+                  Subscribe to our Newsletter
                 </span>
-                <iframe title="news-letter" src="https://gdscpvgcoet.substack.com/embed" width="480" height="180" style={{ background:"#2970E6",}}frameborder="0" scrolling="no"></iframe>
+                <iframe
+                  title="news-letter"
+                  src="https://gdscpvgcoet.substack.com/embed"
+                  width="480"
+                  height="180"
+                  style={{ background: "#2970E6" }}
+                  frameborder="0"
+                  scrolling="no"
+                ></iframe>
               </p>
             </div>
           </div>
