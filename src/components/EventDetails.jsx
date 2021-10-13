@@ -10,42 +10,30 @@ import Footer from "./Footer";
 import FormDialog from "./Form1";
 //import  from "./Form1";
 import Header from "./Header";
-import {events} from "../EnevtDetailsData"
-
-
-
-
-
-
-
+import { events } from "../EnevtDetailsData";
 
 const EventDetails = ({}) => {
-
- 
-
   const [currentIndex, setCurrentIndex] = useState(null);
   const [headerHeight, setHeaderHeight] = useState(0);
-  const [event,setEvent] = useState({})
-  
-  
+  const [event, setEvent] = useState({});
+
   useEffect(() => {
     window.scroll({
       top: 0,
     });
     const fullURL = window.location.href;
-    const eventUrl = fullURL.split("/")[fullURL.split("/").length-1]
-    if(events[eventUrl]){
-      setEvent(events[eventUrl])
-      console.log(new Date(`${events[eventUrl].dateTime}`).getTime() , new Date().getTime())
+    const eventUrl = fullURL.split("/")[fullURL.split("/").length - 1];
+    if (events[eventUrl]) {
+      setEvent(events[eventUrl]);
+      console.log(
+        new Date(`${events[eventUrl].dateTime}`).getTime(),
+        new Date().getTime()
+      );
     }
   }, []);
- 
+
   return (
-
-    
     <Fragment>
-
-
       <Header
         showLogoInHeader={true}
         passHeaderHeight={(height) => setHeaderHeight(height + 20)}
@@ -84,10 +72,10 @@ const EventDetails = ({}) => {
               className="t2 ta-center white"
               style={{ marginTop: isMobile ? 5 : 30 }}
             >
-              {/* event begins in */}
-              event had expired
+              event begins in
+              {/* event had expired */}
             </p>
-            {/* <Timer startDate={new Date(event.start).getTime()} /> */}
+            <Timer startDate={new Date(event.start).getTime()} />
 
             <p
               className="t1 ta-center white"
@@ -104,8 +92,7 @@ const EventDetails = ({}) => {
             >
               {event.post_event_desc}
             </p>
-              {/* {new Date(`${event.dateTime}`).getTime() < new Date().getTime() && <FormDialog className="primary-button" />} */}
-          
+            {/* {new Date(`${event.dateTime}`).getTime() < new Date().getTime() && <FormDialog className="primary-button" />} */}
           </div>
 
           <div className="featured-media">
@@ -113,9 +100,7 @@ const EventDetails = ({}) => {
           </div>
 
           <div className="event-content">
-            <p className="t2 darkGrey">
-              {event.description}
-            </p>
+            <p className="t2 darkGrey">{event.description}</p>
           </div>
         </div>
 
