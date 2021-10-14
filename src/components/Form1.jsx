@@ -15,13 +15,17 @@ import { MenuItem } from '@material-ui/core';
 import { InputLabel } from '@material-ui/core';
 import { FormControl } from '@material-ui/core';
 
-export default function FormDialog({isOpen}) {
+export default function FormDialog({isOpen,title="Register Now",registrationLink=null}) {
 
 
   const [open, setOpen] = React.useState(isOpen);
 
   const handleClickOpen = () => {
-    setOpen(true);
+    if(!registrationLink){
+      setOpen(true);
+    }else{
+      window.open(registrationLink)
+    }
   };
 
   const handleClose = () => {
@@ -75,7 +79,7 @@ export default function FormDialog({isOpen}) {
 
       </div>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
-        <DialogTitle id="form-dialog-title">EVENT NAME </DialogTitle>
+        <DialogTitle id="form-dialog-title">{title}</DialogTitle>
         <DialogContent onChange={handleChange}>
           <DialogContentText>
           <FormControl onSubmit={handleSubmit}>
