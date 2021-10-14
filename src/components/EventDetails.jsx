@@ -88,6 +88,10 @@ const EventDetails = () => {
               style={{ marginTop: 40, display: isMobile ? "none" : "" }}
             >
             </p>
+            <p className="t3 ta-center white">
+            {eventHasExpired ? event.postEventDesc : event.shortDesc }
+
+            </p>
             {eventHasExpired ? <div></div> : <FormDialog title={event.name} registrationLink={event.registrationLink}/> }
           </div>
 

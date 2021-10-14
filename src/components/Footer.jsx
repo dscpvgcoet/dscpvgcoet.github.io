@@ -158,7 +158,7 @@ class Footer extends React.Component {
                 <iframe
                   title="news-letter"
                   src="https://gdscpvgcoet.substack.com/embed"
-                  width="480"
+                  // width=""
                   height="180"
                   style={{ background: "#2970E6" }}
                   frameborder="0"

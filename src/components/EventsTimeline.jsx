@@ -257,7 +257,7 @@ class EventsTimeline extends React.Component {
                             
                             {
                                 eventsListInfo.map((item, index) => {
-                                    return <EventsCard url={item.url} date={item.date} eventLoc={index+1} pageNumber={this.state.pageNumber} title={item.name} description={item.short_desc} index={index}/>
+                                    return <EventsCard url={item.url} date={item.date} eventLoc={index+1} pageNumber={this.state.pageNumber} title={item.name} description={item.shortDesc} index={index}/>
                                 })
                             }
     
@@ -306,7 +306,7 @@ class EventsTimeline extends React.Component {
      
                         {
                                 eventsListInfo.map((item, index) => {
-                                    return <EventsCardMobile url={item.url} date={item.date}  eventLoc={index+1} pageNumber={this.state.pageNumber} title={item.name} description={item.short_desc} index={index}/>
+                                    return <EventsCardMobile url={item.url} date={item.date}  eventLoc={index+1} pageNumber={this.state.pageNumber} title={item.name} description={item.shortDesc} index={index}/>
                                 })
                         }
 
