@@ -29,6 +29,7 @@ export const events = {
       </p>
     ),
     image: "https://docs.google.com/uc?id=111MFVJ-Bm1tDaszNIhitc-hgK8Hep4lv",
+    registrationLink : null,
   },
   "30-day-of-google-cloud": {
     name: "Kick Start With 30 Days Of Google Cloud",
@@ -55,6 +56,7 @@ export const events = {
       </p>
     ),
     image: "https://docs.google.com/uc?id=1BYLQ61x3eBR_mZEoQqwl9GIttLKOnlRR",
+    registrationLink : null,
   },
   "mock-placement-drive": {
     name: "Mock Placement Drive",
@@ -87,5 +89,6 @@ export const events = {
       </p>
     ),
     image: "https://docs.google.com/uc?id=1WBMvXcnHwSwcEc_qlImkE8u6HQkkW-Y2",
+    registrationLink : "https://dare2compete.com/p/mock-placement-pune-vidhyarthi-grihas-college-of-engineering-and-technology-pune-224161?lb=QyfdD6u",
   },
 };

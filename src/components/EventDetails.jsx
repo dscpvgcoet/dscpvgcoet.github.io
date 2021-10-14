@@ -8,14 +8,15 @@ import "../css/events.css";
 import { Timer } from "../helpers";
 import Footer from "./Footer";
 import FormDialog from "./Form1";
-//import  from "./Form1";
+
 import Header from "./Header";
 import { events } from "../EnevtDetailsData";
 
-const EventDetails = ({}) => {
-  const [currentIndex, setCurrentIndex] = useState(null);
+const EventDetails = () => {
+  // const [currentIndex, setCurrentIndex] = useState(null);
   const [headerHeight, setHeaderHeight] = useState(0);
   const [event, setEvent] = useState({});
+  const [eventHasExpired,seteventHasExpired] = useState(true)
 
   useEffect(() => {
     window.scroll({
@@ -25,10 +26,7 @@ const EventDetails = ({}) => {
     const eventUrl = fullURL.split("/")[fullURL.split("/").length - 1];
     if (events[eventUrl]) {
       setEvent(events[eventUrl]);
-      console.log(
-        new Date(`${events[eventUrl].dateTime}`).getTime(),
-        new Date().getTime()
-      );
+      seteventHasExpired(new Date(events[eventUrl].dateTime).getTime() < new Date().getTime())
     }
   }, []);
 
@@ -72,10 +70,9 @@ const EventDetails = ({}) => {
               className="t2 ta-center white"
               style={{ marginTop: isMobile ? 5 : 30 }}
             >
-              event begins in
-              {/* event had expired */}
+              {eventHasExpired ? "event has expired" : "event begins in"}
             </p>
-            <Timer startDate={new Date(event.start).getTime()} />
+            {eventHasExpired ?<div></div> : <Timer startDate={new Date(event.dateTime).getTime()} /> }
 
             <p
               className="t1 ta-center white"
@@ -90,9 +87,8 @@ const EventDetails = ({}) => {
               className="t3 ta-center white"
               style={{ marginTop: 40, display: isMobile ? "none" : "" }}
             >
-              {event.post_event_desc}
             </p>
-            {/* {new Date(`${event.dateTime}`).getTime() < new Date().getTime() && <FormDialog className="primary-button" />} */}
+            {eventHasExpired ? <div></div> : <FormDialog title={event.name} registrationLink={event.registrationLink}/> }
           </div>
 
           <div className="featured-media">
