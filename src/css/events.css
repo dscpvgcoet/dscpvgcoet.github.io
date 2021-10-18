@@ -222,12 +222,15 @@
     flex-direction: row;
     align-items: center;
     transition: 0.3s ease-out;
-    width:max-content;
+    width:fit-content;
     will-change: transform;
+    padding: 8px 12px;
+    border-radius: 100px;
+    background-color: var(--grey);
 }
 
 .go-back a:hover  {
-    transform: translateX(-10px);
+    background-color: white;
     transition: 0.3s ease-out;
 }
 

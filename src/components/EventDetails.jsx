@@ -41,9 +41,10 @@ const EventDetails = () => {
         className="event-details-container"
         style={{ paddingTop: isMobile ? 20 : headerHeight }}
       >
-        <p className="t2 darkGrey ta-left go-back" style={{ margin: "20px 0" }}>
+        <p className="t3 darkGrey ta-left go-back" style={{ margin: "10px 0" }}>
           <Link to="/events">
-            <ChevronLeft className="darkGrey" size={24} />
+            <ChevronLeft className="darkGrey" size={20} />
+            &nbsp;
             back to timeline
           </Link>
         </p>
@@ -51,7 +52,7 @@ const EventDetails = () => {
         <div className="top-headings">
           <p
             className="h3 darkText ta-center"
-            style={{ margin: isMobile ? "50px 20px" : 50 }}
+            style={{ margin: isMobile ? "50px 20px" : '40px 0 20px 0' }}
           >
             {event.name}
           </p>
