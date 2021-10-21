@@ -4,9 +4,9 @@ export const events = {
     name: "Information Session",
     date: "18th September 2021",
     dateTime: "2021-09-18 11:00:00",
-    short_desc:
+    shortDesc:
       "This session is going to be an introduction to the new GDSC PVGCOET.",
-    post_event_desc: "",
+    postEventDesc: "",
     url: "info-session",
     description: (
       <p>
@@ -35,8 +35,8 @@ export const events = {
     name: "Kick Start With 30 Days Of Google Cloud",
     date: "26th September 2021",
     dateTime: "2021-09-26 11:00:00",
-    short_desc: "Start your journey with Google cloud !",
-    post_event_desc: (
+    shortDesc: "Start your journey with Google cloud !",
+    postEventDesc: (
       <p>
         The event is over find the recording over{" "}
         <u>
@@ -62,18 +62,18 @@ export const events = {
     name: "Mock Placement Drive",
     date: "16th-31st October 2021",
     dateTime: "2021-10-16 11:00:00",
-    short_desc:
+    shortDesc:
       "Get the actual feel of interview drives during college placements",
-    post_event_desc: "",
+    postEventDesc: "",
     url: "mock-placement-drive",
     description: (
       <p>
         Engineering can be arduously fun. A part of us might not want to leave
-        it but we are compelled to. :pleading_face: Soon, our lives get
+        it but we are compelled to. Soon, our lives get
         intertwined with appealing jobs and internships. Who doesn't wanna grab
         those opportunities? Behold! The Trinity is here! On 16th of October,
         GDSC, in collaboration with ACES and ITSA of PVGCOET brings forth The
-        Mock Placement Drive!!! :fire: It is an extraordinary event, OPEN FOR
+        Mock Placement Drive!!! It is an extraordinary event, OPEN FOR
         ALL BRANCHES, which includes:
         <ul>
           <li>Aptitude Test</li>
@@ -85,7 +85,8 @@ export const events = {
         Join in this intriguing event and Manifest your Dreams by taking these
         baby steps AT NO COST at all! This Kickstart will send you skyrocketing
         towards your goals and make sure you are ahead of the game! Triple
-        Clubs! Triple Benefits! Triple Fun!
+        Clubs! Triple Benefits! Triple Fun!<br/><br/>
+        Click <a href="https://drive.google.com/file/d/172b9JoCiLwxjq4CFrkvjS9_DcdC_BHtT/view?usp=sharing"><u>here</u></a> to know more
       </p>
     ),
     image: "https://docs.google.com/uc?id=1WBMvXcnHwSwcEc_qlImkE8u6HQkkW-Y2",
