@@ -403,3 +403,16 @@ a:visited {
         font-size: 26px
     }
 }
+
+.loading-screen {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #141718;
+}
+.loading-screen img {
+    width: 10rem;
+}

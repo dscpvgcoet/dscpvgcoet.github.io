@@ -13,10 +13,28 @@ import Resources from './Resources'
 import Blog from './Blogs'
 import Archives from './Archive'
 
+import GDSCGif from '../assets/gdsc-logo.gif'
+
+import '../css/globalStyles.css'
+
+
 class App extends React.Component {
 
+    constructor(props) {
+        super(props)
+        this.state = {
+            isLoading: true
+        }
+    }
+
+    componentDidMount() {
+        setTimeout(() => {
+            this.setState({isLoading: false})
+        }, 3000);
+    }
+
     render() {
-        return (
+        return !this.state.isLoading ? (
             <ThemeProvider>
                 <Router>
                     <div>
@@ -33,6 +51,10 @@ class App extends React.Component {
                     </div>
                 </Router>
             </ThemeProvider>
+        ) : (
+            <div className="loading-screen">
+                <img src={GDSCGif} alt="loading...." />
+            </div>
         )
     }
 }
