@@ -107,6 +107,16 @@ a:visited {
     box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+    background-color: #141718;
+    width: 6px;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: var(--darkGrey);
+    width: 6px;
+    border-radius: 5px;
+}
+
 .ta-center {
     text-align: center;
 }

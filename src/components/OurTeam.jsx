@@ -3,8 +3,6 @@ import { isMobile, BrowserView, MobileView } from "react-device-detect";
 
 import Header from "./Header";
 import Footer from "./Footer";
-import { DSCLeadInformation, teamInformation } from "../teamInformation";
-import team from "../assets/images/team.jpg";
 import teamInfo from "../teamInfo.json";
 
 import "../css/our-team.css";
@@ -29,7 +27,7 @@ class OurTeam extends React.Component {
       return member ? (
         <div className="core-member-box">
           <div className="core-member-photo">
-            <img src={member.imageUrl.replace("open?", "uc?")} />
+            <img src={member.imageUrl.replace("open?", "uc?")} loading="lazy" />
           </div>
           <p
             className="h5 tanText ta-center"
@@ -100,7 +98,7 @@ class OurTeam extends React.Component {
       return member ? (
         <div className="core-member-box">
           <div className="core-member-photo randomize">
-            <img src={member.imageUrl.replace("open?", "uc?")} />
+            <img src={member.imageUrl.replace("open?", "uc?")} loading="lazy"/>
           </div>
           <p
             className="h5 tanText ta-center"

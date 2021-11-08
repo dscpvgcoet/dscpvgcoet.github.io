@@ -103,9 +103,12 @@
     transition: 0.2s ease-out;
     z-index: 102;
 }
+.next-button {
+    background-color: var(--googleBlue);
+}
 
 .next-button:hover {
-    transform: scale(1.1) translateY(calc(-50% + 65px)) translateX(50%);
+    transform: scale(1.05) translateY(calc(-50% + 65px)) translateX(50%);
     transition: 0.3s ease-out;
 }
 

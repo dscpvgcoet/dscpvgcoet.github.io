@@ -17,24 +17,49 @@ import GDSCGif from '../assets/gdsc-logo.gif'
 
 import '../css/globalStyles.css'
 
+const fs = require('fs')
+
 
 class App extends React.Component {
 
     constructor(props) {
         super(props)
         this.state = {
-            isLoading: true
+            isLoading: true,
+            imagesLoaded: false
         }
     }
 
     componentDidMount() {
+        this.preloadImages()
         setTimeout(() => {
             this.setState({isLoading: false})
         }, 3000);
     }
 
+    preloadImages() {   
+        const importAll = r => r.keys().map(r)
+        const loadImage = imageLink => {
+            return new Promise((resolve, reject) => {
+                const imageToLoad = new Image()
+                imageToLoad.src = imageLink
+                imageToLoad.onload = () => {
+                    setTimeout(() => {
+                        resolve(imageLink)
+                    }, 2000)
+                }
+                imageToLoad.onerror = err => reject(err)
+            })
+        }
+          
+        const images = importAll(require.context('../assets/images', false, /\.(png|jpe?g|svg)$/))
+        
+        Promise.all(images.map(image => loadImage(image)))
+        .then(() => this.setState({imagesLoaded: true}))
+    }
+
     render() {
-        return !this.state.isLoading ? (
+        return !this.state.isLoading && this.state.imagesLoaded ? (
             <ThemeProvider>
                 <Router>
                     <div>
