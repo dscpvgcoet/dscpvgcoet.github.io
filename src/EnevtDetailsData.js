@@ -167,4 +167,19 @@ export const events = {
     image: "https://docs.google.com/uc?id=1HKh2odU90DiqMUL7kyMn4v6eP22FknLI",
     registrationLink: null,
   },
+  "shravni": {
+    name: "",
+    date: "22th November 2021",
+    dateTime: "2021-11-23 18:00:00",
+    shortDesc: "",
+    postEventDesc: "",
+    url: "shravni", // should be same as key (shravni)
+    description: (
+      <p>
+        
+      </p>
+    ),
+    image: "",
+    registrationLink: null,
+  },
 };

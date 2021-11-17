@@ -61,7 +61,7 @@ export default function FormDialog({isOpen,title="Register Now",registrationLink
           headers: { "Content-type": "Application/json" },
           body: JSON.stringify(registration),
         })
-        alert(postUrl)
+        alert("Thank you for registering !")
       }catch(e){
         alert("Could not register")
       }
@@ -128,10 +128,14 @@ export default function FormDialog({isOpen,title="Register Now",registrationLink
                 />
               </Grid>
               <Grid item xs={12} sm={6}>
+                <label id = "branch-label">
+                  Branch
+                </label>
                 <Select
                   labelId="branch-label"
                   name="Branch"
                   label="Branch"
+                  placeholder="Branch"
                   fullWidth
                   onChange={handleChange}
                   value={registration["Branch"]}
@@ -154,8 +158,11 @@ export default function FormDialog({isOpen,title="Register Now",registrationLink
                 />}
               </Grid>
               <Grid item xs={12} sm={6}>
+                <label id = "year-label">
+                  Year
+                </label>
                 <Select
-                    labelId="branch-label"
+                    labelId="year-label"
                     name="Year"
                     label="Year"
                     fullWidth
