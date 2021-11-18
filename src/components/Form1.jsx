@@ -62,6 +62,7 @@ export default function FormDialog({isOpen,title="Register Now",registrationLink
           body: JSON.stringify(registration),
         })
         alert("Thank you for registering !")
+        // console.log(postUrl)
       }catch(e){
         alert("Could not register")
       }

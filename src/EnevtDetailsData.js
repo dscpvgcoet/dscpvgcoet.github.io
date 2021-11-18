@@ -167,19 +167,22 @@ export const events = {
     image: "https://docs.google.com/uc?id=1HKh2odU90DiqMUL7kyMn4v6eP22FknLI",
     registrationLink: null,
   },
-  "shravni": {
-    name: "",
+  "competitive-programming": {
+    name: "Breaking into Competitive Programming",
     date: "22th November 2021",
     dateTime: "2021-11-23 18:00:00",
-    shortDesc: "",
+    shortDesc: "Kick-start your Competitive Programming Journey with GDSC PVGCOET",
     postEventDesc: "",
-    url: "shravni", // should be same as key (shravni)
+    url: "competitive-programming", // should be same as key (shravni)
     description: (
       <p>
-        
+        𝗖𝗼𝗺𝗽𝗲𝘁𝗶𝘁𝗶𝘃𝗲 𝗽𝗿𝗼𝗴𝗿𝗮𝗺𝗺𝗲𝗿𝘀 are known for their problem-solving skills. Like developers show their skills by making different projects, competitive programmers show their talent by taking part in unique challenges with sites likes Codeforces, Codechef, Atcoder and many more to host them frequently. <br />
+Start your Competitive Programming Journey with GDSC PVGCOET on the 22nd of November 2021. <br />
+Announcing Breaking into Competitive Programming by Shravani Paraswar who is our Competitive programming Expert. She will guide us through the roadmap of being a successful competitive programmer and tell us the importance of the same. <br />
+So register now and join us on the 22nd to start a blissful journey in Competitive Programming.
       </p>
     ),
-    image: "",
+    image: "https://docs.google.com/uc?id=1Hh6p96X4Uge82_PsGhrLyDXksXy8cLst",
     registrationLink: null,
   },
 };
