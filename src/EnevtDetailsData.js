@@ -170,7 +170,7 @@ export const events = {
   "competitive-programming": {
     name: "Breaking into Competitive Programming",
     date: "22th November 2021",
-    dateTime: "2021-11-23 18:00:00",
+    dateTime: "2021-11-22 18:00:00",
     shortDesc: "Kick-start your Competitive Programming Journey with GDSC PVGCOET",
     postEventDesc: "",
     url: "competitive-programming", // should be same as key (shravni)
