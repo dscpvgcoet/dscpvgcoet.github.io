@@ -185,4 +185,124 @@ So register now and join us on the 22nd to start a blissful journey in Competiti
     image: "https://docs.google.com/uc?id=1Hh6p96X4Uge82_PsGhrLyDXksXy8cLst",
     registrationLink: null,
   },
+  "android-study-jam-basic":{
+    name : "Android Study Jams | Basics of Kotlin",
+    date : "4th December 2021",
+    dateTime : "2021-12-04 11:00:00",
+    shortDesc : "Kickstart your journey as an Android Developer",
+    postEventDesc : "",
+    url : "android-study-jam-basic",
+    description : (
+      <p>
+        Android Study Jams are back!!<br/><br/>
+        Exciting opportunities awaits all Android lovers<br/><br/>
+
+        Google decided that Kotlin was its preferred language for building Android apps<br/><br/>
+
+        That's not the only reason to learn Kotlin!<br/><br/>
+
+        It is a modern, concise and safe programming language which is easy to pick up, so that you can create powerful applications immediately.<br/><br/>
+
+        Android is ubiquitous. Imagining a world without it is improbable. So is life without Android Apps!<br/><br/>
+
+        Kick start your journey as an Android Developer with GDSC PVGCOET.<br/><br/>
+
+        Learn how to build your first Android App to solve real world problems.<br/><br/>
+
+        Join us on our first session: The Basics of Kotlin, on 4th December at 11 a.m. and continue learning with us to become a part of a greater community.<br/><br/>
+
+        Join the Android Study Jams Whatsapp Group to stay updated.<br/><br/>
+      </p>
+    ),
+    image: "https://docs.google.com/uc?id=135T0f2qrdsPdMPwcIgYsxcRwwmv-43ST",
+    registrationLink: null,
+  },
+  "android-study-jam-adv-kotlin":{
+    name : "Android Study Jams | Advanced Kotlin",
+    date : "11th December 2021",
+    dateTime : "2021-12-11 11:00:00",
+    shortDesc : "Dive deep into Kotlin",
+    postEventDesc : "",
+    url : "android-study-jam-adv-kotlin",
+    description : (
+      <p>
+        Had fun in the first Android Study Jam? 
+        <br/><br/>    
+        Looking forward for more sessions? 
+        <br/><br/>
+        Well,
+        <br/><br/>
+        Mark your Calenders!!
+        <br/><br/>
+        Android Study Jams is back for two back to back sessions on 11th and 12th Dec!! 
+        <br/><br/>
+        Session 2: Advanced Kotlin on 11th Dec at 11 a.m.
+        <br/><br/>
+        Session 3: Kotlin App Tour on 12th Dec at 11 a.m.
+        <br/><br/>
+        Double Fun this weekend with Android and Kotlin!!!
+      </p>
+    ),
+    image: "https://docs.google.com/uc?id=12rJnslvlpiLSrVHA60Dud2tg_uYs7dxq",
+    registrationLink: null,
+  },
+  "android-study-jam-app-tour":{
+    name : "Android Study Jams | Kotlin App Tour",
+    date : "12th December 2021",
+    dateTime : "2021-12-12 11:00:00",
+    shortDesc : "Build real time Android applications!",
+    postEventDesc : "",
+    url : "android-study-jam-app-tour",
+    description : (
+      <p>
+        Had fun in the first Android Study Jam? 
+        <br/><br/>    
+        Looking forward for more sessions? 
+        <br/><br/>
+        Well,
+        <br/><br/>
+        Mark your Calenders!!
+        <br/><br/>
+        Android Study Jams is back for two back to back sessions on 11th and 12th Dec!! 
+        <br/><br/>
+        Session 2: Advanced Kotlin on 11th Dec at 11 a.m.
+        <br/><br/>
+        Session 3: Kotlin App Tour on 12th Dec at 11 a.m.
+        <br/><br/>
+        Double Fun this weekend with Android and Kotlin!!!
+      </p>
+    ),
+    image: "https://docs.google.com/uc?id=12rJnslvlpiLSrVHA60Dud2tg_uYs7dxq",
+    registrationLink: null,
+  },
+  "innovathon":{
+    name : "Innovathon",
+    date : "",
+    dateTime : "2021-12-12 11:00:00",
+    shortDesc : "Mini-Hackathon",
+    postEventDesc : "",
+    url : "innovathon",
+    description : (
+      <p>
+        "Innovating minds innovate entire nations"
+        <br/><br/>
+        Kotlin enthusiasts,<br/>
+        Hear us, and rejoice!<br/>
+        GDSC PVGCOET presents a Mini-Hackathon, "Innovathon"!!<br/><br/>
+        Participate in the mini-hackathon and get a strong grip on Kotlin and Android Development. Improvise, adapt and innovate in a limited time.<br/><br/>
+        Multiple perks will be awarded to the top 3 winners
+        <ul>
+          <li>Get a chance to submit their app and get featured on Google social media channels</li>
+          <li>Special Certificate of Appreciation presented by Google Developer Student Club, PVGCOET</li>
+          <li>An opportunity to present the idea in Solution Challenge</li>
+          <li>Mentorship offered by GDSC PVGCOET's team</li>
+        </ul>
+        <br/><br/>
+        <a href="https://bit.ly/InnovathonGuidelines"><u>Innovathon Guidelines</u></a><br/><br/>
+        <a href="https://forms.gle/EHREcoFDWMv2jcQE8"><u>Submission form</u></a>
+      </p>
+    ),
+    image: "https://docs.google.com/uc?id=1obz1wUrhi0mt2VXhlQ7bl0qaDpp_VZmB",
+    registrationLink: null,
+  },
 };
