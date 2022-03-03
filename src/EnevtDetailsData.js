@@ -171,138 +171,313 @@ export const events = {
     name: "Breaking into Competitive Programming",
     date: "22th November 2021",
     dateTime: "2021-11-22 18:00:00",
-    shortDesc: "Kick-start your Competitive Programming Journey with GDSC PVGCOET",
+    shortDesc:
+      "Kick-start your Competitive Programming Journey with GDSC PVGCOET",
     postEventDesc: "",
     url: "competitive-programming", // should be same as key (shravni)
     description: (
       <p>
-        𝗖𝗼𝗺𝗽𝗲𝘁𝗶𝘁𝗶𝘃𝗲 𝗽𝗿𝗼𝗴𝗿𝗮𝗺𝗺𝗲𝗿𝘀 are known for their problem-solving skills. Like developers show their skills by making different projects, competitive programmers show their talent by taking part in unique challenges with sites likes Codeforces, Codechef, Atcoder and many more to host them frequently. <br />
-Start your Competitive Programming Journey with GDSC PVGCOET on the 22nd of November 2021. <br />
-Announcing Breaking into Competitive Programming by Shravani Paraswar who is our Competitive programming Expert. She will guide us through the roadmap of being a successful competitive programmer and tell us the importance of the same. <br />
-So register now and join us on the 22nd to start a blissful journey in Competitive Programming.
+        𝗖𝗼𝗺𝗽𝗲𝘁𝗶𝘁𝗶𝘃𝗲 𝗽𝗿𝗼𝗴𝗿𝗮𝗺𝗺𝗲𝗿𝘀 are known for their problem-solving skills. Like
+        developers show their skills by making different projects, competitive
+        programmers show their talent by taking part in unique challenges with
+        sites likes Codeforces, Codechef, Atcoder and many more to host them
+        frequently. <br />
+        Start your Competitive Programming Journey with GDSC PVGCOET on the 22nd
+        of November 2021. <br />
+        Announcing Breaking into Competitive Programming by Shravani Paraswar
+        who is our Competitive programming Expert. She will guide us through the
+        roadmap of being a successful competitive programmer and tell us the
+        importance of the same. <br />
+        So register now and join us on the 22nd to start a blissful journey in
+        Competitive Programming.
       </p>
     ),
     image: "https://docs.google.com/uc?id=1Hh6p96X4Uge82_PsGhrLyDXksXy8cLst",
     registrationLink: null,
   },
-  "android-study-jam-basic":{
-    name : "Android Study Jams | Basics of Kotlin",
-    date : "4th December 2021",
-    dateTime : "2021-12-04 11:00:00",
-    shortDesc : "Kickstart your journey as an Android Developer",
-    postEventDesc : "",
-    url : "android-study-jam-basic",
-    description : (
+  "android-study-jam-basic": {
+    name: "Android Study Jams | Basics of Kotlin",
+    date: "4th December 2021",
+    dateTime: "2021-12-04 11:00:00",
+    shortDesc: "Kickstart your journey as an Android Developer",
+    postEventDesc: "",
+    url: "android-study-jam-basic",
+    description: (
       <p>
-        Android Study Jams are back!!<br/><br/>
-        Exciting opportunities awaits all Android lovers<br/><br/>
-
-        Google decided that Kotlin was its preferred language for building Android apps<br/><br/>
-
-        That's not the only reason to learn Kotlin!<br/><br/>
-
-        It is a modern, concise and safe programming language which is easy to pick up, so that you can create powerful applications immediately.<br/><br/>
-
-        Android is ubiquitous. Imagining a world without it is improbable. So is life without Android Apps!<br/><br/>
-
-        Kick start your journey as an Android Developer with GDSC PVGCOET.<br/><br/>
-
-        Learn how to build your first Android App to solve real world problems.<br/><br/>
-
-        Join us on our first session: The Basics of Kotlin, on 4th December at 11 a.m. and continue learning with us to become a part of a greater community.<br/><br/>
-
-        Join the Android Study Jams Whatsapp Group to stay updated.<br/><br/>
+        Android Study Jams are back!!
+        <br />
+        <br />
+        Exciting opportunities awaits all Android lovers
+        <br />
+        <br />
+        Google decided that Kotlin was its preferred language for building
+        Android apps
+        <br />
+        <br />
+        That's not the only reason to learn Kotlin!
+        <br />
+        <br />
+        It is a modern, concise and safe programming language which is easy to
+        pick up, so that you can create powerful applications immediately.
+        <br />
+        <br />
+        Android is ubiquitous. Imagining a world without it is improbable. So is
+        life without Android Apps!
+        <br />
+        <br />
+        Kick start your journey as an Android Developer with GDSC PVGCOET.
+        <br />
+        <br />
+        Learn how to build your first Android App to solve real world problems.
+        <br />
+        <br />
+        Join us on our first session: The Basics of Kotlin, on 4th December at
+        11 a.m. and continue learning with us to become a part of a greater
+        community.
+        <br />
+        <br />
+        Join the Android Study Jams Whatsapp Group to stay updated.
+        <br />
+        <br />
       </p>
     ),
     image: "https://docs.google.com/uc?id=135T0f2qrdsPdMPwcIgYsxcRwwmv-43ST",
     registrationLink: null,
   },
-  "android-study-jam-adv-kotlin":{
-    name : "Android Study Jams | Advanced Kotlin",
-    date : "11th December 2021",
-    dateTime : "2021-12-11 11:00:00",
-    shortDesc : "Dive deep into Kotlin",
-    postEventDesc : "",
-    url : "android-study-jam-adv-kotlin",
-    description : (
+  "android-study-jam-adv-kotlin": {
+    name: "Android Study Jams | Advanced Kotlin",
+    date: "11th December 2021",
+    dateTime: "2021-12-11 11:00:00",
+    shortDesc: "Dive deep into Kotlin",
+    postEventDesc: "",
+    url: "android-study-jam-adv-kotlin",
+    description: (
       <p>
-        Had fun in the first Android Study Jam? 
-        <br/><br/>    
-        Looking forward for more sessions? 
-        <br/><br/>
+        Had fun in the first Android Study Jam?
+        <br />
+        <br />
+        Looking forward for more sessions?
+        <br />
+        <br />
         Well,
-        <br/><br/>
+        <br />
+        <br />
         Mark your Calenders!!
-        <br/><br/>
-        Android Study Jams is back for two back to back sessions on 11th and 12th Dec!! 
-        <br/><br/>
+        <br />
+        <br />
+        Android Study Jams is back for two back to back sessions on 11th and
+        12th Dec!!
+        <br />
+        <br />
         Session 2: Advanced Kotlin on 11th Dec at 11 a.m.
-        <br/><br/>
+        <br />
+        <br />
         Session 3: Kotlin App Tour on 12th Dec at 11 a.m.
-        <br/><br/>
+        <br />
+        <br />
         Double Fun this weekend with Android and Kotlin!!!
       </p>
     ),
     image: "https://docs.google.com/uc?id=12rJnslvlpiLSrVHA60Dud2tg_uYs7dxq",
     registrationLink: null,
   },
-  "android-study-jam-app-tour":{
-    name : "Android Study Jams | Kotlin App Tour",
-    date : "12th December 2021",
-    dateTime : "2021-12-12 11:00:00",
-    shortDesc : "Build real time Android applications!",
-    postEventDesc : "",
-    url : "android-study-jam-app-tour",
-    description : (
+  "android-study-jam-app-tour": {
+    name: "Android Study Jams | Kotlin App Tour",
+    date: "12th December 2021",
+    dateTime: "2021-12-12 11:00:00",
+    shortDesc: "Build real time Android applications!",
+    postEventDesc: "",
+    url: "android-study-jam-app-tour",
+    description: (
       <p>
-        Had fun in the first Android Study Jam? 
-        <br/><br/>    
-        Looking forward for more sessions? 
-        <br/><br/>
+        Had fun in the first Android Study Jam?
+        <br />
+        <br />
+        Looking forward for more sessions?
+        <br />
+        <br />
         Well,
-        <br/><br/>
+        <br />
+        <br />
         Mark your Calenders!!
-        <br/><br/>
-        Android Study Jams is back for two back to back sessions on 11th and 12th Dec!! 
-        <br/><br/>
+        <br />
+        <br />
+        Android Study Jams is back for two back to back sessions on 11th and
+        12th Dec!!
+        <br />
+        <br />
         Session 2: Advanced Kotlin on 11th Dec at 11 a.m.
-        <br/><br/>
+        <br />
+        <br />
         Session 3: Kotlin App Tour on 12th Dec at 11 a.m.
-        <br/><br/>
+        <br />
+        <br />
         Double Fun this weekend with Android and Kotlin!!!
       </p>
     ),
     image: "https://docs.google.com/uc?id=12rJnslvlpiLSrVHA60Dud2tg_uYs7dxq",
     registrationLink: null,
   },
-  "innovathon":{
-    name : "Innovathon",
-    date : "",
-    dateTime : "2021-12-12 11:00:00",
-    shortDesc : "Mini-Hackathon",
-    postEventDesc : "",
-    url : "innovathon",
-    description : (
+  innovathon: {
+    name: "Innovathon",
+    date: "",
+    dateTime: "2021-12-12 11:00:00",
+    shortDesc: "Mini-Hackathon",
+    postEventDesc: "",
+    url: "innovathon",
+    description: (
       <p>
         "Innovating minds innovate entire nations"
-        <br/><br/>
-        Kotlin enthusiasts,<br/>
-        Hear us, and rejoice!<br/>
-        GDSC PVGCOET presents a Mini-Hackathon, "Innovathon"!!<br/><br/>
-        Participate in the mini-hackathon and get a strong grip on Kotlin and Android Development. Improvise, adapt and innovate in a limited time.<br/><br/>
+        <br />
+        <br />
+        Kotlin enthusiasts,
+        <br />
+        Hear us, and rejoice!
+        <br />
+        GDSC PVGCOET presents a Mini-Hackathon, "Innovathon"!!
+        <br />
+        <br />
+        Participate in the mini-hackathon and get a strong grip on Kotlin and
+        Android Development. Improvise, adapt and innovate in a limited time.
+        <br />
+        <br />
         Multiple perks will be awarded to the top 3 winners
         <ul>
-          <li>Get a chance to submit their app and get featured on Google social media channels</li>
-          <li>Special Certificate of Appreciation presented by Google Developer Student Club, PVGCOET</li>
+          <li>
+            Get a chance to submit their app and get featured on Google social
+            media channels
+          </li>
+          <li>
+            Special Certificate of Appreciation presented by Google Developer
+            Student Club, PVGCOET
+          </li>
           <li>An opportunity to present the idea in Solution Challenge</li>
           <li>Mentorship offered by GDSC PVGCOET's team</li>
         </ul>
-        <br/><br/>
-        <a href="https://bit.ly/InnovathonGuidelines"><u>Innovathon Guidelines</u></a><br/><br/>
-        <a href="https://forms.gle/EHREcoFDWMv2jcQE8"><u>Submission form</u></a>
+        <br />
+        <br />
+        <a href="https://bit.ly/InnovathonGuidelines">
+          <u>Innovathon Guidelines</u>
+        </a>
+        <br />
+        <br />
+        <a href="https://forms.gle/EHREcoFDWMv2jcQE8">
+          <u>Submission form</u>
+        </a>
       </p>
     ),
     image: "https://docs.google.com/uc?id=1obz1wUrhi0mt2VXhlQ7bl0qaDpp_VZmB",
+    registrationLink: null,
+  },
+  "freshers-connect": {
+    name: "Freshers' Connect",
+    date: "13th January 2022",
+    dateTime: "2022-1-13 18:00:00",
+    shortDesc: "Freshers-Connect",
+    postEventDesc: "",
+    url: "freshers-connect",
+    description: (
+      <p>
+        GDSC PVGCOET is a developer's community by students, and for students.
+        It is a group of like minded individuals with the sole aim of teaching,
+        learning and helping our fellow students to excel.
+        <br />
+        <br />
+        The main motto of GDSC is,{" "}
+        <strong> "To bridge the gap between theory and practice."</strong>
+        <br />
+        In this Orientation session freshers will learn everything about GDSC.
+      </p>
+    ),
+    image:
+      "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-dsc/events/20220110_192624_0000_LU4oHk3.png",
+    registrationLink: null,
+  },
+  portfolio: {
+    name: "Build Your Own Portfolio | WebHunt",
+    date: "15th January 2022",
+    dateTime: "2022-1-15 16:30:00",
+    shortDesc: "Learn HTML, CSS & JavaScript",
+    postEventDesc: "",
+    url: "portfolio",
+    description: (
+      <p>
+        When you're a Web Developer, the possibilities are endless!
+        <br />
+        WebHunt is a Web Development Bootcamp will be starting on the 15th Of
+        January 2022.
+        <br />
+        <br />
+        Learn the fundamentals of web development at our Web Essentials
+        Bootcamp, which includes CSS & HTML to jump-start your career as a web
+        developer in just a matter of days.
+        <br />
+        Learn more and sign up today!
+      </p>
+    ),
+    image:
+      "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-dsc/events/1_2.png",
+    registrationLink: null,
+  },
+  "reactjs-essentials": {
+    name: "React JS Essentials | WebHunt",
+    date: "22nd January 2022",
+    dateTime: "2022-1-22 16:30:00",
+    shortDesc: "Dive in Deep into the Word of React and learn it from Scratch",
+    postEventDesc: "",
+    url: "reactjs-essentials",
+    description: (
+      <p>
+        Dive in Deep into the Word of React and learn it from Scratch. On
+        successful completion of this workshop you’ll be able to make your own
+        Linktree!! So Join us, to get your hands on this exciting project
+        <br />
+        <br />
+        <strong>What you will learn?</strong>
+        <ul>
+          <li>React patterns and anti-patterns</li>
+          <li>
+            Get insights on React Hooks and Functional components for better
+            reusability
+          </li>
+          <li>Build your own Linktree</li>
+        </ul>
+      </p>
+    ),
+    image:
+      "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-dsc/events/Webhunt-react_v_Moment.jpg",
+    registrationLink: null,
+  },
+  "solution-challenge-info": {
+    name: "Google Solution Challenge Info Session    ",
+    date: "22nd January 2022",
+    dateTime: "2022-2-5 16:30:00",
+    shortDesc:
+      "Hop along with us for the Solution Challenge Info session where we'll be guiding you through everything from the registration process to guidelines, as well as answering our questions.",
+    postEventDesc: "",
+    url: "solution-challenge-info",
+    description: (
+      <p>
+        Have you ever thought about building an application or tool that solves
+        a problem your community faces?🤔
+        <br /> <br />
+        Wanna change the world with your revolutionary ideas?😎
+        <br /> <br />
+        The year ahead brings more opportunities for helping each other and
+        giving back to our communities.🤝 The mission of the 2022 Solution
+        Challenge by Google is to solve for one or more of the United Nation's
+        1️⃣7️⃣ Sustainable Development Goals using Google technologies.
+        <br /> <br />
+        GDSC PVGCOET is participating in the Solution Challenge for the first
+        time!!🥳
+        <br /> <br />
+        Join the Info Session on 5th Feb, Saturday at 4:30 p.m. to get briefed
+        about the event and thereby contribute to make this world a better
+        place🙌
+      </p>
+    ),
+    image:
+      "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-dsc/event_banners/solutionchallenge-2022-EventThumbnail.png",
     registrationLink: null,
   },
 };
