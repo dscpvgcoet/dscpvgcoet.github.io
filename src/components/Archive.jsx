@@ -6,6 +6,7 @@ import archiveInfo from '../archiveInfo'
 import '../css/archive.css'
 import { ArrowUpLeft, ArrowUpRight, ExternalLink } from 'react-feather'
 import { isMobile } from 'react-device-detect'
+import { Link } from 'react-router-dom'
 
 const Archives = () => {
 
@@ -47,15 +48,26 @@ const Archives = () => {
                         <p className="t2 darkGrey">{inf.description}</p>
                       </div>
                       &emsp;
-                      <a href={inf.link} rel="noopener noreferrer" target="_blank">
-                        <div className="open-button">
-                          <p className="t2 darkText">
-                            Open
-                            
-                            {/* <ArrowUpRight size={16}/> */}
-                          </p>
-                        </div>
-                      </a>
+                      {inf.same_page ? 
+                        <Link to={inf.link} rel="noopener noreferrer">
+                          <div className="open-button">
+                            <p className="t2 darkText">
+                              Open
+                              
+                              {/* <ArrowUpRight size={16}/> */}
+                            </p>
+                          </div>
+                        </Link> :
+                        <a href={inf.link} rel="noopener noreferrer" target="_blank">
+                          <div className="open-button">
+                            <p className="t2 darkText">
+                              Open
+                              
+                              {/* <ArrowUpRight size={16}/> */}
+                            </p>
+                          </div>
+                        </a>
+                      }
                       
                     </div>
                   )
