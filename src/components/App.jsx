@@ -16,6 +16,7 @@ import Archives from './Archive'
 import GDSCGif from '../assets/gdsc-logo.gif'
 
 import '../css/globalStyles.css'
+import OldTeam from './OldTeam'
 
 const fs = require('fs')
 
@@ -65,6 +66,7 @@ class App extends React.Component {
                     <div>
                         <Route path="/" exact component={Home}/>
                         <Route path="/team" exact component={OurTeam}/>
+                        <Route path="/team-21-22" exact component={OldTeam}/>
                         <Route path="/blogs" exact component={BlogList}/>
                         <Route path="/blogs/*" exact component={Blog}/>
                         <Route path="/events" exact component={EventsTimeline}/>
