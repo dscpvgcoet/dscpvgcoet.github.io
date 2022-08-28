@@ -178,7 +178,7 @@ class OurTeam extends React.Component {
             <p className="h3 darkText">Our Team</p>
             <p className="t1 darkGrey">
               Presenting our passionate team for Google Developer Students Club
-              PVGCOET 2020-2021
+              PVGCOET 2022-2023
             </p>
           </div>
         </div>
@@ -200,6 +200,9 @@ class OurTeam extends React.Component {
             </div>
             <div className="team-members-core-inner">
               {this.renderCompleteTeam(8, 12)}
+            </div>
+            <div className="team-members-core-inner">
+              {this.renderCompleteTeam(12, 16)}
             </div>
           </BrowserView>
           <MobileView>
