@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://gdscpvgcoet.in/static/media/DSCPVGCOETOnlyLogo.f4703c49.svg" style="width: 13%; "/>
+<img src="https://user-images.githubusercontent.com/65951872/190701432-3085ae93-e40a-4825-9c52-4360642d43a3.png" style="width:13%"/>
 </p>
 <p align="center">
 <img src="https://gdscpvgcoet.in/static/media/GDSCLogoText.976dcd99.png" style="width: 43%;"/>
@@ -21,6 +21,8 @@ Find out more about our events and activities on our official website, [gdscpvgc
 
 <br/>
 
+---
+
 ### How do I join GDSC ?
 
 GDSC is open to any student, ranging from amateur developers who are just getting started, to experienced developers who want to further hone and showcase their skills.
@@ -35,6 +37,8 @@ Our core committee will conduct a one-to-one interview with you to assess your s
 It doesnt end here. Be an active part of GDSC and its events to gain maximum knowledge, experience, and to participate in various projects!
 
 <br/>
+
+---
 
 ### Contributing
 - To add a new feature request, create an issue.
