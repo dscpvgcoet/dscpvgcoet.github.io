@@ -953,22 +953,22 @@ export const events = {
     image: "https://docs.google.com/uc?id=1kPB2trDtWKRuBcG6LT6UFi4NdmtOVLd1",
     registrationLink: null,
   },
-  "io-extended-2k23": {
-    name: "I/O Extended Pune",
-    date: "20th May 2023",
-    dateTime: "2023-5-20 09:00:00",
-    shortDesc:
-      "I/O connects developers from around the world for thoughtful discussions and a first look at our latest developer products.",
-    postEventDesc: "",
-    url: "io-extended-2k23",
-    description: (
-      <p>
-        Join us for this year's Google IO Extended Pune event, where we'll bring
-        together tech enthusiasts and the developer community to be a part of
-        the Google IO 2023 experience.
-      </p>
-    ),
-    image: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_1080,q_100,w_1080/v1/gcs/platform-data-goog/events/Copy%20of%20IOE23-Bevy-Thumbnail-1080x1080-Editable_oeP5uJS.jpg",
-    registrationLink: null,
-  },
+  // "io-extended-2k23": {
+  //   name: "I/O Extended Pune",
+  //   date: "20th May 2023",
+  //   dateTime: "2023-5-20 09:00:00",
+  //   shortDesc:
+  //     "I/O connects developers from around the world for thoughtful discussions and a first look at our latest developer products.",
+  //   postEventDesc: "",
+  //   url: "io-extended-2k23",
+  //   description: (
+  //     <p>
+  //       Join us for this year's Google IO Extended Pune event, where we'll bring
+  //       together tech enthusiasts and the developer community to be a part of
+  //       the Google IO 2023 experience.
+  //     </p>
+  //   ),
+  //   image: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_1080,q_100,w_1080/v1/gcs/platform-data-goog/events/Copy%20of%20IOE23-Bevy-Thumbnail-1080x1080-Editable_oeP5uJS.jpg",
+  //   registrationLink: null,
+  // },
 };
