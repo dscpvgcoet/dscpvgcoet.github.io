@@ -1,7 +1,7 @@
 @import './globalStyles.css';
 
 .eventstimeline-main-container {
-    height: 100vh;
+    height: 130vh;
     background-color: var(--background);
     position: relative;
     width: 100%;
@@ -311,7 +311,7 @@
         width: 24px;
         height: 24px;
         border-radius: 100%;
-        background-color:var(--grey);
+        background-color:var(--googleGreen);
         left: -38px;
         z-index: 100 !important;
         position: absolute;
