@@ -21,49 +21,57 @@ const findCurrentPool = (loc) => {
   return j;
 };
 
-const eventsListInfo = Object.values(events)
-  // [
-  // {
-  //     title:'Information Session',
-  //     description:'This session is going to be an introduction to the new GDSC PVGCOET.',
-  //     date : "18th Sep 2021",
-  //     url : "info-session"
-  // },
-  // {
-  //     title:'CodeBuddy Coding Event',
-  //     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
-  // },
-  // {
-  //     title:'CodeBuddy Coding Event',
-  //     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
-  // },
-  // {
-  //     title:'CodeBuddy Coding Event',
-  //     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
-  // },
-  // {
-  //     title:'CodeBuddy Coding Event',
-  //     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
-  // },
-  // {
-  //     title:'CodeBuddy Coding Event',
-  //     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
-  // },
-  // {
-  //     title:'CodeBuddy Coding Event',
-  //     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
-  // },
-  // {
-  //     title:'CodeBuddy Coding Event',
-  //     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
-  // },
-  // {
-  //     title:'CodeBuddy Coding Event',
-  //     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
-  // },
-  // ];
+const eventsListInfo = Object.values(events);
+// [
+// {
+//     title:'Information Session',
+//     description:'This session is going to be an introduction to the new GDSC PVGCOET.',
+//     date : "18th Sep 2021",
+//     url : "info-session"
+// },
+// {
+//     title:'CodeBuddy Coding Event',
+//     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+// },
+// {
+//     title:'CodeBuddy Coding Event',
+//     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+// },
+// {
+//     title:'CodeBuddy Coding Event',
+//     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+// },
+// {
+//     title:'CodeBuddy Coding Event',
+//     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+// },
+// {
+//     title:'CodeBuddy Coding Event',
+//     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+// },
+// {
+//     title:'CodeBuddy Coding Event',
+//     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+// },
+// {
+//     title:'CodeBuddy Coding Event',
+//     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+// },
+// {
+//     title:'CodeBuddy Coding Event',
+//     description:'Over 100 participants were provided guidance from experts and study material to cover major parts of DSA within 2 months'
+// },
+// ];
 
-const EventsCard = ({ eventLoc, pageNumber, title, description, index,date,url }) => {
+const EventsCard = ({
+  eventLoc,
+  pageNumber,
+  title,
+  description,
+  index,
+  date,
+  url,
+}) => {
   const eventLocActual = eventLoc;
   const evClass = eventLocActual % 4 === 0 ? 4 : eventLocActual % 4;
   const left =
@@ -123,8 +131,10 @@ const EventsCardMobile = ({
   title,
   description,
   index,
-  date,url
+  date,
+  url,
 }) => {
+  // const eventLocActual = eventLoc;
   return (
     <Link to={`/event/${url}`}>
       <div className={`events-card-mobile`}>
@@ -148,7 +158,7 @@ const EventsCardMobile = ({
           read more
         </p>
 
-        {/* <div className="circle" style={{display:eventLocActual%2 ? 'flex' : 'none'}}></div> */}
+        {/* <div className="circle" style={{display: eventLocActual % 2 ? 'flex' : 'none'}}></div> */}
       </div>
     </Link>
   );
@@ -250,27 +260,58 @@ class EventsTimeline extends React.Component {
             </p> */}
 
             <div className="timeline-container-outer">
-                        <div 
-                            className="timeline-container"
-                            style={{transform:[`translateX(-${this.state.pageNumber*window.innerWidth}px)`]}}
-                        >
-                            
-                            {
-                                eventsListInfo.map((item, index) => {
-                                    return <EventsCard url={item.url} date={item.date} eventLoc={index+1} pageNumber={this.state.pageNumber} title={item.name} description={item.shortDesc} index={index}/>
-                                })
-                            }
-    
-                            <div className="timeline-now circle"><div className="timeline-now-inner"></div></div>
-                            <p className="today t3 darkGrey">TODAY</p>
+              <div
+                className="timeline-container"
+                style={{
+                  transform: [
+                    `translateX(-${
+                      this.state.pageNumber * window.innerWidth
+                    }px)`,
+                  ],
+                }}
+              >
+                {eventsListInfo.map((item, index) => {
+                  return (
+                    <EventsCard
+                      url={item.url}
+                      date={item.date}
+                      eventLoc={index + 1}
+                      pageNumber={this.state.pageNumber}
+                      title={item.name}
+                      description={item.shortDesc}
+                      index={index}
+                    />
+                  );
+                })}
 
-                            
-                        </div>
-                        
-                        <div className="timeline" style={{width:`calc(80vw)`}}></div>
-                        <button className="next-button" onClick={this.goToNext} style={{display: this.state.pageNumber+2 > findCurrentPool(eventsListInfo.length) ? 'none' : 'flex'}}><ChevronRight className="tanText" size={25}/></button>
-                        <button className="prev-button" onClick={this.goToPrev} style={{display: this.state.pageNumber > 0 ? 'flex' : 'none'}}><ChevronLeft className="tanText" size={25}/></button>
-                    </div>
+                <div className="timeline-now circle">
+                  <div className="timeline-now-inner"></div>
+                </div>
+                <p className="today t3 darkGrey">TODAY</p>
+              </div>
+
+              <div className="timeline" style={{ width: `calc(80vw)` }}></div>
+              <button
+                className="next-button"
+                onClick={this.goToNext}
+                style={{
+                  display:
+                    this.state.pageNumber + 2 >
+                    findCurrentPool(eventsListInfo.length)
+                      ? "none"
+                      : "flex",
+                }}
+              >
+                <ChevronRight className="tanText" size={25} />
+              </button>
+              <button
+                className="prev-button"
+                onClick={this.goToPrev}
+                style={{ display: this.state.pageNumber > 0 ? "flex" : "none" }}
+              >
+                <ChevronLeft className="tanText" size={25} />
+              </button>
+            </div>
           </div>
         </BrowserView>
 
@@ -301,18 +342,26 @@ class EventsTimeline extends React.Component {
             Stay tuned !
           </p> */}
 
-          <p className="t3 darkGrey" style={{margin:'20px 0px 10px 40px'}}>TODAY</p>
+
+          <p className="t3 darkGrey" style={{ margin: "20px 0px 10px 40px" }}>
+            TODAY
+          </p>
           <div className="mobile-timeline-container">
-     
-                        {
-                                eventsListInfo.map((item, index) => {
-                                    return <EventsCardMobile url={item.url} date={item.date}  eventLoc={index+1} pageNumber={this.state.pageNumber} title={item.name} description={item.shortDesc} index={index}/>
-                                })
-                        }
-
-                        <div className="mobile-timeline"></div>
-
-                    </div>
+          {eventsListInfo.map((item, index) => {
+            return (
+              <EventsCardMobile
+                url={item.url}
+                date={item.date}
+                eventLoc={index + 1}
+                pageNumber={this.state.pageNumber}
+                title={item.name}
+                description={item.shortDesc}
+                index={index}
+              />
+            );
+          })}
+            <div className="mobile-timeline"></div>
+          </div>
         </MobileView>
 
         <Footer />
