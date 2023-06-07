@@ -492,8 +492,7 @@ export const events = {
       <p>
         We have observed that a lot of people are curious about GDSC and how it
         works Shrouded by the mist of dubiety, we are organizing an Informative
-        Session on 7th September 8 p.m., that will clear
-        all your doubts
+        Session on 7th September 8 p.m., that will clear all your doubts
         <br />
         <br />
         The Informative Session will include discussions on:-
@@ -512,7 +511,7 @@ export const events = {
     registrationLink: null,
   },
   "android-study-jam-intro": {
-    name: "Android Study Jams Compose Camp | Intro to Kotlin",
+    name: "Android Study Jams | Intro to Kotlin",
     date: "22nd September 2022",
     dateTime: "2021-09-22 13:00:00",
     shortDesc: "Kickstart your journey as an Android Developer",
@@ -547,8 +546,8 @@ export const events = {
         Learn how to build your first Android App to solve real world problems.
         <br />
         <br />
-        Join us on our first session: Introduction to Kotlin, on 22nd September at
-        1 p.m. and continue learning with us to become a part of a greater
+        Join us on our first session: Introduction to Kotlin, on 22nd September
+        at 1 p.m. and continue learning with us to become a part of a greater
         community.
         <br />
         <br />
@@ -581,8 +580,8 @@ export const events = {
         Mark your Calenders!!
         <br />
         <br />
-        Android Study Jams is back for three back to back sessions on 23th, 24th and
-        26th Sept!!
+        Android Study Jams is back for three back to back sessions on 23th, 24th
+        and 26th Sept!!
         <br />
         <br />
         Session 2: Fundamentals of Kotlin on 23th Sept at 7:30 p.m.
@@ -621,8 +620,8 @@ export const events = {
         Mark your Calenders!!
         <br />
         <br />
-        Android Study Jams is back for three back to back sessions on 23th, 24th and
-        26th Sept!!
+        Android Study Jams is back for three back to back sessions on 23th, 24th
+        and 26th Sept!!
         <br />
         <br />
         Session 2: Fundamentals of Kotlin on 23th Sept at 7:30 p.m.
@@ -661,8 +660,8 @@ export const events = {
         Mark your Calenders!!
         <br />
         <br />
-        Android Study Jams is back for three back to back sessions on 23th, 24th and
-        26th Sept!!
+        Android Study Jams is back for three back to back sessions on 23th, 24th
+        and 26th Sept!!
         <br />
         <br />
         Session 2: Fundamentals of Kotlin on 23th Sept at 7:30 p.m.
@@ -680,7 +679,7 @@ export const events = {
     image: "https://docs.google.com/uc?id=18PV3yw9WBwdywawJjT_LRYFI_oPIVC3g",
     registrationLink: null,
   },
-  "innovathon": {
+  innovathon: {
     name: "Innovathon",
     date: "26th Sept - 6th Oct 2022",
     dateTime: "2022-10-12",
@@ -731,7 +730,7 @@ export const events = {
     image: "https://docs.google.com/uc?id=1A1e4pPx7FgyHUYgJOfd4cZ6V6BILdO6R",
     registrationLink: null,
   },
-  "hacktoberfest": {
+  hacktoberfest: {
     name: "Hacktoberfest",
     date: "1st-31st October 2022",
     dateTime: "2022-10-01 19:00:00",
@@ -794,15 +793,182 @@ export const events = {
     url: "google-cloud-career-practitioners-campaign",
     description: (
       <p>
-        Every Cloud has a Silver Lining Google Cloud Career Practitioners Campaign is here! For
-        those who have registered, an Orientation will be held on 8 p.m., 14th November
-        where you will be briefed up about the Event. Aniket Gaudgual is
-        the Facilitator of our college for this event. A facilitator will guide
-        you throughout the program and help you out in case you face any
-        difficulties. Kindly attend this session to clear your doubts!!!
+        Every Cloud has a Silver Lining Google Cloud Career Practitioners
+        Campaign is here! For those who have registered, an Orientation will be
+        held on 8 p.m., 14th November where you will be briefed up about the
+        Event. Aniket Gaudgual is the Facilitator of our college for this event.
+        A facilitator will guide you throughout the program and help you out in
+        case you face any difficulties. Kindly attend this session to clear your
+        doubts!!!
       </p>
     ),
     image: "https://docs.google.com/uc?id=1cDYKjE6sPJWVZ887JA0SSZMSNjPrpKmA",
     registrationLink: null,
-  }
+  },
+  "solution-challenge-info": {
+    name: "Google Solution Challenge Info Session",
+    date: "1st February 2023",
+    dateTime: "2023-2-1 19:00:00",
+    shortDesc: "Join us for the Solution Challenge Info session",
+    postEventDesc: (
+      <p>
+        The event is over find the recording over{" "}
+        <u>
+          <a href="https://www.youtube.com/live/7NIJBbj2_A0?feature=share">
+            here
+          </a>
+        </u>
+      </p>
+    ),
+    url: "solution-challenge-info",
+    description: (
+      <p>
+        Have you ever thought about building an application or tool that solves
+        a problem your community faces?🤔
+        <br /> <br />
+        Wanna change the world with your revolutionary ideas?😎
+        <br /> <br />
+        The year ahead brings more opportunities for helping each other and
+        giving back to our communities.🤝 The mission of the 2023 Solution
+        Challenge by Google is to solve for one or more of the United Nation's
+        1️⃣7️⃣ Sustainable Development Goals using Google technologies.
+        <br /> <br />
+        GDSC PVGCOET is participating in the Solution Challenge for the third
+        time!!🥳
+        <br /> <br />
+        At the Info Session on the 1st of February, you will get details about
+        the Solution Challenge from our speaker, Ruchika Suryawanshi, a
+        Semifinalist in the Solution Challenge 2022 (ranking among the top 50
+        Global teams)🚀. She will share her experience and insights on how to
+        make your solution stand out!!🥳
+      </p>
+    ),
+    image: "https://docs.google.com/uc?id=1rC-b2DK2nzjAyEaM-q-4LU6_0YPVoQ46",
+    registrationLink: null,
+  },
+  "flutter-forward-extended": {
+    name: "Flutter Forward Extended",
+    date: "11th - 12th Feb 2023",
+    dateTime: "2023-2-11 18:00:00",
+    shortDesc: "Start your journey with Google cloud !",
+    postEventDesc: (
+      <p>
+        The event is over find the recording over{" "}
+        <u>
+          <a href="https://www.youtube.com/live/4jvDVVsg-mU?feature=share">
+            here
+          </a>
+        </u>
+      </p>
+    ),
+    url: "flutter-forward-extended",
+    description: (
+      <p>
+        Want to know what Flutter is?👀 <br /> <br /> FLUTTER is a mobile app
+        development platform that allows developers to create cross-platform
+        apps that run on Android and iOS devices. <br /> <br /> 💻 Linkedin
+        ranked Flutter as the "fastest-growing skill among software engineers."
+        <br /> <br /> 💥 Do you also wish to be a part of this fast-sweeping
+        trend? Then this is for you!
+        <br /> <br />
+        💫 We invite you all to a Flutter workshop with Akshay Kumar, a
+        freelance Flutter developer and also devest and workshop speaker for
+        Flutter & firebase. <br /> <br />✨ It's gonna be an exciting and
+        innovative 2-day workshop where you will be able to learn about how to
+        develop apps live so make sure to tune in!!💡
+      </p>
+    ),
+    image: "https://docs.google.com/uc?id=1G8BGlPM46BlebcxY0rj0WAW79onPdkTT",
+    registrationLink: null,
+  },
+  "ideathon-2k23": {
+    name: "Ideathon 2k23",
+    date: "18th March 2023",
+    dateTime: "2023-3-18 20:00:00",
+    shortDesc: "Start your journey with Google cloud !",
+    postEventDesc: (
+      <p>
+        The event is over
+        {/* find the recording over{" "}
+        <u>
+          <a href="https://youtu.be/AAN2YhTg3_U">here</a>
+        </u> */}
+      </p>
+    ),
+    url: "ideathon-2k23",
+    description: (
+      <p>
+        📌Innovations are not new to GDSC PVGCOET, for bringing students
+        together🫂. We encourage students to be a part of such progressive,
+        cultural, and multi-spherical activities and develop such solutions
+        which justify the upbringing of humans📈.
+        <br /> <br /> 📌Heard of marathons right? Now get an exclusive chance to
+        present yourself in the marathon of ideas, with new ideas and idealistic
+        solutions, GDSC PVGCOET is launching Ideathon 2023🥳.
+        <br /> <br /> 📌GDSC PVGCOET wants you to apply the 3R principle.
+        Rethink, Reuse, and Repeat to devise and come up with comprehensive and
+        wide-ranging ideas💎.
+        <br /> <br /> 💡A female-empowered activity that saw more than 70%
+        female participation last year, shows there is no gender barrier or
+        differentiated background🎉🙌.
+        <br /> <br /> 💡You don't need to be technical but you need to be gifted
+        with ingenious ideas💯. So don't miss this initiative of breaking ideas
+        into reality✅. Build your team, get ready to pitch your ideas, and we
+        are waiting for your unique solutions🖊🔎.
+      </p>
+    ),
+    image: "https://docs.google.com/uc?id=1ddjooXXR0FzeQifNZBCUBVUhHhchA9rO",
+    registrationLink: null,
+  },
+  "webfolio-workshop": {
+    name: "Webfolio Workshop",
+    date: "1st April 2023",
+    dateTime: "2023-4-1 11:00:00",
+    shortDesc: "Learn HTML, CSS & Animations with GSAP",
+    postEventDesc: (
+      <p>
+        The event is over find the recording over{" "}
+        <u>
+          <a href="https://youtu.be/CNlrrHdK5jI">here</a>
+        </u>
+      </p>
+    ),
+    url: "webfolio-workshop",
+    description: (
+      <p>
+        When you're a Web Developer, the possibilities are endless!
+        <br />
+        Webfolio Worksop is a Web Development Bootcamp will be arranging on the
+        1st Of April 2023.
+        <br />
+        <br />
+        🤩In this workshop, you'll have the opportunity to create your own
+        professional and stunning resume website. With a customized website, you
+        can showcase your skills, experience, and projects to potential
+        employers and set yourself apart from the competition.🌟
+        <br />
+        Learn more and sign up today!
+      </p>
+    ),
+    image: "https://docs.google.com/uc?id=1kPB2trDtWKRuBcG6LT6UFi4NdmtOVLd1",
+    registrationLink: null,
+  },
+  "io-extended-2k23": {
+    name: "I/O Extended Pune",
+    date: "20th May 2023",
+    dateTime: "2023-5-20 09:00:00",
+    shortDesc:
+      "I/O connects developers from around the world for thoughtful discussions and a first look at our latest developer products.",
+    postEventDesc: "",
+    url: "io-extended-2k23",
+    description: (
+      <p>
+        Join us for this year's Google IO Extended Pune event, where we'll bring
+        together tech enthusiasts and the developer community to be a part of
+        the Google IO 2023 experience.
+      </p>
+    ),
+    image: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_1080,q_100,w_1080/v1/gcs/platform-data-goog/events/Copy%20of%20IOE23-Bevy-Thumbnail-1080x1080-Editable_oeP5uJS.jpg",
+    registrationLink: null,
+  },
 };
