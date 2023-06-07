@@ -1,5 +1,16 @@
 const archiveInfo = [
     {
+        year: '2022-23',
+        info: [
+            {
+                title: 'A look at our 22-23 tenure of GDSC',
+                description: 'Take a look over some of the events and fun activites we conducted during 22-23 year',
+                link: 'https://drive.google.com/file/d/137dynhENx4M0Sqfoy-jpVKA1bjEZs2im/view?usp=share_link',
+                same_page: false
+            },
+        ]
+    },
+    {
         year: '2021-22',
         info: [
             {
