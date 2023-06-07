@@ -204,6 +204,9 @@ class OurTeam extends React.Component {
             <div className="team-members-core-inner">
               {this.renderCompleteTeam(12, 16)}
             </div>
+            <div className="team-members-core-inner">
+              {this.renderCompleteTeam(16, 20)}
+            </div>
           </BrowserView>
           <MobileView>
             <div className="team-members-core-inner-mobile">
