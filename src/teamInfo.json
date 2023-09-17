@@ -2,89 +2,103 @@
   "core": [
     {
       "timestamp": "2021-08-19T14:14:26.669Z",
-      "fullName": "Chinmayee Gade ",
-      "email": "Chinmayeepgade@gmail.com ",
-      "linkedinProfile": "https://www.linkedin.com/in/chinmayee-gade-a96665212",
-      "githubLink": "https://github.com/CG-python",
-      "personalWebsite": "https://syntaxpython.blogspot.com/?m=1 and https://youtube.com/channel/UCeEqDibjr0iYngaZq8pAakQ",
+      "fullName": "Anushka Patil",
+      "email": "anushkapatil1511@gmail.com",
+      "linkedinProfile": "https://www.linkedin.com/in/anushka-patil-291858236/",
+      "githubLink": "https://github.com/anushkaspatil",
       "baseUrl": "https://docs.google.com/uc?id=",
+      "instagram": "https://www.instagram.com/_anushka.patil/",
       "id": "1kmp2sCvA0Gxave-HBIQQwv1LRz4qwECF",
-      "imageUrl": "https://docs.google.com/uc?id=1kmp2sCvA0Gxave-HBIQQwv1LRz4qwECF",
+      "imageUrl": "/team/anushka-patil.jpeg",
       "role": "GDSC Lead"
     },
     {
       "timestamp": "2021-08-19T18:03:20.467Z",
-      "fullName": "Nisarg Kudgunti",
-      "email": "nisarg6502@gmail.com",
-      "linkedinProfile": "https://www.linkedin.com/in/nisarg-kudgunti-948024206/",
-      "githubLink": "https://github.com/Nisarg6502",
-      "personalWebsite": "https://www.quora.com/profile/Nisarg-Kudgunti",
-      "baseUrl": "https://docs.google.com/uc?id=",
-      "id": "1TwylbYJSqpFBR0X52BhVd5rnfXdIIj13",
-      "imageUrl": "https://docs.google.com/uc?id=1TwylbYJSqpFBR0X52BhVd5rnfXdIIj13",
-      "role": "Mgmt & Operations Head"
-    },
-    {
-      "fullName": "Mahak Gautam",
-      "email": "mahakgautam02@gmail.com",
-      "linkedinProfile": "https://www.linkedin.com/in/mahak-gautam-08a97b188",
-      "githubLink": "https://github.com/MahakGautam2002",
-      "baseUrl": "https://docs.google.com/uc?id=",
-      "id": "1KmC1lGuvjaTShXmMDqHxQSOoaaRvNDur",
-      "imageUrl": "https://docs.google.com/uc?id=1KmC1lGuvjaTShXmMDqHxQSOoaaRvNDur",
-      "role": "Design & Content Head"
-    },
-    {
-      "timestamp": "2021-08-19T14:22:54.495Z",
-      "fullName": "Rohit Dalvi",
-      "email": "rohit.dalvi2001@gmail.com",
-      "linkedinProfile": "https://www.linkedin.com/in/rohit-dalvi/",
-      "githubLink": "https://github.com/rohitdalvi18",
-      "baseUrl": "https://docs.google.com/uc?id=",
-      "id": "1NEYMw4vQh-frbVmRzC2mnKpEM8ETzhRs",
-      "imageUrl": "https://docs.google.com/uc?id=1NEYMw4vQh-frbVmRzC2mnKpEM8ETzhRs",
-      "role": "Student Mentor"
-    },
-    {
       "fullName": "Prof. Urmila Kalshetti",
       "email": "umk_it@pvgcoet.ac.in",
       "linkedinProfile": "https://www.linkedin.com/in/urmila-kalshetti-3507669a/",
+      "instagram": "https://www.instagram.com/urmila.kalshetti/",
       "baseUrl": "https://docs.google.com/uc?id=",
-      "id": "1Ypzqptvm1zW9O1FzRItlYEQh2kI7k94_",
-      "imageUrl": "https://docs.google.com/uc?id=1Ypzqptvm1zW9O1FzRItlYEQh2kI7k94_",
+      "id": "1TwylbYJSqpFBR0X52BhVd5rnfXdIIj13",
+      "imageUrl": "/team/urmila-kalshetti.jpeg",
       "role": "Faculty Advisor"
     },
     {
-      "fullName": "Aniket Gaudgaul",
-      "email": "aniketgaudgaul@gmail.com",
-      "linkedinProfile": "https://www.linkedin.com/in/aniket-gaudgaul-689542213/",
+      "timestamp": "2021-08-19T14:14:26.669Z",
+      "fullName": "Chinmayee Gade",
+      "email": "Chinmayeepgade@gmail.com ",
+      "linkedinProfile": "https://www.linkedin.com/in/chinmayeegade/",
+      "githubLink": "https://github.com/Chinmayeegade/",
+      "instagram": "https://www.instagram.com/chinmayeegade/",
+      "baseUrl": "https://docs.google.com/uc?id=",
+      "id": "1kmp2sCvA0Gxave-HBIQQwv1LRz4qwECF",
+      "imageUrl": "team/Chinmayee Gade.jpeg",
+      "role": "Student Mentor"
+    },
+    {
+      "timestamp": "2021-08-19T14:22:54.495Z",
+      "fullName": "Heramb Patil",
+      "email": "herambpatil2004@gmail.com",
+      "linkedinProfile": "https://www.linkedin.com/in/herambvpatil/",
+      "githubLink": "https://github.com/herambpatilofficial/",
+      "instagram": "https://www.instagram.com/herambpatilofficial/",
+      "baseUrl": "https://docs.google.com/uc?id=",
+      "id": "1NEYMw4vQh-frbVmRzC2mnKpEM8ETzhRs",
+      "imageUrl": "team/Heramb Patil.jpeg",
+      "role": "Technical Head"
+    },
+    {
+      "fullName": "Vaishnavi Choudhari",
+      "email": "vnchoudhari20@gmail.com",
+      "linkedinProfile": "https://www.linkedin.com/in/vaishnavi-choudhari-a135b3251/",
+      "instagram": "https://www.instagram.com/c_vaishnavi03/",
+      "baseUrl": "https://docs.google.com/uc?id=",
+      "id": "1Ypzqptvm1zW9O1FzRItlYEQh2kI7k94_",
+      "imageUrl": "team/Vaishnavi Choudhari.jpeg",
+      "role": "Management and Operations Head"
+    },
+    {
+      "fullName": "Atharva Chaudhari",
+      "email": "2111008@pvgcoet.ac.in",
+      "linkedinProfile": "https://www.linkedin.com/in/atharva-chaudhari-a76343238/",
+      "instagram": "https://www.instagram.com/atharva_1810/",
       "githubLink": "https://github.com/AniketGaudgaul",
       "baseUrl": "https://docs.google.com/uc?id=",
       "id": "1ze8glatD7GGztCE_v9usdZdQh0X3Spb2",
-      "imageUrl": "https://docs.google.com/uc?id=1ze8glatD7GGztCE_v9usdZdQh0X3Spb2",
-      "role": "Programmer Analyst"
+      "imageUrl": "team/Atharva Chaudhari.jpeg",
+      "role": "Design Head"
     },
     {
-      "fullName": "Shravani Paraswar",
-      "email": "shravani.paraswar@gmail.com",
-      "linkedinProfile": "https://www.linkedin.com/in/shravani-paraswar-677ab51b7/",
+      "fullName": "Atharv Pujari",
+      "email": "atharv.pujari2010@gmail.com",
+      "linkedinProfile": "",
       "baseUrl": "https://docs.google.com/uc?id=",
       "id": "139GyUpBAapUIUnuc1JvhQFG65GPBFiwZ",
-      "imageUrl": "https://docs.google.com/uc?id=139GyUpBAapUIUnuc1JvhQFG65GPBFiwZ",
-      "role": "Computational Analyst"
+      "imageUrl": "team/Atharv Pujari.jpeg",
+      "role": "Content Head"
+    },
+    {
+      "fullName": "Sushmita Chaudhari",
+      "email": "sushmitachaudhari264@gmail.com",
+      "linkedinProfile": "https://www.linkedin.com/in/sushmita-c-3121a7236/",
+      "instagram": "https://www.instagram.com/sushmita_2oo3/",
+      "baseUrl": "https://docs.google.com/uc?id=",
+      "id": "1ze8glatD7GGztCE_v9usdZdQh0X3Spb2",
+      "imageUrl": "team/Sushmita Chaudhari.jpeg",
+      "role": "Marketing Head" 
     }
   ],
   "prev_core": [
     {
       "timestamp": "2021-08-19T14:22:54.495Z",
-      "fullName": "Rohit Dalvi",
-      "email": "rohit.dalvi2001@gmail.com",
-      "linkedinProfile": "https://www.linkedin.com/in/rohit-dalvi/",
-      "githubLink": "https://github.com/rohitdalvi18",
+      "fullName": "Pushkar Tipre",
+      "email": "pushkartipre53@gmail.com",
+      "linkedinProfile": "https://www.linkedin.com/in/pushkar-tipre-222247215/",
+      "instagram": "https://www.instagram.com/pushkar_tipre/",
       "baseUrl": "https://docs.google.com/uc?id=",
       "id": "1l98zAQ-2dx0lC8IbE36hSAfyclc6vwi5",
-      "imageUrl": "https://docs.google.com/uc?id=1l98zAQ-2dx0lC8IbE36hSAfyclc6vwi5",
-      "role": "GDSC Lead"
+      "imageUrl": "team/Pushkar Tipre.jpeg",
+      "role": "Flutter Expert"
     },
     {
       "timestamp": "2021-08-19T14:07:40.199Z",
@@ -151,174 +165,145 @@
   ],
   "complete": [
     {
-      "fullName": "Sahil Dahekar",
-      "email": "dahekar30sahil@gmail.com",
-      "linkedinProfile": "https://www.linkedin.com/in/sahil-dahekar-45735820a/",
-      "githubLink": "https://github.com/SahilDahekar",
+      "timestamp": "2021-08-19T14:22:54.495Z",
+      "fullName": "Pushkar Tipre",
+      "email": "pushkartipre53@gmail.com",
+      "linkedinProfile": "https://www.linkedin.com/in/pushkar-tipre-222247215/",
+      "instagram": "https://www.instagram.com/pushkar_tipre/",
       "baseUrl": "https://docs.google.com/uc?id=",
-      "id": "1wluQHBy21MHpdr2q9csyv54QqKLu1ntO",
-      "imageUrl": "https://docs.google.com/uc?id=1wluQHBy21MHpdr2q9csyv54QqKLu1ntO",
+      "id": "1l98zAQ-2dx0lC8IbE36hSAfyclc6vwi5",
+      "imageUrl": "team/Pushkar Tipre.jpeg",
+      "role": "Flutter Expert"
+    },
+    {
+      "fullName": "Aditya Shelke",
+      "email": "21118033@pvgcoet.ac.in",
+      "linkedinProfile": "https://www.linkedin.com/in/aditya-shelke-242507221/",
+      "githubLink": "http://github.com/adi-uchiha",
+      "instagram": "https://www.instagram.com/adityashelke0702/",
+      "baseUrl": "https://docs.google.com/uc?id=",
+      "id": "1HI1x55kRjhXFu30tuFyN0U_bID-SQEJd",
+      "imageUrl": "team/Aditya Shelke.jpeg",
       "role": "Web Expert"
     },
     {
-      "fullName": "Siddhesh Kukade",
-      "email": "21113018@pvgcoet.ac.in",
-      "linkedinProfile": "https://www.linkedin.com/in/siddhu-kukade/",
-      "githubLink": "http://github.com/Siddheshkukade",
-      "baseUrl": "https://docs.google.com/uc?id=",
-      "id": "1HI1x55kRjhXFu30tuFyN0U_bID-SQEJd",
-      "imageUrl": "https://docs.google.com/uc?id=1HI1x55kRjhXFu30tuFyN0U_bID-SQEJd",
-      "role": "App Expert"
-    },
-    {
-      "fullName": "Shivendra Deshpande",
-      "email": "shivdeshpande2001@gmail.com",
-      "linkedinProfile": "https://www.linkedin.com/in/shivendra-deshpande-893236207",
-      "githubLink": "https://github.com/shivdeshpande",
+      "fullName": "Jagruti Patil",
+      "email": "jagrutipatil5433@gmail.com",
+      "linkedinProfile": "https://www.linkedin.com/in/ms-jagruti-patil/",
+      "instagram": "https://www.instagram.com/jagruti._r._patil/",
       "baseUrl": "https://docs.google.com/uc?id=",
       "id": "1csV3Ac-dn2IRSQq73nQ3TvR5EAJ26Zlb",
-      "imageUrl": "https://docs.google.com/uc?id=1csV3Ac-dn2IRSQq73nQ3TvR5EAJ26Zlb",
-      "role": "Open Source Expert"
-    },
-    {
-      "fullName": "Anushka Khupse",
-      "email": "20020106@pvgcoet.ac.in",
-      "linkedinProfile": "https://www.linkedin.com/in/anushka-khuspe-903108208/",
-      "baseUrl": "https://docs.google.com/uc?id=",
-      "id": "1gaWkL-sGfGPoTJFqASriksLw240H6wJZ",
-      "imageUrl": "https://docs.google.com/uc?id=1gaWkL-sGfGPoTJFqASriksLw240H6wJZ",
-      "role": "Logistics Officer"
-    },
-    {
-      "fullName": "Kasturi Bhandare",
-      "email": "kasturibhandare019@gmail.com",
-      "linkedinProfile": "https://www.linkedin.com/in/kasturi-bhandare-84139a208/",
-      "baseUrl": "https://docs.google.com/uc?id=",
-      "id": "1qbytutdKPRMjkfiCH2v0C6SVUQP1rc2x",
-      "imageUrl": "https://docs.google.com/uc?id=1qbytutdKPRMjkfiCH2v0C6SVUQP1rc2x",
-      "role": "Outreach Officer"
-    },
-    {
-      "fullName": "Anushka Patil",
-      "email": "anushkapatil1511@gmail.com",
-      "linkedinProfile": "https://www.linkedin.com/in/anushka-patil-291858236",
-      "baseUrl": "https://docs.google.com/uc?id=",
-      "id": "1nj2NP4yZSILj4ZyyHn4fE-mPZCAInvkd",
-      "imageUrl": "https://docs.google.com/uc?id=1nj2NP4yZSILj4ZyyHn4fE-mPZCAInvkd",
-      "role": "Public Relations Officer"
-    },
-    {
-      "fullName": "Devadripta Jadhav",
-      "email": "devadripta@gmail.com",
-      "linkedinProfile": "https://www.linkedin.com/in/devadripta",
-      "baseUrl": "https://docs.google.com/uc?id=",
-      "id": "16WQNROn2o7UmzJVnPFHVz_na1SiFI43W",
-      "imageUrl": "https://docs.google.com/uc?id=16WQNROn2o7UmzJVnPFHVz_na1SiFI43W",
-      "role": "Event Organiser"
-    },
-    {
-      "fullName": "Atharva Ostwal",
-      "email": "atharva.ostwal02@gmail.com",
-      "linkedinProfile": "https://www.linkedin.com/in/atharva-ostwal-299136222/",
-      "baseUrl": "https://docs.google.com/uc?id=",
-      "id": "13WUgozbv6hVP3ifIFL576EAKp9jcNZth",
-      "imageUrl": "https://docs.google.com/uc?id=13WUgozbv6hVP3ifIFL576EAKp9jcNZth",
-      "role": "Event Organiser"
-    },
-    {
-      "fullName": "Aditya Bhambe",
-      "email": "bhambeaditya@gmail.com",
-      "linkedinProfile": "https://www.linkedin.com/in/aditya-bhambe-4a47b7208/",
-      "baseUrl": "https://docs.google.com/uc?id=",
-      "id": "1UjoABj8OVNxD0DzjCpZ5AlVF1jq9tnY6",
-      "imageUrl": "https://docs.google.com/uc?id=1UjoABj8OVNxD0DzjCpZ5AlVF1jq9tnY6",
-      "role": "Marketing Specialist"
-    },
-    {
-      "fullName": "Rutvij Deo",
-      "email": "rutvij.deo5@gmail.com",
-      "linkedinProfile": "https://www.linkedin.com/in/rutvij-deo-08aa93194/",
-      "baseUrl": "https://docs.google.com/uc?id=",
-      "id": "1AjRlehqh2GngfRvL8a2433XwnaboRIKp",
-      "imageUrl": "https://docs.google.com/uc?id=1AjRlehqh2GngfRvL8a2433XwnaboRIKp",
-      "role": "Marketing Specialist"
-    },
-    {
-      "fullName": "Rijvi Kulkarni",
-      "email": "rijvikulkarni@gmail.com",
-      "linkedinProfile": "https://www.linkedin.com/in/rijvi-kulkarni-a89239201/",
-      "baseUrl": "https://docs.google.com/uc?id=",
-      "id": "1Lg5VhI7cjNHtB6lM5w3lWkITJ-Ouq19w",
-      "imageUrl": "https://docs.google.com/uc?id=1Lg5VhI7cjNHtB6lM5w3lWkITJ-Ouq19w",
-      "role": "Marketing Specialist"
-    },
-    {
-      "fullName": "Heramb Patil",
-      "email": "herambpatil2004@gmail.com",
-      "linkedinProfile": "https://www.linkedin.com/in/herambvpatil",
-      "githubLink": "https://github.com/herambpatilofficial",
-      "baseUrl": "https://docs.google.com/uc?id=",
-      "id": "1deKaRI2E-KQK6c9ImbGlLwSGOK8Y2T5E",
-      "imageUrl": "https://docs.google.com/uc?id=1deKaRI2E-KQK6c9ImbGlLwSGOK8Y2T5E",
-      "role": "Content Writer"
-    },
-    {
-      "fullName": "Sanmay Jain",
-      "email": "19115008@pvgcoet.ac.in",
-      "linkedinProfile": "https://www.linkedin.com/in/sanmay-jain-b93370176/",
-      "baseUrl": "https://docs.google.com/uc?id=",
-      "id": "1nXoBQjiPa_pe9QEKp8T2mgcDRui6jzoF",
-      "imageUrl": "https://docs.google.com/uc?id=1nXoBQjiPa_pe9QEKp8T2mgcDRui6jzoF",
-      "role": "Design Specialist"
-    },
-    {
-      "fullName": "Pranav Patne",
-      "email": "pranavpatne491@gmail.com",
-      "linkedinProfile": "https://www.linkedin.com/in/pranav-patne-9450681a8/",
-      "baseUrl": "https://docs.google.com/uc?id=",
-      "id": "16PdHuK8YaTXTdWR6M4Qz4ZgJm0kiAl1-",
-      "imageUrl": "https://docs.google.com/uc?id=16PdHuK8YaTXTdWR6M4Qz4ZgJm0kiAl1-",
-      "role": "Design Specialist"
-    },
-    {
-      "fullName": "Prathamesh Kirad",
-      "email": "20112035@pvgcoet.ac.in",
-      "linkedinProfile": "http://www.linkedin.com/in/prathamesh-kirad-aa4863167",
-      "baseUrl": "https://docs.google.com/uc?id=",
-      "id": "1RL0NoQY7soN08yYP675VnRdvyNQKI4Mn",
-      "imageUrl": "https://docs.google.com/uc?id=1RL0NoQY7soN08yYP675VnRdvyNQKI4Mn",
-      "role": "Design Copywriter"
+      "imageUrl": "team/Jagruti Patil.jpeg",
+      "role": "Computational Analyst"
     },
     {
       "fullName": "Nirjara Mhaskar",
       "email": "nirjaramhaskar233@gmail.com",
       "linkedinProfile": "https://www.linkedin.com/in/nirjara-mhaskar-1a804b229/",
-      "githubLink": "https://github.com/nirjaramhaskar",
       "baseUrl": "https://docs.google.com/uc?id=",
-      "id": "1ctmANxUI78PwWV3-VmI4orHojZ_dKrdE",
-      "imageUrl": "https://docs.google.com/uc?id=1ctmANxUI78PwWV3-VmI4orHojZ_dKrdE",
+      "id": "1gaWkL-sGfGPoTJFqASriksLw240H6wJZ",
+      "imageUrl": "team/Nirjara Mhaskar.jpeg",
+      "role": "Design Specialist"
+    },
+    {
+      "fullName": "Aditya Deshmukh",
+      "email": "adityawithyoualways@gmail.com",
+      "linkedinProfile": "https://www.linkedin.com/in/aditya-deshmukh-935823196/",
+      "instagram": "https://www.instagram.com/aditya_b4_u/",
+      "baseUrl": "https://docs.google.com/uc?id=",
+      "id": "1qbytutdKPRMjkfiCH2v0C6SVUQP1rc2x",
+      "imageUrl": "team/Aditya Deshmukh.jpeg",
       "role": "Design Analyst"
     },
     {
-      "fullName": "Rugved Joshi",
-      "email": "rugvedsamruddhi@gmail.com",
-      "linkedinProfile": "https://www.linkedin.com/in/rugved-joshi-954a9b22a/",
-      "githubLink": "https://github.com/rugved3079",
-      "personalWebsite": "https://rugved3079.github.io/webiste-/#",
+      "fullName": "Varad Deshpande",
+      "email": "varaddeshpande81@gmail.com",
+      "linkedinProfile": "https://www.linkedin.com/in/varad-deshpande-2170611a7/",
+      "instagram": "https://www.instagram.com/sahil_batgeri/",
       "baseUrl": "https://docs.google.com/uc?id=",
-      "id": "1z06Z2YP45qa4szWa8FuDn7AAIdlfsZFs",
-      "imageUrl": "https://docs.google.com/uc?id=1z06Z2YP45qa4szWa8FuDn7AAIdlfsZFs",
-      "role": "Content Specialist"
+      "id": "16WQNROn2o7UmzJVnPFHVz_na1SiFI43W",
+      "imageUrl": "team/Varad Deshpande.jpeg",
+      "role": "Video Specialist"
     },
     {
-      "fullName": "Swaraj Mhatre",
-      "email": "swarajmhatre25@gmail.com",
-      "linkedinProfile": "https://www.linkedin.com/in/swaraj-mhatre-a054a6205",
-      "githubLink": "https://github.com/swarajmhatre",
+      "fullName": "Prajakta Khaty",
+      "email": "Khatyprajakta@gmail.com",
+      "linkedinProfile": "https://www.linkedin.com/in/prajakta-khaty-20b26024a/",
+      "githubLink": "https://github.com/BlueHeart0065/",
+      "instagram": "https://www.instagram.com/prajakta.khaty/",
       "baseUrl": "https://docs.google.com/uc?id=",
-      "id": "1FD7z7fd3I1Oy1yFNcyoxbTnQdvpyDhKu",
-      "imageUrl": "https://docs.google.com/uc?id=1FD7z7fd3I1Oy1yFNcyoxbTnQdvpyDhKu",
-      "role": "Content Analyst"
+      "id": "13WUgozbv6hVP3ifIFL576EAKp9jcNZth",
+      "imageUrl": "team/Prajakta Khaty.jpeg",
+      "role": "Content Writer"
+    },
+    {
+      "fullName": "Vaishnavee Sanam",
+      "email": "21018026@pvgcoet.ac.in",
+      "linkedinProfile": "https://www.linkedin.com/in/va-s-196464284/",
+      "baseUrl": "https://docs.google.com/uc?id=",
+      "id": "1UjoABj8OVNxD0DzjCpZ5AlVF1jq9tnY6",
+      "imageUrl": "team/Vaishnavee Sanam.jpeg",
+      "role": "Chief Editor"
+    },
+    {
+      "fullName": "Vaibhav Deshpande",
+      "email": "deshpande.vaibhav1012@gmail.com",
+      "linkedinProfile": "https://www.linkedin.com/in/vaibhav-deshpande-40233b258/",
+      "baseUrl": "https://docs.google.com/uc?id=",
+      "id": "1Lg5VhI7cjNHtB6lM5w3lWkITJ-Ouq19w",
+      "imageUrl": "team/Vaibhav Deshpande.jpeg",
+      "role": "Design Copywriter"
+    },
+    {
+      "fullName": "Prathamesh Birle",
+      "email": "prathmeshbirle@gmail.com",
+      "linkedinProfile": "https://www.linkedin.com/in/prathmeshbirle/",
+      "baseUrl": "https://docs.google.com/uc?id=",
+      "id": "1AjRlehqh2GngfRvL8a2433XwnaboRIKp",
+      "imageUrl": "team/Prathamesh Birle.jpeg",
+      "role": "Logistics Officer"
+    },
+    
+    {
+      "fullName": "Prathamesh Gawali",
+      "email": "prathmeshg@gmail.com",
+      "linkedinProfile": "https://www.linkedin.com/in/prathmesh-gawali-19231324a/",
+      "githubLink": "https://github.com/herambpatilofficial",
+      "baseUrl": "https://docs.google.com/uc?id=",
+      "id": "1deKaRI2E-KQK6c9ImbGlLwSGOK8Y2T5E",
+      "imageUrl": "team/Prathamesh Gawali.jpeg",
+      "role": "Event Organizer"
+    },
+    {
+      "fullName": "Ayush Bhansali",
+      "email": "ayushbhansali0204@gmail.com",
+      "linkedinProfile": "https://www.linkedin.com/in/ayush-bhansali-430b481b5/",
+      "instagram": "https://www.instagram.com/ayush.bhansali/",
+      "baseUrl": "https://docs.google.com/uc?id=",
+      "id": "1nXoBQjiPa_pe9QEKp8T2mgcDRui6jzoF",
+      "imageUrl": "team/Ayush Bhansali.jpeg",
+      "role": "Equity Facilitator"
+    },
+    {
+      "fullName": "Kabeer Ahmed Merchant",
+      "email": "merchantkabeer68@gmail.com",
+      "linkedinProfile": "https://www.linkedin.com/in/kabeer-ahmed-merchant/",
+      "githubLink": "http://github.com/Kabeer2004",
+      "instagram": "https://www.instagram.com/kxb3er/",
+      "baseUrl": "https://docs.google.com/uc?id=",
+      "id": "1RL0NoQY7soN08yYP675VnRdvyNQKI4Mn",
+      "imageUrl": "team/Kabeer Ahmed Merchant.jpeg",
+      "role": "Analytics Specialist"
+    },
+    {
+      "fullName": "Mayur Suryavanshi",
+      "email": "suryavanshimayur2003@gmail.com",
+      "linkedinProfile": "https://www.linkedin.com/in/mayur-suryavanshi-5a9507237/",
+      "instagram": "https://www.instagram.com/_16.mayur/",
+      "baseUrl": "https://docs.google.com/uc?id=",
+      "id": "1ctmANxUI78PwWV3-VmI4orHojZ_dKrdE",
+      "imageUrl": "team/Mayur Suryavanshi.jpeg",
+      "role": "Digital Marketer"
     }
   ],
   "prev_complete": [
